@@ -1,5 +1,5 @@
 <?php
-$config["sitename"] = "ㅇㅇㅇ";
+$config["sitename"] = "국토교통부 통계누리";
 $config["mode"] = "front";
 $config["isDev"] = true;
 $config["cssTableMinWidth"] = 640;
