@@ -32,24 +32,12 @@ $config["cssLargeDesktopMinWidth"] = 1280;
 <meta name="msapplication-TileImage" content="/resources/favicon/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
 <?php if($config['isDev'] === true){ ?>
-<link rel="stylesheet/less" href="/resources-dev/<?php echo $config["mode"]; ?>/less/phone.less" />
-<link rel="stylesheet" href="/resources/<?php echo $config["mode"]; ?>-legacy/css/legacy-phone.css" />
-<link rel="stylesheet/less" href="/resources-dev/<?php echo $config["mode"]; ?>/less/tablet.less" media="screen and (min-width: <?php echo $config['cssTableMinWidth']; ?>px)" />
-<link rel="stylesheet" href="/resources/<?php echo $config["mode"]; ?>-legacy/css/legacy-tablet.css" media="screen and (min-width: <?php echo $config['cssTableMinWidth']; ?>px)" />
-<link rel="stylesheet/less" href="/resources-dev/<?php echo $config["mode"]; ?>/less/desktop.less" media="screen and (min-width: <?php echo $config['cssDesktopMinWidth']; ?>px)" />
-<link rel="stylesheet" href="/resources/<?php echo $config["mode"]; ?>-legacy/css/legacy-desktop.css" media="screen and (min-width: <?php echo $config['cssDesktopMinWidth']; ?>px)" />
-<link rel="stylesheet/less" href="/resources-dev/<?php echo $config["mode"]; ?>/less/largedesktop.less" media="screen and (min-width: <?php echo $config['cssLargeDesktopMinWidth']; ?>px)" />
-<link rel="stylesheet" href="/resources/<?php echo $config["mode"]; ?>-legacy/css/legacy-largedesktop.css" media="screen and (min-width: <?php echo $config['cssLargeDesktopMinWidth']; ?>px)" />
+<link rel="stylesheet/less" href="/resources-dev/<?php echo $config["mode"]; ?>/less/style.less" />
+<link rel="stylesheet" href="/resources/<?php echo $config["mode"]; ?>-legacy/css/legacy-style.css" />
 <script src="/resources-dev/<?php echo $config["mode"]; ?>/etc/less.min.js"></script>
 <?php }else{ ?>
-<link rel="stylesheet" href="/resources/<?php echo $config["mode"]; ?>/css/phone.min.css" />
-<link rel="stylesheet" href="/resources/<?php echo $config["mode"]; ?>-legacy/css/legacy-phone.css" />
-<link rel="stylesheet" href="/resources/<?php echo $config["mode"]; ?>/css/tablet.min.css" media="screen and (min-width: <?php echo $config['cssTableMinWidth']; ?>px)" />
-<link rel="stylesheet" href="/resources/<?php echo $config["mode"]; ?>-legacy/css/legacy-tablet.css" media="screen and (min-width: <?php echo $config['cssTableMinWidth']; ?>px)" />
-<link rel="stylesheet" href="/resources/<?php echo $config["mode"]; ?>/css/desktop.min.css" media="screen and (min-width: <?php echo $config['cssDesktopMinWidth']; ?>px)" />
-<link rel="stylesheet" href="/resources/<?php echo $config["mode"]; ?>-legacy/css/legacy-desktop.css" media="screen and (min-width: <?php echo $config['cssDesktopMinWidth']; ?>px)" />
-<link rel="stylesheet" href="/resources/<?php echo $config["mode"]; ?>/css/largedesktop.min.css" media="screen and (min-width: <?php echo $config['cssLargeDesktopMinWidth']; ?>px)" />
-<link rel="stylesheet" href="/resources/<?php echo $config["mode"]; ?>-legacy/css/legacy-largedesktop.css" media="screen and (min-width: <?php echo $config['cssLargeDesktopMinWidth']; ?>px)" />
+<link rel="stylesheet" href="/resources/<?php echo $config["mode"]; ?>/css/style.min.css" />
+<link rel="stylesheet" href="/resources/<?php echo $config["mode"]; ?>-legacy/css/legacy-style.css" />
 <?php } ?>
 <?php if ($config["isDev"] === true) { ?>
 <!--[if lt IE 9]><script src="/resources-dev/<?php echo $config["mode"]; ?>/jsvendor/jquery-1.12.2.min.js"></script><![endif]-->
