@@ -1,10 +1,7 @@
-.container{
-	margin-left: auto;
-	margin-right: auto;
-	padding: 0 25px;
-	width: 1050px;
-	background-color: rgba(255, 255, 255, .3);
+body.layout-page {
+	background-color:#f1f1f1;
 }
+
 #wrap{
 	position: relative;
 	height: 100%;
@@ -17,7 +14,6 @@
 	top: 0;
 	z-index: 300;
 	overflow: hidden;
-	background-color: #000;
 	
 	&, .container{
 		height: 100px;
@@ -33,41 +29,578 @@
 	position: relative;
 	z-index: 100;
 	overflow: hidden;
-	padding: 100px 0 100px;
-	margin-bottom: -100px;
+	padding: 128px 0 197px;
+	margin-bottom: -197px;
 	min-height: 100%;
-	background-color: #ff0;
 	
 	.container{
 		position: relative;
 	}
 }
-#snb{
-	background-color: #99f;
+
+.container {
+	width:1000px;
+	margin:0 auto;
 }
+
+.skip {
+	font-size:0;
+	text-indent:-9999px;
+	width:0;
+	height:0;
+}
+
+#wrap{
+	position: relative;
+	height: 100%;
+	.app-min-width();
+}
+.body{
+	height: 100%;
+}
+
+
+#header {
+	width:100%;
+	background:#fff url('../images/common/bg_header.png') repeat-x center 0;
+	height:128px;
+	
+	.container {
+		position:relative;
+		background:url('../images/common/bg_header_con.png') no-repeat 0 5px;
+		padding:0;
+	}
+	h1.site-logo {
+		margin:0;
+		padding-top:63px;
+	}
+	h1.site-logo a {
+		display:block;
+		width:198px;
+		height:42px;
+		text-indent:-9999px;
+		background:url('../images/common/h1-logo.png') no-repeat 0 0;
+	}
+	
+	.gnb {
+		position:absolute;
+		top:9px;
+		right:40px;
+	}
+	
+	.gnb ul {
+		overflow:hidden;
+	}
+	
+	.gnb ul li {
+		float:left;
+		padding:0 12px;
+		background:url('../images/common/gnb_li.png') no-repeat 0 50%;
+		font-size:12px;
+	}
+	
+	.gnb ul li:first-child {
+		background:none;
+	}
+	
+	.gnb ul li a {
+		color:#ececec;
+	}
+	
+	.gnb ul li.gnb-display {
+		color:#a0c4e3;
+	}
+	
+	.gnb ul li.gnb-display .controls {
+		overflow: hidden;
+		display: inline-block;
+		vertical-align: middle;
+		margin-top: -2px;
+		margin-left:7px;
+		a {
+			text-indent:-9999px;
+			float: left;
+			display:inline-block;
+			width:18px;
+			height:18px;
+			border:1px solid #5084bf;
+			margin-left: -1px;
+			vertical-align: middle;
+			
+			&:first-child{
+				margin-left: 0;
+			}
+			&.zoom-in {
+				background:url('../images/common/bg_zoomin.png') no-repeat 50% 50%;
+			}
+			
+			&.rotation {
+				background:url('../images/common/bg_rotation.png') no-repeat 50% 50%;
+			}
+			
+			&.zoom-out {
+				background:url('../images/common/bg_zoomout.png') no-repeat 50% 50%;
+			}
+		}
+	}
+	
+	
+	p.site-map {
+		position:absolute;
+		top:0;
+		right:0;
+	}
+	
+	p.site-map a {
+		display:block;
+		width:40px;
+		height:40px;
+		background:url('../images/common/sitemap-btn.png') no-repeat 0 0;
+		text-indent:-9999px;
+		margin:0;
+	}
+	
+	.lnb {
+		position:absolute;
+		top:74px;
+		left:250px;
+		overflow:hidden;
+	}
+	
+	.lnb li {
+		float:left;
+		padding:0 16px;
+	}
+	
+	.lnb li a {
+		color:#103555;
+		font-size:18px;
+		font-weight:600;
+		letter-spacing:-0.045em;
+	}
+	
+	.search-box {
+		position:absolute;
+		top:67px;
+		left:668px;
+		overflow:hidden;
+		width:240px;
+		height:34px;
+		background:url('../images/common/bg_search-box.png') no-repeat 0 0;
+	}
+	
+	.search-box p.select-click {
+		display:inline-block;
+		width:70px;
+		height:34px;
+		background:url('../images/common/select-click.png') no-repeat 80% 50%;
+		text-indent:-9999px;
+		margin:0;
+		line-height:34px;
+	}
+	
+	.search-box input {
+		background:transparent;
+		border:0px none;
+		height:34px;
+		width:126px;
+	}
+	
+	.search-box input[type="button"] {
+		float:right;
+		width:34px;
+		height:34px;
+		background:url('../images/common/search-btn.png') no-repeat 50% 50%;
+		text-indent:-9999px;
+	}
+	
+}
+
+.snb {
+	width:100%;
+	border-top:1px solid #e4e4e4;
+	border-bottom:1px solid #cfcfcf;
+	height:49px;
+	background-color:#fff;
+	
+	ul {
+		width:1000px;
+		margin:0 auto;
+		overflow:hidden;	
+	}
+	
+	ul li {
+		float:left;
+		border-right:1px solid #e4e4e4;
+		background:url('../images/common/snb_arrow.png') no-repeat 90% 50%;
+	}
+	
+	ul li.home {
+		background:none;
+	}
+	
+	ul li.home a {
+		width:53px;
+		height:49px;
+		text-indent:-9999px;
+		border-left:1px solid #e4e4e4;
+	
+		background:url('../images/common/bg_home_ico.png') no-repeat 50% 50%;
+	}
+	
+	ul li a {
+		display:block;
+		height:49px;
+		line-height:49px;
+		padding-left:17px;
+		font-size:14px;
+		color:#666;
+	}
+	
+	ul li:nth-of-type(2) {
+		padding-right:75px;
+	}
+	
+	ul li:nth-of-type(3) {
+		padding-right:107px;
+	}
+}
+
+/* 페이지 네이게이션 */
+.pagination > li > a, .pagination > li > span {
+	padding:6px 11px;
+	color:#888;
+	font-size:12px;
+	border:1px solid #e2e2e2;
+	font-family:'돋움', Dotum;
+	margin-right:3px;
+}
+.pagination > .active > a, 
+.pagination > .active > span, 
+.pagination > .active > a:hover, 
+.pagination > .active > span:hover, 
+.pagination > .active > a:focus, 
+.pagination > .active > span:focus {
+	background-color:#034a87;
+}
+
+.pagination > li:first-child > a, .pagination > li:first-child > span {
+	border-radius:0;
+}
+
+.pagination > li > a.prev {
+	width:30px;
+	background:#fff url('../images/common/bg_arrow-prev.png') no-repeat 50% 50%;
+	margin-right:0;
+}
+
+.pagination > li > a.prev span {
+	font-size:0;
+}
+
+.pagination > li > a.next {
+	width:30px;
+	background:#fff url('../images/common/bg_arrow-next.png') no-repeat 50% 50%;
+}
+
+.pagination > li > a.next span {
+	font-size:0;
+}
+
+/* 검색박스 인풋 */
+select.search-select {
+	width:107px;
+	height:30px;
+	padding-left:5px;
+	font-family:'돋움', Dotum;
+	font-size:12px;
+	border:1px solid #cdcdcd;
+}
+
+input {
+	vertical-align:middle;
+}
+
+input.input-text-primary {
+	width:154px;
+	height:30px;
+	padding-left:5px;
+	border:1px solid #cdcdcd;
+}
+
+input.search-btn {
+	width:30px;
+	height:30px;
+	border:1px solid #d4d4d4;
+	text-indent:-9999px;
+	background:#fff url('../images/common/bg_search-btn.png') no-repeat 50% 50%;
+}
+
+/* 서브 공통 */
+.layout-page {
+	
+	#content {
+		position:relative;
+		padding-bottom:110px;
+	}
+	
+	h2 {
+		font-size:30px;
+		text-align:center;
+		font-weight:600;
+		margin-top:50px;
+		background:url('../images/common/bg_h2.png') no-repeat 50% 0;
+		padding-top:15px;
+	}
+	
+	p.additional {
+		text-align:center;
+		font-size:12px;
+		font-family:'돋움', Dotum;
+		color:#aaa;
+		margin-bottom:35px;
+	}
+	
+	dl.paging {
+		position:absolute;
+		right:0;
+		top:55px;
+		
+		dd {
+			font-size:11px;
+			padding-left:22px;
+			background:url('../images/common/bg_paging_home.png') no-repeat 0 50%;
+			height:22px;
+			line-height:22px;
+			
+			a {
+				color:#bebebe;
+				font-family:'돋움', Dotum;
+				display:inline-block;
+				padding:0 8px;
+				background:url('../images/common/bg_paging-arrow.png') no-repeat 100% 50%;
+			}
+			
+			a:nth-of-type(2) {
+				padding-left:2px;
+			}
+			
+			span {
+				color:#888;
+				font-family:'돋움', Dotum;
+			}
+			
+		}
+		
+	}
+	
+	ul.qna {
+		border-top:2px solid #034a87;
+	
+		li {
+			border-bottom:1px solid #e6e6e6;
+			
+			&:last-child {
+				border-bottom:1px solid #d4d4d4;
+			}
+			
+			dl {
+				margin:0;
+				
+				dt {
+					height:54px;
+					line-height:54px;
+					font-size:14px;
+					font-family:'돋움', Dotum;
+					color:#666;
+					font-weight:normal;
+					cursor:pointer;
+					
+					span {
+						display:inline-block;
+						width:50px;
+						text-indent:-9999px;
+						background:url('../images/sub/bg_qna-q.png') no-repeat 11px 50%;
+					}
+					
+				}
+				
+				dd {
+					border-top:1px solid #e6e6e6;
+					padding:14px 50px 20px 55px;
+					background:#fff url('../images/sub/bg_qna-a.png') no-repeat 11px 12px;
+					font-size:12px;
+					font-family:'돋움', Dotum;
+					color:#444;
+					line-height:18px;
+					display:none;
+					
+					span {
+						text-indent:-9999px;
+						
+					}
+				}
+				
+			}
+			
+		}
+	}
+	
+	.page-nav-box {
+		overflow:hidden;
+		
+		ul.pagination {
+			float:left;
+		}
+		
+		.search {
+			float:right;
+			margin:20px 0;
+		}
+		
+	}
+		
+} 
+
+/* 알림마당 - 국토교통통계 소개 */
+.page-notice-introduce {
+	width:100%;
+	
+	p.visaul-txt {
+		height:200px;
+		background:url('../images/sub/bg_introduce-visual.png') no-repeat 0 0;
+		text-indent:-9999px;
+	}
+	
+	p.txt1 {
+		font-size:14px;
+		line-height:24px;
+		color:#444;
+		text-align:center;
+		padding:20px 0 27px 0;
+		border-bottom:1px solid #dadada;
+	}
+	
+	ul.list {
+		margin:0;
+		padding-top:35px;
+		overflow:hidden;
+		
+		li {
+			padding:0;
+			height:130px;
+			
+			dl {
+				padding-left:106px;
+				height:130px;
+				background:url('../images/sub/introduce-img1.png') no-repeat 0 0;
+								
+				dt {
+					font-size:22px;
+					color:#034a87;
+					font-weight:normal;
+				}
+				
+				dd {
+					font-size:12px;
+					font-family:'돋움', Dotum;
+					color:#444;
+					line-height:19px;
+				}
+			}
+			
+		}
+		
+		li:nth-of-type(2) dl {
+			background-image:url('../images/sub/introduce-img2.png');
+		}
+		
+		li:nth-of-type(3) dl {
+			background-image:url('../images/sub/introduce-img3.png');
+		}
+		
+		li:nth-of-type(4) dl {
+			background-image:url('../images/sub/introduce-img4.png');
+		}
+		
+		li:nth-of-type(5) dl {
+			background-image:url('../images/sub/introduce-img5.png');
+		}
+		
+		li:nth-of-type(6) dl {
+			background-image:url('../images/sub/introduce-img6.png');
+		}
+		
+		li:nth-of-type(7) dl {
+			background-image:url('../images/sub/introduce-img7.png');
+		}
+	}
+}
+
+/* borad-primary */
+
+
+/* 푸터 영역 */
 #footer{
 	position: relative;
 	z-index: 200;
 	overflow: hidden;
-	background-color: #0f0;
+	background-color: #fff;
+	height:197px;
 	
-	&, .container{
-		height: 100px;
+	.ft_list {
+		height:71px;
+		border-top:1px solid #d5d5d5;
+		border-bottom:1px solid #d5d5d5;
+		
+		ul {
+			width:1000px;
+			margin:0 auto;
+			text-align:center;
+			
+			li {
+				display:inline-block;
+				padding:0 13px;
+				background:url('../images/common/bg_ft_list.png') no-repeat 0 50%;
+				
+				&:first-child {
+					background:none;
+				}
+				
+				a {
+					display:inline-block;
+					height:70px;
+					line-height:70px;
+					font-size:14px;
+					color:#333;
+					font-weight:600;
+					letter-spacing:-0.045em;
+					
+					&:hover {
+						border-bottom:3px solid #034a87;
+					}
+				}
+				
+			}
+		}
 	}
+	
 	.container{
 		position: relative;
+		height: 126px;
+		padding-left:145px;
+		background:url('../images/common/ft_logo.png') no-repeat 0 20px;
+		
+		address {
+			padding-top:25px;
+			font-size:12px;
+			color:#666;
+			line-height:20px;
+			letter-spacing:-0.045em;
+			
+			p.copy {
+				color:#aaa;
+			}
+		}
 	}
-}
-body.layout-page #container{
-	.container{
-		padding-left: 25px + 200px + 25px;
-	}
-}
-#snb{
-	position: absolute;
-	left: 25px;
-	top: 0;
-	display: inline-block;
-	width: 200px;
-	height: 100%;
 }
