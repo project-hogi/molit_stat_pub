@@ -28,3 +28,35 @@ function echoJsInPath($path)
 ';
     }
 }
+
+function getBodyClass($classString)
+{
+    global $pagePath;
+    
+    $namePartList = explode("-", str_replace(".php", "", basename($pagePath)));
+    $pageClaseList = [];
+    
+    for ($i = 0; $i < count($namePartList); $i ++) {
+        $arr = [];
+        $arr[] = "page";
+        
+        for ($j = 0; $j <= $i; $j ++) {
+            $arr[] = $namePartList[$j];
+        }
+        
+        $pageClaseList[] = implode("-", $arr);
+    }
+    
+    $pageClassList2 = explode(" ", $classString);
+    
+    return implode(" ", array_unique(array_merge($pageClaseList, $pageClassList2)));
+}
+
+function getDepthId($depth)
+{
+    global $pagePath;
+    
+    $namePartList = explode("-", str_replace(".php", "", basename($pagePath)));
+    
+    return isset($namePartList[$depth]) ? $namePartList[$depth] : null;
+}

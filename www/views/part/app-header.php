@@ -31,7 +31,7 @@ $config["cssLargeDesktopMinWidth"] = 1280;
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="msapplication-TileImage" content="/resources/favicon/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
-<?php if($config['isDev'] === true){ ?>
+<?php if($config['isDev'] === true && (isset($config['isBuild']) && !$config['isBuild'] || !isset($config['isBuild']))){ ?>
 <link rel="stylesheet/less" href="/resources-dev/<?php echo $config["mode"]; ?>/less/style.less" />
 <link rel="stylesheet" href="/resources/<?php echo $config["mode"]; ?>-legacy/css/legacy-style.css" />
 <script src="/resources-dev/<?php echo $config["mode"]; ?>/etc/less.min.js"></script>
@@ -39,7 +39,7 @@ $config["cssLargeDesktopMinWidth"] = 1280;
 <link rel="stylesheet" href="/resources/<?php echo $config["mode"]; ?>/css/style.min.css" />
 <link rel="stylesheet" href="/resources/<?php echo $config["mode"]; ?>-legacy/css/legacy-style.css" />
 <?php } ?>
-<?php if ($config["isDev"] === true) { ?>
+<?php if($config['isDev'] === true && (isset($config['isBuild']) && !$config['isBuild'] || !isset($config['isBuild']))){ ?>
 <!--[if lt IE 9]><script src="/resources-dev/<?php echo $config["mode"]; ?>/jsvendor/jquery-1.12.2.min.js"></script><![endif]-->
 <!--[if gte IE 9]><!--><script src="/resources-dev/<?php echo $config["mode"]; ?>/jsvendor-dev-only/jquery.js"></script><![endif]-->
 <?php echoJsInPath('/resources-dev/' . $config["mode"] . '/jspack/'); ?>
