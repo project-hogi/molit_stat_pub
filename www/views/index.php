@@ -1,4 +1,5 @@
-<?php $bodyClass = "layout-index page-index"; ?>
+<?php $pagePath = __FILE__; ?>
+<?php $bodyClass = "layout-index"; ?>
 <?php require_once $_SERVER["DOCUMENT_ROOT"] . "/lib.php"; ?>
 <?php require "part/app-header.php"; ?>
 <?php require "part/header.php"; ?>

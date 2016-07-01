@@ -1,4 +1,6 @@
 <?php
+$config['isBuild'] = true;
+
 requirePhpInPath("views", "../html/views");
 
 chdir("../tool/front");
