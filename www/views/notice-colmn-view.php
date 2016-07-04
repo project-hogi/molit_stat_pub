@@ -1,16 +1,17 @@
-<?php $bodyClass = "layout-page page-notice page-notice-notice_view"; ?>
+<?php $pagePath = __FILE__; ?>
+<?php $bodyClass = "layout-page"; ?>
 <?php require_once $_SERVER["DOCUMENT_ROOT"] . "/lib.php"; ?>
 <?php require "part/app-header.php"; ?>
 <?php require "part/header.php"; ?>
 <?php require "part/header-sub.php"; ?>
-<h2>공지사항</h2>
-<p class="additional">국토교통통계누리의 새소식을 신속하게 접하실 수 있습니다.</p>
+<h2>보도자료</h2>
+<p class="additional">국민들에게 알리기 위하여 언론에 제공하는 자료를 확인하실 수 있습니다.</p>
 <dl class="paging">
 	<dt class="skip">현재 페이지 경로</dt>
 	<dd>
 		<a href="#">홈</a>
 		<a href="notice-use.php">알림마당</a>
-		<span>공지사항</span>
+		<span>보도자료</span>
 	</dd>
 </dl>
 <div class="board-view">
@@ -58,7 +59,7 @@
 		</li>
 	</ul>
 	<p class="list-btn">
-		<a href="notice-notice_list.php" class="btn btn-default">리스트</a>
+		<a href="notice-colmn.php" class="btn btn-default"><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>리스트</a>
 	</p>
 </div>
 <?php require "part/footer-sub.php"; ?>

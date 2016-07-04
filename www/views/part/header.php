@@ -34,10 +34,10 @@
 			</p>
 			<div class="lnb">
 				<ul>
-					<li><a href="#">알림마당</a></li>
-					<li><a href="#">통계마당</a></li>
-					<li><a href="#">자료마당</a></li>
-					<li><a href="#">참여마당</a></li>
+					<li><a href="notice-use.php">알림마당</a></li>
+					<li><a href="stat-field.php">통계마당</a></li>
+					<li><a href="data-year.php">자료마당</a></li>
+					<li><a href="community-report.php">참여마당</a></li>
 				</ul>
 			</div>
 			<div class="search-box">

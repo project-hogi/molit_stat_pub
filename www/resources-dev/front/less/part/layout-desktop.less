@@ -5,7 +5,7 @@ body.layout-page {
 #wrap{
 	position: relative;
 	height: 100%;
-	.app-min-width();
+	min-width:1000px !important;
 }
 #header{
 	position: absolute;
@@ -25,7 +25,7 @@ body.layout-page {
 .body{
 	height: 100%;
 }
-#container{
+.layout-page #container, .layout-index #container {
 	position: relative;
 	z-index: 100;
 	overflow: hidden;
@@ -89,7 +89,7 @@ body.layout-page {
 	}
 	
 	.gnb ul {
-		overflow:hidden;
+		#util>.clearFloat();
 	}
 	
 	.gnb ul li {
@@ -222,47 +222,80 @@ body.layout-page {
 	border-bottom:1px solid #cfcfcf;
 	height:49px;
 	background-color:#fff;
+	position:relative;
+	z-index:100;
 	
-	ul {
+	>ul{
 		width:1000px;
 		margin:0 auto;
-		overflow:hidden;	
-	}
-	
-	ul li {
-		float:left;
-		border-right:1px solid #e4e4e4;
-		background:url('../images/common/snb_arrow.png') no-repeat 90% 50%;
-	}
-	
-	ul li.home {
-		background:none;
-	}
-	
-	ul li.home a {
-		width:53px;
-		height:49px;
-		text-indent:-9999px;
-		border-left:1px solid #e4e4e4;
-	
-		background:url('../images/common/bg_home_ico.png') no-repeat 50% 50%;
-	}
-	
-	ul li a {
-		display:block;
-		height:49px;
-		line-height:49px;
-		padding-left:17px;
-		font-size:14px;
-		color:#666;
-	}
-	
-	ul li:nth-of-type(2) {
-		padding-right:75px;
-	}
-	
-	ul li:nth-of-type(3) {
-		padding-right:107px;
+		#util>.clearFloat();
+		
+		>li{
+			position: relative;
+			float:left;
+			border-right:1px solid #e4e4e4;
+			background:url('../images/common/snb_arrow.png') no-repeat 90% 50%;
+			
+			&.home{
+				background:none;
+				
+				a {
+					width:53px;
+					height:49px;
+					text-indent:-9999px;
+					border-left:1px solid #e4e4e4;
+					background:url('../images/common/bg_home_ico.png') no-repeat 50% 50%;
+				}
+			}
+			&:hover{
+				>ul{
+					display: block;
+				}
+			}
+			>a{
+				display:block;
+				height:49px;
+				line-height:49px;
+				padding-left:17px;
+				font-size:14px;
+				color:#666;
+			}
+			>ul{
+				display: none;
+				position: absolute;
+				left: 0;
+				top: 49px;
+				padding:5px 0;
+				background-color:#fff;
+				width:100%;
+				border:1px solid #e4e4e4;
+				border-top:0px none;
+				
+				li {
+					padding:5px 15px;
+					
+					a {
+						color:#666;
+						font-size:13px;
+						
+						&:hover {
+							color:#000;
+						}
+					}
+				}
+			}
+			
+			&:nth-of-type(2) {
+				min-width:143px;
+				padding-right:35px;
+			}
+			
+			&:nth-of-type(3) {
+				min-width:174px;
+				padding-right:35px;
+			}
+			
+		}
 	}
 }
 
@@ -460,81 +493,6 @@ input.search-btn {
 		
 	}
 		
-} 
-
-/* 알림마당 - 국토교통통계 소개 */
-.page-notice-introduce {
-	width:100%;
-	
-	p.visaul-txt {
-		height:200px;
-		background:url('../images/sub/bg_introduce-visual.png') no-repeat 0 0;
-		text-indent:-9999px;
-	}
-	
-	p.txt1 {
-		font-size:14px;
-		line-height:24px;
-		color:#444;
-		text-align:center;
-		padding:20px 0 27px 0;
-		border-bottom:1px solid #dadada;
-	}
-	
-	ul.list {
-		margin:0;
-		padding-top:35px;
-		overflow:hidden;
-		
-		li {
-			padding:0;
-			height:130px;
-			
-			dl {
-				padding-left:106px;
-				height:130px;
-				background:url('../images/sub/introduce-img1.png') no-repeat 0 0;
-								
-				dt {
-					font-size:22px;
-					color:#034a87;
-					font-weight:normal;
-				}
-				
-				dd {
-					font-size:12px;
-					font-family:'돋움', Dotum;
-					color:#444;
-					line-height:19px;
-				}
-			}
-			
-		}
-		
-		li:nth-of-type(2) dl {
-			background-image:url('../images/sub/introduce-img2.png');
-		}
-		
-		li:nth-of-type(3) dl {
-			background-image:url('../images/sub/introduce-img3.png');
-		}
-		
-		li:nth-of-type(4) dl {
-			background-image:url('../images/sub/introduce-img4.png');
-		}
-		
-		li:nth-of-type(5) dl {
-			background-image:url('../images/sub/introduce-img5.png');
-		}
-		
-		li:nth-of-type(6) dl {
-			background-image:url('../images/sub/introduce-img6.png');
-		}
-		
-		li:nth-of-type(7) dl {
-			background-image:url('../images/sub/introduce-img7.png');
-		}
-	}
 }
 
 /* board-primary */
@@ -651,7 +609,7 @@ table.board-primary {
 				padding-left:20px;
 				background:url('../images/sub/bg_a-file.png') no-repeat 0 50%;
 				
-				&:hover {
+				&:hover, &:focus {
 					text-decoration:underline;
 				}
 			}
@@ -722,14 +680,71 @@ table.board-primary {
 	}
 }
 
-/* 공지사항 */
-.page-notice-notice_list {
-	table.board-primary { 
-		tbody tr td:nth-of-type(2) {
-			text-align:left;
-			padding-left:14px;
-		}
+.form-control {
+	border-radius:0;
+	border:1px solid #d8d8d8;
+	font-size:12px;
+	color:#888;
+	height:34px;
+}
+
+.btn-default {
+	background-color:#0d497d;
+	color:#fff;
+	padding:13px 42px;
+	border: 1px solid #316490;
+	box-shadow: 0px 0px 0px 1px #0a375b;
+	font-size:15px;
+	font-weight:600;
+	
+	&:hover, &:focus {
+		background-color:#0c416c;
+		color:#fff;
+		border: 1px solid #316490;
+		box-shadow: 0px 0px 0px 1px #0a375b;
 	}
+	
+	span {
+		display:inline-block;
+		padding-right:7px;
+		vertical-align:middle;
+		margin-top:-3px;
+	}
+}
+
+.nav-tabs {
+		border-left:1px solid #dfdfdf;
+		border-right:1px solid #dfdfdf;
+	li {
+		padding:0;
+		a {
+			text-align:center;
+			background-color:#fff;
+			padding:13px 0;
+			margin-right:0;
+			border-right:1px solid #dfdfdf;
+			border-bottom:1px solid #dfdfdf;
+			border-top:1px solid #dfdfdf;
+			border-radius:0;
+			color:#444;
+			font-size:14px;
+			font-family:'돋움', Dotum;
+			
+		}
+		
+		&.active a {
+			border:1px solid #034a87;
+			border-radius:0;
+			background-color:#034a87;
+			color:#fff;
+			
+			&:hover, &:focus {
+				background-color:#004683;
+				color:#fff;
+				border:1px solid #034a87;
+			}
+		}
+	} 
 }
 
 /* 푸터 영역 */
@@ -794,5 +809,23 @@ table.board-primary {
 				color:#aaa;
 			}
 		}
+	}
+}
+
+/* modal */
+.layout-modal {
+	h1 {
+		margin:0;
+		height:50px;
+		line-height:50px;
+		background:#00acdc url('../images/sub/modal-h1.png') no-repeat 16px 50%;
+		color:#fff;
+		font-size:18px;
+		font-weight:normal;
+		padding-left:55px;
+	}
+	
+	#container {
+		padding:20px 57px 20px 35px;
 	}
 }

@@ -1,11 +1,16 @@
 "use strict";
 
-(function($) {
-	
-	$(document).ready(function(){
-		$('.qna li dl dt').click(function(){
-				$(this).parent('dl').find('dd').toggle();
-			});
+jQuery(function($) {
+	$('.qna li dl dt').on('click', function() {
+		$(this).parent('dl').find('dd').toggle();
 	});
 
-})(jQuery);
+	$('ul.db-list li dl dt').on('click', function() {
+		$(this).parent('dl').find('dd').toggle();
+	});
+	
+	$('.data-year-view .ri ul li dl dt').on('click', function() {
+		$(this).parent('dl').find('dd').toggle();
+	});
+	
+});

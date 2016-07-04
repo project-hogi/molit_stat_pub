@@ -1,5 +1,4 @@
 <?php
-
 function echoJsInPath($path)
 {
     $realPath = $_SERVER['DOCUMENT_ROOT'] . $path;

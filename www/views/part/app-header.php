@@ -5,6 +5,7 @@ $config["isDev"] = true;
 $config["cssTableMinWidth"] = 640;
 $config["cssDesktopMinWidth"] = 1024;
 $config["cssLargeDesktopMinWidth"] = 1280;
+$config["imageFolder"] = ($config['isDev'] === true && (isset($config['isBuild']) && !$config['isBuild'] || !isset($config['isBuild']))) ? "/resources-dev/" . $config["mode"] . "/images" : "/resources/" . $config["mode"] . "/images";
 ?><!DOCTYPE html>
 <html lang="ko-KR">
 <head>
@@ -49,4 +50,4 @@ $config["cssLargeDesktopMinWidth"] = 1280;
 <script src="/resources/<?php echo $config["mode"]; ?>/js/script.min.js"></script>
 <?php } ?>
 </head>
-<body class="<?php echo $bodyClass; ?>">
+<body class="<?php echo getBodyClass($bodyClass); ?>">

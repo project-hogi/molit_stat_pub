@@ -23,7 +23,7 @@
 	쉽고 빠르고 정확하게 활용할 수 있도록 지속적으로 노력 하겠습니다.
 </p>
 <ul class="list">
-	<li class="col-lg-6">
+	<li class="col-md-6">
 		<dl>
 			<dt>
 				국토&#47;도시
@@ -35,7 +35,7 @@
 			</dd>
 		</dl>
 	</li>
-	<li class="col-lg-6">
+	<li class="col-md-6">
 		<dl>
 			<dt>
 				주택&#47;토지
@@ -46,7 +46,7 @@
 			</dd>
 		</dl>
 	</li>
-	<li class="col-lg-6">
+	<li class="col-md-6">
 		<dl>
 			<dt>
 				건설&#47;수자원
@@ -59,7 +59,7 @@
 			</dd>
 		</dl>
 	</li>
-	<li class="col-lg-6">
+	<li class="col-md-6">
 		<dl>
 			<dt>
 				교통&#47;물류
@@ -70,7 +70,7 @@
 			</dd>
 		</dl>
 	</li>
-	<li class="col-lg-6">
+	<li class="col-md-6">
 		<dl>
 			<dt>
 				항공
@@ -80,7 +80,7 @@
 			</dd>
 		</dl>
 	</li>
-	<li class="col-lg-6">
+	<li class="col-md-6">
 		<dl>
 			<dt>
 				도로&#47;철도
@@ -91,7 +91,7 @@
 			</dd>
 		</dl>
 	</li>
-	<li class="col-lg-6">
+	<li class="col-md-6">
 		<dl>
 			<dt>
 				외부통계
