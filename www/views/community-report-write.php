@@ -24,7 +24,7 @@
 				제목
 			</th>
 			<td>
-				<input type="text" class="form-control" />
+				<input type="text" class="form-control" style="width:511px;" />
 			</td>
 		</tr>
 		<tr>
@@ -32,7 +32,7 @@
 				요청구분
 			</th>
 			<td>
-				<select class="form-control">
+				<select class="form-control" style="width:177px;">
 					<option value="">통계내용 오류</option>
 				</select>
 			</td>
@@ -42,7 +42,7 @@
 				통계분류
 			</th>
 			<td>
-				<select class="form-control">
+				<select class="form-control" style="width:177px;">
 					<option value="">국토 · 토지</option>
 				</select>
 			</td>
@@ -52,7 +52,7 @@
 				통계명
 			</th>
 			<td>
-				<select class="form-control">
+				<select class="form-control" style="width:324px;">
 					<option value="">선택해주세요.</option>
 				</select>
 			</td>
@@ -62,7 +62,7 @@
 				통계표명
 			</th>
 			<td>
-				<select class="form-control">
+				<select class="form-control" style="width:324px;">
 					<option value="">선택해주세요.</option>
 				</select>
 			</td>
@@ -80,7 +80,7 @@
 				이름
 			</th>
 			<td>
-				<input type="text" class="form-control" />
+				<input type="text" class="form-control" style="width:177px; display:inline-block;" />
 				<span>ex) 010-0000-1111</span>
 			</td>
 		</tr>
@@ -89,7 +89,7 @@
 				연락처
 			</th>
 			<td>
-				<input type="text" class="form-control" />
+				<input type="text" class="form-control" style="width:177px; display:inline-block;" />
 			</td>
 		</tr>
 		<tr>
@@ -97,7 +97,7 @@
 				이메일
 			</th>
 			<td>
-				<input type="text" class="form-control" />
+				<input type="text" class="form-control" style="width:324px;" />
 			</td>
 		</tr>
 		<tr>
@@ -105,7 +105,7 @@
 				비밀번호
 			</th>
 			<td>
-				<input type="password" class="form-control" />
+				<input type="password" class="form-control" style="width:177px; display:inline-block;" />
 				<span>게시물 수정 및 삭제시에 사용됩니다.</span>
 			</td>
 		</tr>

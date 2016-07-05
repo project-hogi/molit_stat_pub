@@ -42,112 +42,164 @@
 		<div class="col-md-6">
 			<ul class="stat-list">
 				<li>
-					<a href="#">국토&#47;도시 &#62; 국토정책  &#62;  [e]개발제한구역 지정 및 해제현황</a>
-					<span class="plus"></span>
+					<a href="#" onclick="window.open('graph-view.php', 'window')">
+						국토&#47;도시 &#62; 국토정책  &#62;  [e]개발제한구역 지정 및 해제현황
+						<span class="plus"></span>
+					</a>
 				</li>
 				<li>
-					<a href="#">국토&#47;도시 &#62; 국토정책  &#62;  [e]개발제한구역 지정 및 해제현황</a>
-					<span class="plus"></span>
+					<a href="#" onclick="window.open('graph-view.php', 'window')">
+						국토&#47;도시 &#62; 국토정책  &#62;  [e]개발제한구역 지정 및 해제현황
+						<span class="plus"></span>
+					</a>
 				</li>
 				<li>
-					<a href="#">국토&#47;도시 &#62; 국토정책  &#62;  [e]개발제한구역 지정 및 해제현황</a>
-					<span class="plus"></span>
+					<a href="#" onclick="window.open('graph-view.php', 'window')">
+						국토&#47;도시 &#62; 국토정책  &#62;  [e]개발제한구역 지정 및 해제현황
+						<span class="plus"></span>
+					</a>
 				</li>
 				<li>
-					<a href="#">국토&#47;도시 &#62; 국토정책  &#62;  [e]개발제한구역 지정 및 해제현황</a>
-					<span class="plus"></span>
+					<a href="#" onclick="window.open('graph-view.php', 'window')">
+						국토&#47;도시 &#62; 국토정책  &#62;  [e]개발제한구역 지정 및 해제현황
+						<span class="plus"></span>
+					</a>
 				</li>
 				<li>
-					<a href="#">국토&#47;도시 &#62; 국토정책  &#62;  [e]개발제한구역 지정 및 해제현황</a>
-					<span class="plus"></span>
+					<a href="#" onclick="window.open('graph-view.php', 'window')">
+						국토&#47;도시 &#62; 국토정책  &#62;  [e]개발제한구역 지정 및 해제현황
+						<span class="plus"></span>
+					</a>
 				</li>
 				<li>
-					<a href="#">국토&#47;도시 &#62; 국토정책  &#62;  [e]개발제한구역 지정 및 해제현황</a>
-					<span class="plus"></span>
+					<a href="#" onclick="window.open('graph-view.php', 'window')">
+						국토&#47;도시 &#62; 국토정책  &#62;  [e]개발제한구역 지정 및 해제현황
+						<span class="plus"></span>
+					</a>
 				</li>
 				<li>
-					<a href="#">국토&#47;도시 &#62; 국토정책  &#62;  [e]개발제한구역 지정 및 해제현황</a>
-					<span class="plus"></span>
+					<a href="#" onclick="window.open('graph-view.php', 'window')">
+						국토&#47;도시 &#62; 국토정책  &#62;  [e]개발제한구역 지정 및 해제현황
+						<span class="plus"></span>
+					</a>
 				</li>
 				<li>
-					<a href="#">국토&#47;도시 &#62; 국토정책  &#62;  [e]개발제한구역 지정 및 해제현황</a>
-					<span class="plus"></span>
+					<a href="#" onclick="window.open('graph-view.php', 'window')">
+						국토&#47;도시 &#62; 국토정책  &#62;  [e]개발제한구역 지정 및 해제현황
+						<span class="plus"></span>
+					</a>
 				</li>
 				<li>
-					<a href="#">국토&#47;도시 &#62; 국토정책  &#62;  [e]개발제한구역 지정 및 해제현황</a>
-					<span class="plus"></span>
+					<a href="#" onclick="window.open('graph-view.php', 'window')">
+						국토&#47;도시 &#62; 국토정책  &#62;  [e]개발제한구역 지정 및 해제현황
+						<span class="plus"></span>
+					</a>
 				</li>
 				<li>
-					<a href="#">국토&#47;도시 &#62; 국토정책  &#62;  [e]개발제한구역 지정 및 해제현황</a>
-					<span class="plus"></span>
+					<a href="#" onclick="window.open('graph-view.php', 'window')">
+						국토&#47;도시 &#62; 국토정책  &#62;  [e]개발제한구역 지정 및 해제현황
+						<span class="plus"></span>
+					</a>
 				</li>
 				<li>
-					<a href="#">국토&#47;도시 &#62; 국토정책  &#62;  [e]개발제한구역 지정 및 해제현황</a>
-					<span class="plus"></span>
+					<a href="#" onclick="window.open('graph-view.php', 'window')">
+						국토&#47;도시 &#62; 국토정책  &#62;  [e]개발제한구역 지정 및 해제현황
+						<span class="plus"></span>
+					</a>
 				</li>
 				<li>
-					<a href="#">국토&#47;도시 &#62; 국토정책  &#62;  [e]개발제한구역 지정 및 해제현황</a>
-					<span class="plus"></span>
+					<a href="#" onclick="window.open('graph-view.php', 'window')">
+						국토&#47;도시 &#62; 국토정책  &#62;  [e]개발제한구역 지정 및 해제현황
+						<span class="plus"></span>
+					</a>
 				</li>
 				<li>
-					<a href="#">국토&#47;도시 &#62; 국토정책  &#62;  [e]개발제한구역 지정 및 해제현황</a>
-					<span class="plus"></span>
+					<a href="#" onclick="window.open('graph-view.php', 'window')">
+						국토&#47;도시 &#62; 국토정책  &#62;  [e]개발제한구역 지정 및 해제현황
+						<span class="plus"></span>
+					</a>
 				</li>
 			</ul>
 		</div>
 		<div class="col-md-6">
 			<ul class="stat-list">
 				<li>
-					<a href="#">국토&#47;도시 &#62; 국토정책  &#62;  [e]개발제한구역 지정 및 해제현황</a>
-					<span class="plus"></span>
+					<a href="#" onclick="window.open('graph-view.php', 'window')">
+						국토&#47;도시 &#62; 국토정책  &#62;  [e]개발제한구역 지정 및 해제현황
+						<span class="plus"></span>
+					</a>
 				</li>
 				<li>
-					<a href="#">국토&#47;도시 &#62; 국토정책  &#62;  [e]개발제한구역 지정 및 해제현황</a>
-					<span class="plus"></span>
+					<a href="#" onclick="window.open('graph-view.php', 'window')">
+						국토&#47;도시 &#62; 국토정책  &#62;  [e]개발제한구역 지정 및 해제현황
+						<span class="plus"></span>
+					</a>
 				</li>
 				<li>
-					<a href="#">국토&#47;도시 &#62; 국토정책  &#62;  [e]개발제한구역 지정 및 해제현황</a>
-					<span class="plus"></span>
+					<a href="#" onclick="window.open('graph-view.php', 'window')">
+						국토&#47;도시 &#62; 국토정책  &#62;  [e]개발제한구역 지정 및 해제현황
+						<span class="plus"></span>
+					</a>
 				</li>
 				<li>
-					<a href="#">국토&#47;도시 &#62; 국토정책  &#62;  [e]개발제한구역 지정 및 해제현황</a>
-					<span class="plus"></span>
+					<a href="#" onclick="window.open('graph-view.php', 'window')">
+						국토&#47;도시 &#62; 국토정책  &#62;  [e]개발제한구역 지정 및 해제현황
+						<span class="plus"></span>
+					</a>
 				</li>
 				<li>
-					<a href="#">국토&#47;도시 &#62; 국토정책  &#62;  [e]개발제한구역 지정 및 해제현황</a>
-					<span class="plus"></span>
+					<a href="#" onclick="window.open('graph-view.php', 'window')">
+						국토&#47;도시 &#62; 국토정책  &#62;  [e]개발제한구역 지정 및 해제현황
+						<span class="plus"></span>
+					</a>
 				</li>
 				<li>
-					<a href="#">국토&#47;도시 &#62; 국토정책  &#62;  [e]개발제한구역 지정 및 해제현황</a>
-					<span class="plus"></span>
+					<a href="#" onclick="window.open('graph-view.php', 'window')">
+						국토&#47;도시 &#62; 국토정책  &#62;  [e]개발제한구역 지정 및 해제현황
+						<span class="plus"></span>
+					</a>
 				</li>
 				<li>
-					<a href="#">국토&#47;도시 &#62; 국토정책  &#62;  [e]개발제한구역 지정 및 해제현황</a>
-					<span class="plus"></span>
+					<a href="#" onclick="window.open('graph-view.php', 'window')">
+						국토&#47;도시 &#62; 국토정책  &#62;  [e]개발제한구역 지정 및 해제현황
+						<span class="plus"></span>
+					</a>
 				</li>
 				<li>
-					<a href="#">국토&#47;도시 &#62; 국토정책  &#62;  [e]개발제한구역 지정 및 해제현황</a>
-					<span class="plus"></span>
+					<a href="#" onclick="window.open('graph-view.php', 'window')">
+						국토&#47;도시 &#62; 국토정책  &#62;  [e]개발제한구역 지정 및 해제현황
+						<span class="plus"></span>
+					</a>
 				</li>
 				<li>
-					<a href="#">국토&#47;도시 &#62; 국토정책  &#62;  [e]개발제한구역 지정 및 해제현황</a>
-					<span class="plus"></span>
+					<a href="#" onclick="window.open('graph-view.php', 'window')">
+						국토&#47;도시 &#62; 국토정책  &#62;  [e]개발제한구역 지정 및 해제현황
+						<span class="plus"></span>
+					</a>
 				</li>
 				<li>
-					<a href="#">국토&#47;도시 &#62; 국토정책  &#62;  [e]개발제한구역 지정 및 해제현황</a>
-					<span class="plus"></span>
+					<a href="#" onclick="window.open('graph-view.php', 'window')">
+						국토&#47;도시 &#62; 국토정책  &#62;  [e]개발제한구역 지정 및 해제현황
+						<span class="plus"></span>
+					</a>
 				</li>
 				<li>
-					<a href="#">국토&#47;도시 &#62; 국토정책  &#62;  [e]개발제한구역 지정 및 해제현황</a>
-					<span class="plus"></span>
+					<a href="#" onclick="window.open('graph-view.php', 'window')">
+						국토&#47;도시 &#62; 국토정책  &#62;  [e]개발제한구역 지정 및 해제현황
+						<span class="plus"></span>
+					</a>
 				</li>
 				<li>
-					<a href="#">국토&#47;도시 &#62; 국토정책  &#62;  [e]개발제한구역 지정 및 해제현황</a>
-					<span class="plus"></span>
+					<a href="#" onclick="window.open('graph-view.php', 'window')">
+						국토&#47;도시 &#62; 국토정책  &#62;  [e]개발제한구역 지정 및 해제현황
+						<span class="plus"></span>
+					</a>
 				</li>
 				<li>
-					<a href="#">국토&#47;도시 &#62; 국토정책  &#62;  [e]개발제한구역 지정 및 해제현황</a>
-					<span class="plus"></span>
+					<a href="#" onclick="window.open('graph-view.php', 'window')">
+						국토&#47;도시 &#62; 국토정책  &#62;  [e]개발제한구역 지정 및 해제현황
+						<span class="plus"></span>
+					</a>
 				</li>
 			</ul>
 		</div>	

@@ -26,73 +26,73 @@
 	<tbody>
 		<tr>
 			<td>1</td>
-			<td><a href="#">건설사업관리기술자 임금실태조사</a></td>
+			<td><a href="notice-schedule-view.php" class="trigger-modal-box" data-modal-box-width="1178">건설사업관리기술자 임금실태조사</a></td>
 			<td>건설안전과</td>
 			<td>02-0000-0000</td>
 		</tr>
 		<tr>
 			<td>1</td>
-			<td><a href="#">건설사업관리기술자 임금실태조사</a></td>
+			<td><a href="notice-schedule-view.php" class="trigger-modal-box" data-modal-box-width="1178">건설사업관리기술자 임금실태조사</a></td>
 			<td>건설안전과</td>
 			<td>02-0000-0000</td>
 		</tr>
 		<tr>
 			<td>1</td>
-			<td><a href="#">건설사업관리기술자 임금실태조사</a></td>
+			<td><a href="notice-schedule-view.php" class="trigger-modal-box" data-modal-box-width="1178">건설사업관리기술자 임금실태조사</a></td>
 			<td>건설안전과</td>
 			<td>02-0000-0000</td>
 		</tr>
 		<tr>
 			<td>1</td>
-			<td><a href="#">건설사업관리기술자 임금실태조사</a></td>
+			<td><a href="notice-schedule-view.php" class="trigger-modal-box" data-modal-box-width="1178">건설사업관리기술자 임금실태조사</a></td>
 			<td>건설안전과</td>
 			<td>02-0000-0000</td>
 		</tr>
 		<tr>
 			<td>1</td>
-			<td><a href="#">건설사업관리기술자 임금실태조사</a></td>
+			<td><a href="notice-schedule-view.php" class="trigger-modal-box" data-modal-box-width="1178">건설사업관리기술자 임금실태조사</a></td>
 			<td>건설안전과</td>
 			<td>02-0000-0000</td>
 		</tr>
 		<tr>
 			<td>1</td>
-			<td><a href="#">건설사업관리기술자 임금실태조사</a></td>
+			<td><a href="notice-schedule-view.php" class="trigger-modal-box" data-modal-box-width="1178">건설사업관리기술자 임금실태조사</a></td>
 			<td>건설안전과</td>
 			<td>02-0000-0000</td>
 		</tr>
 		<tr>
 			<td>1</td>
-			<td><a href="#">건설사업관리기술자 임금실태조사</a></td>
+			<td><a href="notice-schedule-view.php" class="trigger-modal-box" data-modal-box-width="1178">건설사업관리기술자 임금실태조사</a></td>
 			<td>건설안전과</td>
 			<td>02-0000-0000</td>
 		</tr>
 		<tr>
 			<td>1</td>
-			<td><a href="#">건설사업관리기술자 임금실태조사</a></td>
+			<td><a href="notice-schedule-view.php" class="trigger-modal-box" data-modal-box-width="1178">건설사업관리기술자 임금실태조사</a></td>
 			<td>건설안전과</td>
 			<td>02-0000-0000</td>
 		</tr>
 		<tr>
 			<td>1</td>
-			<td><a href="#">건설사업관리기술자 임금실태조사</a></td>
+			<td><a href="notice-schedule-view.php" class="trigger-modal-box" data-modal-box-width="1178">건설사업관리기술자 임금실태조사</a></td>
 			<td>건설안전과</td>
 			<td>02-0000-0000</td>
 		</tr>
 		<tr>
 			<td>1</td>
-			<td><a href="#">건설사업관리기술자 임금실태조사</a></td>
+			<td><a href="notice-schedule-view.php" class="trigger-modal-box" data-modal-box-width="1178">건설사업관리기술자 임금실태조사</a></td>
 			<td>건설안전과</td>
 			<td>02-0000-0000</td>
 		</tr>
 		<tr>
 			<td>1</td>
-			<td><a href="#">건설사업관리기술자 임금실태조사</a></td>
+			<td><a href="notice-schedule-view.php" class="trigger-modal-box" data-modal-box-width="1178">건설사업관리기술자 임금실태조사</a></td>
 			<td>건설안전과</td>
 			<td>02-0000-0000</td>
 		</tr>
 		<tr>
 			<td>1</td>
-			<td><a href="#">건설사업관리기술자 임금실태조사</a></td>
+			<td><a href="notice-schedule-view.php" class="trigger-modal-box" data-modal-box-width="1178">건설사업관리기술자 임금실태조사</a></td>
 			<td>건설안전과</td>
 			<td>02-0000-0000</td>
 		</tr>					

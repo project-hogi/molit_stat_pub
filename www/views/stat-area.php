@@ -25,40 +25,59 @@
 		<div class="le-list">
 			<ul class="stat-list">
 				<li>
-					<a href="#">건축물착공현황</a>
-					<span class="plus"></span>
+					<a href="#" onclick="window.open('graph-view.php', 'window')">
+						건축물착공현황
+						<span class="plus"></span>
+					</a>
 				</li>
 				<li>
-					<a href="#">건축물허가현황</a>
-					<span class="plus"></span>
+					<a href="#" onclick="window.open('graph-view.php', 'window')">
+						건축물허가현황
+						<span class="plus"></span>
+					</a>
+					
 				</li>
 				<li>
-					<a href="#">용도별건축물현황(공업용)</a>
-					<span class="plus"></span>
+					<a href="#" onclick="window.open('graph-view.php', 'window')">
+						용도별건축물현황(공업용)
+						<span class="plus"></span>
+					</a>
 				</li>
 				<li>
-					<a href="#">용도별건축물현황(기타)</a>
-					<span class="plus"></span>
+					<a href="#" onclick="window.open('graph-view.php', 'window')">
+						용도별건축물현황(기타)
+						<span class="plus"></span>
+					</a>
 				</li>
 				<li>
-					<a href="#">용도별건축물현황(문교사회용)</a>
-					<span class="plus"></span>
+					<a href="#" onclick="window.open('graph-view.php', 'window')">
+						용도별건축물현황(문교사회용)
+						<span class="plus"></span>
+					</a>
 				</li>
 				<li>
-					<a href="#">용도별건축물현황(상업용)</a>
-					<span class="plus"></span>
+					<a href="#" onclick="window.open('graph-view.php', 'window')">
+						용도별건축물현황(상업용)
+						<span class="plus"></span>
+					</a>
 				</li>
 				<li>
-					<a href="#">용도별건축물현황(주거용)</a>
-					<span class="plus"></span>
+					<a href="#" onclick="window.open('graph-view.php', 'window')">
+						용도별건축물현황(주거용)
+						<span class="plus"></span>
+					</a>
 				</li>
 				<li>
-					<a href="#">용도별건축물현황(총계)</a>
-					<span class="plus"></span>
+					<a href="#" onclick="window.open('graph-view.php', 'window')">
+						용도별건축물현황(총계)
+						<span class="plus"></span>
+					</a>
 				</li>
 				<li>
-					<a href="#">측량업 등록현황</a>
-					<span class="plus"></span>
+					<a href="#" onclick="window.open('graph-view.php', 'window')">
+						측량업 등록현황
+						<span class="plus"></span>
+					</a>
 				</li>
 			</ul>
 		</div>

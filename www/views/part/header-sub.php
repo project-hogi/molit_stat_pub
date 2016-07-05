@@ -18,9 +18,9 @@
 			<?php } ?>
 			<ul>
 				<li><a href="notice-use.php">알림마당</a></li>
-				<li><a href="stat.php">통계마당</a></li>
+				<li><a href="stat-field.php">통계마당</a></li>
 				<li><a href="data-year.php">자료마당</a></li>
-				<li><a href="#">참여마당</a></li>
+				<li><a href="community-event.php">참여마당</a></li>
 			</ul>
 		</li>
 		<?php if(getDepthId(0) == 'notice'){ ?>
@@ -138,8 +138,13 @@
 				<?php if(getDepthId(1) == 'report'){ ?>
 					<a href="community-report.php">통계 불일치 신고센터</a>
 				<?php } ?>
+				<?php if(getDepthId(1) == 'event'){ ?>
+					<a href="community-event.php">이벤트</a>
+				<?php } ?>
 				<ul>
-					<li><a href="community-report.php">통계 불일치 신고센터 </a></li>
+					<li><a href="http://eminwon.molit.go.kr/" target="_blank">민원마당</a></li>
+					<li><a href="community-event.php">이벤트</a></li>
+					<li><a href="community-report.php">통계 불일치 신고센터</a></li>
 				</ul>
 			</li>
 		<?php } ?>

@@ -19,14 +19,6 @@
 					<li>
 						<a href="#">English</a>
 					</li>
-					<li class="gnb-display">
-						화면조절
-						<span class="controls">
-							<a href="#" class="zoom-in">확대</a>						
-							<a href="#" class="rotation">회전</a>				
-							<a href="#" class="zoom-out">축소</a>						
-						</span>
-					</li>
 				</ul>
 			</div>
 			<p class="site-map">
