@@ -833,8 +833,9 @@ table.board-primary {
 
 /* sub-style */
 .sub-style {
-	width:1420px;
+	width:100%;
 	margin:0 auto;
+	min-width:1000px;
 		
 	.header {
 		position:relative;
@@ -1065,7 +1066,6 @@ table.board-primary {
 					}
 					
 					th {
-						width:133px;
 						height:42px;
 						background-color:#f9f9f9;
 						text-align:center;
@@ -1123,12 +1123,6 @@ table.board-primary {
 							vertical-align:middle;
 						}
 						
-						span {
-							color:#666;
-							font-weight:normal;
-							display:block;
-							padding-top:30px;
-						}
 					}
 					
 					a {
@@ -1161,6 +1155,19 @@ table.board-primary {
 				border:1px solid #c4c4c4;
 				margin-top:35px;
 				text-indent:-9999px;
+				position:relative;
+				
+				span {
+					text-indent:0;
+					position:absolute;
+					top:-22px;
+					right:0;
+					color:#666;
+					font-weight:normal;
+					display:block;
+					font-family:'돋움', Dotum;
+					font-size:12px;
+				}
 			}
 			
 			table.graph-table {
@@ -1226,22 +1233,17 @@ table.board-primary {
 				}
 			}			
 			
-		}
-		.graph-info {
-			float:right;
-			width:300px;
-			background-color:#fff;
-			border:1px solid #c2c5c8;
-			position: relative;
-			height:993px;
-			background:url('../images/graph/bg_graph-info.png') no-repeat right bottom;
-			
 			p.info-menu {
-				width:339px;
+				width:40px;
 				height:185px;
 				position:absolute;
-				left:-40px;
+				right:299px;
+				top:0;
 				background:url('../images/graph/info-menu.png') no-repeat 0 0;
+				
+				&.on{
+					background:url('../images/graph/info-menu-ov.png') no-repeat 0 0;
+				}
 				
 				a {
 					display:block;
@@ -1251,85 +1253,98 @@ table.board-primary {
 					margin-top:145px;
 				}
 			}
-			
-			ul.info-tab {
-				overflow:hidden;
-				padding-bottom:8px;
-				border-bottom:1px solid #f0f0f0;
+
+			.graph-info {
+				position: absolute;
+				right:-1px;
+				top:0;
+				width:300px;
+				border:1px solid #c2c5c8;
+				height:993px;
+				background:#fff url('../images/graph/bg_graph-info.png') no-repeat right bottom;
 				
-				li {
-					float:left;
-					width:50%;
+				ul.info-tab {
+					overflow:hidden;
+					padding-bottom:8px;
+					border-bottom:1px solid #f0f0f0;
+					
+					li {
+						float:left;
+						width:50%;
+						
+						a {
+							display:block;
+							text-align:center;
+							height:41px;
+							line-height:45px;
+							background-color:#f1f1f2;
+							border-bottom:1px solid #c2c5c8;
+							font-size:14px;
+							font-weight:600;
+							color:#666;
+							border-left:1px solid #c2c5c8;
+							border-top:3px solid #b7b9ba;
+						}
+						
+						&.active {
+							a {
+								background-color:#ffffff;
+								border-bottom:1px solid #fff;
+								color:#f77a00;
+								border-top:3px solid #ff9401;
+							}	
+						}
+						
+						&:first-child a {
+							border-left:0px none;
+						}
+					}
+				}
+				
+				ul.chk-list {
+					padding:20px 16px;
+					
+					li {
+						padding-bottom:10px;
+						font-size:12px;
+						font-family:'돋움', Dotum;
+						
+						strong {
+							display:inline-block;
+							color:#034a87;
+							padding-left:18px;
+							background:url('../images/graph/strong-chk.png') no-repeat 0 50%;
+						}
+						
+						em {
+							font-style:normal;
+							display:inline-block;
+							padding-left:5px;
+							color:#666;
+						}
+						
+						span {
+							display:block;
+							color: #666;
+							padding-left:16px;
+						}
+					}
+				}
+				
+				p.more {
+					position:absolute;
+					bottom:0;
+					right:0;
 					
 					a {
 						display:block;
-						text-align:center;
-						height:41px;
-						line-height:45px;
-						background-color:#f1f1f2;
-						border-bottom:1px solid #c2c5c8;
-						font-size:14px;
-						font-weight:600;
-						color:#666;
-						border-left:1px solid #c2c5c8;
-					}
-					
-					&.active {
-						a {
-							background-color:#ffffff;
-							border-bottom:1px solid #fff;
-							color:#f77a00;
-						}	
-					}
-					
-					&:first-child a {
-						border-left:0px none;
+						width:79px;
+						height:45px;
+						text-indent:-9999px;
 					}
 				}
 			}
 			
-			ul.chk-list {
-				padding:20px 16px;
-				
-				li {
-					padding-bottom:10px;
-					font-size:12px;
-					font-family:'돋움', Dotum;
-					
-					strong {
-						display:inline-block;
-						color:#034a87;
-						padding-left:18px;
-						background:url('../images/graph/strong-chk.png') no-repeat 0 50%;
-					}
-					
-					em {
-						font-style:normal;
-						display:inline-block;
-						padding-left:5px;
-						color:#666;
-					}
-					
-					span {
-						display:block;
-						color: #666;
-						padding-left:16px;
-					}
-				}
-			}
-			
-			p.more {
-				position:absolute;
-				bottom:0;
-				right:0;
-				
-				a {
-					display:block;
-					width:79px;
-					height:45px;
-					text-indent:-9999px;
-				}
-			}
 		}
 	}
 	
