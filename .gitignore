@@ -60,7 +60,3 @@ local.properties
 .loadpath
 .recommenders
 .buildpath
-
-### Custom ###
-/html
-/www/resources/front

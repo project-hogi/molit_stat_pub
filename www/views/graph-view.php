@@ -121,14 +121,14 @@
 				<li>
 					<a href="#">항목1</a>
 				</li>
+				<li class="ri">
+					분석함수
+					<select class="form-control">
+						<option value="">값</option>
+					</select>
+					<span>단위 : 동, %</span>
+				</li>
 			</ul>
-			<p class="func">
-				분석함수
-				<select class="form-control">
-					<option value="">값</option>
-				</select>
-				<span>단위 : 동, %</span>
-			</p>
 			<p class="graph-img">
 				그래프 이미지
 			</p>

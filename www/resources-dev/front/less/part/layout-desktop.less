@@ -1008,11 +1008,10 @@ table.board-primary {
 		
 		.graph-view {
 			position:relative;
-			float:left;
-			width:1120px;
+			width:100%;
 			background-color:#f4f4f4;
 			border:1px solid #e6e6e6;
-			padding:37px 49px;
+			padding:37px 349px 37px 49px;
 			height:993px;
 			
 			ul.top-tab {
@@ -1111,6 +1110,27 @@ table.board-primary {
 					float:left;
 					padding-right:5px;
 					
+					&.ri {
+						float:right;
+						font-size:12px;
+						font-family:'돋움', Dotum;
+						font-weight:600;
+						text-align:right;
+						
+						select {
+							display:inline-block;
+							width:126px;
+							vertical-align:middle;
+						}
+						
+						span {
+							color:#666;
+							font-weight:normal;
+							display:block;
+							padding-top:30px;
+						}
+					}
+					
 					a {
 						display:block;
 						width:80px;
@@ -1133,31 +1153,6 @@ table.board-primary {
 					}
 					
 				}
-			}
-			
-			p.func {
-				position:absolute;
-				top:220px;
-				right:50px;
-				width:200px;
-				font-size:12px;
-				font-family:'돋움', Dotum;
-				font-weight:600;
-				text-align:right;
-				
-				select {
-					display:inline-block;
-					width:126px;
-					vertical-align:middle;
-				}
-				
-				span {
-					color:#666;
-					font-weight:normal;
-					display:block;
-					padding-top:30px;
-				}
-				
 			}
 			
 			p.graph-img {
