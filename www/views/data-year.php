@@ -26,7 +26,7 @@
 					Statistical Year Book of MOLIT
 				</dd>
 				<dd class="img">
-					2014 국제교통 통계연보
+					<span class="upload-img" style="background-image:url('<?php echo $config["imageFolder"]; ?>/temp_data/data-year-img1.png');"></span>
 				</dd>
 				<dd class="detail">
 					자세히보기
@@ -42,7 +42,7 @@
 					Statistical Year Book of MOLIT
 				</dd>
 				<dd class="img">
-					2014 국제교통 통계연보
+					<span class="upload-img" style="background-image:url('<?php echo $config["imageFolder"]; ?>/temp_data/data-year-img2.png');"></span>
 				</dd>
 				<dd class="detail">
 					자세히보기
@@ -58,7 +58,7 @@
 					Statistical Year Book of MOLIT
 				</dd>
 				<dd class="img">
-					2014 국제교통 통계연보
+					<span class="upload-img" style="background-image:url('<?php echo $config["imageFolder"]; ?>/temp_data/data-year-img3.png');"></span>
 				</dd>
 				<dd class="detail">
 					자세히보기
@@ -74,7 +74,7 @@
 					Statistical Year Book of MOLIT
 				</dd>
 				<dd class="img">
-					2014 국제교통 통계연보
+					
 				</dd>
 				<dd class="detail">
 					자세히보기
@@ -90,7 +90,7 @@
 					Statistical Year Book of MOLIT
 				</dd>
 				<dd class="img">
-					2014 국제교통 통계연보
+					
 				</dd>
 				<dd class="detail">
 					자세히보기
@@ -106,7 +106,7 @@
 					Statistical Year Book of MOLIT
 				</dd>
 				<dd class="img">
-					2014 국제교통 통계연보
+					
 				</dd>
 				<dd class="detail">
 					자세히보기
@@ -122,7 +122,7 @@
 					Statistical Year Book of MOLIT
 				</dd>
 				<dd class="img">
-					2014 국제교통 통계연보
+					
 				</dd>
 				<dd class="detail">
 					자세히보기
@@ -138,7 +138,7 @@
 					Statistical Year Book of MOLIT
 				</dd>
 				<dd class="img">
-					2014 국제교통 통계연보
+					
 				</dd>
 				<dd class="detail">
 					자세히보기
@@ -154,7 +154,7 @@
 					Statistical Year Book of MOLIT
 				</dd>
 				<dd class="img">
-					2014 국제교통 통계연보
+					
 				</dd>
 				<dd class="detail">
 					자세히보기
@@ -170,7 +170,7 @@
 					Statistical Year Book of MOLIT
 				</dd>
 				<dd class="img">
-					2014 국제교통 통계연보
+					
 				</dd>
 				<dd class="detail">
 					자세히보기
@@ -186,7 +186,7 @@
 					Statistical Year Book of MOLIT
 				</dd>
 				<dd class="img">
-					2014 국제교통 통계연보
+					
 				</dd>
 				<dd class="detail">
 					자세히보기
@@ -202,7 +202,7 @@
 					Statistical Year Book of MOLIT
 				</dd>
 				<dd class="img">
-					2014 국제교통 통계연보
+					
 				</dd>
 				<dd class="detail">
 					자세히보기
