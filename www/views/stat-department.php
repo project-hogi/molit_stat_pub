@@ -48,13 +48,14 @@
 </p>
 <div class="tab-content">
 	<div role="tabpanel" class="tab-pane active" id="field-tab1">
-		<div class="col-md-6">
+		<div>
 			<ul class="stat-list">
 				<li>
 					<a href="#" onclick="window.open('graph-view.php', 'window')">
 						[행정] 개발제한구역현황
 						<span class="plus"></span>					
 					</a>
+					
 				</li>
 				<li>
 					<a href="#" onclick="window.open('graph-view.php', 'window')">
@@ -92,15 +93,12 @@
 						<span class="plus"></span>					
 					</a>
 				</li>
-			</ul>
-		</div>
-		<div class="col-md-6">
-			<ul class="stat-list">
 				<li>
 					<a href="#" onclick="window.open('graph-view.php', 'window')">
 						[행정] 개발제한구역현황
 						<span class="plus"></span>					
 					</a>
+					
 				</li>
 				<li>
 					<a href="#" onclick="window.open('graph-view.php', 'window')">

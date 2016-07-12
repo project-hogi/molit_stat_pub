@@ -78,7 +78,7 @@
 						통계표명
 					</th>
 					<td>
-						<select class="form-control" style="width:370px; display:inline-block; height:30px;">
+						<select class="form-control" style="width:65%; max-width:370px; display:inline-block; height:30px;">
 							<option value="">면적별 건축물 현황</option>
 						</select>
 						<input type="button" value="상세보기" class="type-btn" style="width:70px;" />
@@ -89,11 +89,11 @@
 						기간선택(년)
 					</th>
 					<td>
-						<select class="form-control" style="width:75px; display:inline-block; height:30px;">
+						<select class="form-control" style="width:33%; max-width:75px; display:inline-block; height:30px;">
 							<option value="">2015</option>
 						</select>
 						 ~ 
-						<select class="form-control" style="width:75px; display:inline-block; height:30px;">
+						<select class="form-control" style="width:33%; max-width:75px; display:inline-block; height:30px;">
 							<option value="">2015</option>
 						</select>
 						<input type="button" value="검색" class="type-btn" />
@@ -102,10 +102,10 @@
 						양식선택
 					</th>
 					<td>
-						<select class="form-control" style="width:126px; display:inline-block; height:30px;">
+						<select class="form-control" style="width:40%; max-width:126px; display:inline-block; height:30px;">
 							<option value="">양식94</option>
 						</select>
-						<select class="form-control" style="width:126px; display:inline-block; height:30px;">
+						<select class="form-control" style="width:40%; max-width:126px; display:inline-block; height:30px;">
 							<option value="">한글</option>
 						</select>
 					</td>
@@ -126,10 +126,10 @@
 					<select class="form-control">
 						<option value="">값</option>
 					</select>
-					<span>단위 : 동, %</span>
 				</li>
 			</ul>
 			<p class="graph-img">
+				<span>단위 : 동, %</span>
 				그래프 이미지
 			</p>
 			<table class="graph-table">
@@ -430,113 +430,113 @@
 					</td>
 				</tr>
 			</table>
-		</div>
-		<div class="graph-info">
 			<p class="info-menu">
 				<a href="#">요약정보</a>
 			</p>
-			<ul class="info-tab">
-				<li class="active">
-					<a href="#">요약정보</a>
-				</li>
-				<li>
-					<a href="#">My 스크립</a>
-				</li>
-			</ul>
-			<ul class="chk-list">
-				<li>
-					<strong>
-						통계구분
-					</strong>
-					<em>
-						승인통계
-					</em>
-				</li>
-				<li>
-					<strong>
-						공표주기
-					</strong>
-					<em>
-						매년
-					</em>
-				</li>
-				<li>
-					<strong>
-						담당부서
-					</strong>
-					<em>
-						녹색건축과
-					</em>
-				</li>
-				<li>
-					<strong>
-						담당자
-					</strong>
-					<em>
-						건축행정시스템 세움터
-					</em>
-				</li>
-				<li>
-					<strong>
-						전화번호
-					</strong>
-					<em>
-						02-3480-0200
-					</em>
-				</li>
-				<li>
-					<strong>
-						작성(조사)방법
-					</strong>
-					<span>
-						“건축물대장”에 등재되어 있는 적법한 건축물의 
-						현황 자료를 기초로 국토교통부내의 “인터넷
-						건축행정시스템”을 통해 조사
-					</span>
-				</li>
-				<li>
-					<strong>
-						공표방법
-					</strong>
-					<span>
-						「국토교통통계연보」, 국토교통통계누리<br>
-						(http://stat.molit.go.kr)
-					</span>
-				</li>
-				<li>
-					<strong>
-						통계표 주석
-					</strong>
-					<span>
-						주) 수록된 수치는 매년 12월말 기준 기타는 
-						세움터 상 미기록 혹은 기록오기 자료 : 국토교통
-						부 국토도시실 건축정책관 녹색건축과
-					</span>
-				</li>
-				<li>
-					<strong>
-						통계 관련파일
-					</strong>
-					<span>
-						ㆍ50만_이상_도시_년간통계(2015년).xls<br>
-						ㆍ2015년_건축물현황(게시용).xls<br>
-						ㆍ50만_이상_도시_년간통계(2014년).xls<br>
-						ㆍ2014년_건축물현황(게시용).xls
-					</span>
-				</li>
-				<li>
-					<strong>
-						통계표 관련파일
-					</strong>
-					<span>
-						ㆍ면적별 건축물 현황<br>
-						통계분류표(건축물 용도).hwp
-					</span>
-				</li>
-			</ul>
-			<p class="more">
-				<a href="#">펼치기</a>
-			</p>
+			<div class="graph-info">
+				<ul class="info-tab">
+					<li class="active">
+						<a href="#">요약정보</a>
+					</li>
+					<li>
+						<a href="#">My 스크립</a>
+					</li>
+				</ul>
+				<ul class="chk-list">
+					<li>
+						<strong>
+							통계구분
+						</strong>
+						<em>
+							승인통계
+						</em>
+					</li>
+					<li>
+						<strong>
+							공표주기
+						</strong>
+						<em>
+							매년
+						</em>
+					</li>
+					<li>
+						<strong>
+							담당부서
+						</strong>
+						<em>
+							녹색건축과
+						</em>
+					</li>
+					<li>
+						<strong>
+							담당자
+						</strong>
+						<em>
+							건축행정시스템 세움터
+						</em>
+					</li>
+					<li>
+						<strong>
+							전화번호
+						</strong>
+						<em>
+							02-3480-0200
+						</em>
+					</li>
+					<li>
+						<strong>
+							작성(조사)방법
+						</strong>
+						<span>
+							“건축물대장”에 등재되어 있는 적법한 건축물의 
+							현황 자료를 기초로 국토교통부내의 “인터넷
+							건축행정시스템”을 통해 조사
+						</span>
+					</li>
+					<li>
+						<strong>
+							공표방법
+						</strong>
+						<span>
+							「국토교통통계연보」, 국토교통통계누리<br>
+							(http://stat.molit.go.kr)
+						</span>
+					</li>
+					<li>
+						<strong>
+							통계표 주석
+						</strong>
+						<span>
+							주) 수록된 수치는 매년 12월말 기준 기타는 
+							세움터 상 미기록 혹은 기록오기 자료 : 국토교통
+							부 국토도시실 건축정책관 녹색건축과
+						</span>
+					</li>
+					<li>
+						<strong>
+							통계 관련파일
+						</strong>
+						<span>
+							ㆍ50만_이상_도시_년간통계(2015년).xls<br>
+							ㆍ2015년_건축물현황(게시용).xls<br>
+							ㆍ50만_이상_도시_년간통계(2014년).xls<br>
+							ㆍ2014년_건축물현황(게시용).xls
+						</span>
+					</li>
+					<li>
+						<strong>
+							통계표 관련파일
+						</strong>
+						<span>
+							ㆍ면적별 건축물 현황<br>
+							통계분류표(건축물 용도).hwp
+						</span>
+					</li>
+				</ul>
+				<p class="more">
+					<a href="#">펼치기</a>
+				</p>
+			</div>
 		</div>
 	</div>
 	<div class="footer">

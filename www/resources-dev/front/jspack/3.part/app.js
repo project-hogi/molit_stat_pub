@@ -67,5 +67,59 @@ jQuery(function($) {
 		}
 
 	});
+	
+	$('.graph-view').each(function(){
+		//$(this).click(function(){
+			//$('.graph-info').hide();
+//			$(this).parent('.graph-view').css('padding-right','49px');
+			//$(this).css('right','0');
+//		});
+		
+		var $obj = $(this);
+		var $menu = $(this).parent().find('.graph-info');
+		var $more = $(this).find('p.info-menu');
+		var $moreOpen = $more.find('.open');
+		var $moreClose = $more.find('.close');
+		var isOpened = true;
+		
+		$more.find('a').on('click', function(event){
+			event.preventDefault();
+			
+			$obj.trigger('toggles');
+		});
+		$obj.on('toggles', function(){
+			if(isOpened){
+				$obj.trigger('close');
+			}else{
+				$obj.trigger('open');
+			}
+		});
+		$obj.on('open', function(){
+			if(isOpened)
+				return;
+			
+			isOpened = true;
+			
+			$obj.stop().animate({'padding-right': 349});
+			$menu.stop().animate({'right': '-1'});
+			$more.stop().animate({'right': 299});
+			$moreOpen.stop().fadeOut(1200, 'easeInOutExpo');
+			$moreClose.stop().fadeIn(1200, 'easeInOutExpo');
+			$more.removeClass('on');
+		});
+		$obj.on('close', function(){
+			if(!isOpened)
+				return;
+			
+			isOpened = false;
+			
+			$obj.stop().animate({'padding-right': 49});
+			$menu.stop().animate({'right': '-300'});
+			$more.stop().animate({'right': 0});
+			$moreOpen.stop().fadeIn(1200, 'easeInOutExpo');
+			$moreClose.stop().fadeOut(1200, 'easeInOutExpo');			
+			$more.addClass('on');
+		});
+	});
 
 });
