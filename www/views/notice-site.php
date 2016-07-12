@@ -15,7 +15,7 @@
 	</dd>
 </dl>
 <h3><span>01</span>통계관련사이트</h3>
-<div class="col-md-6 site">
+<div class="site">
 	<ul>
 		<li>
 			<a href="#">
@@ -26,87 +26,6 @@
 				<span class="plus"></span>
 			</a>
 		</li>
-		<li>
-			<a href="#">
-				e나라지표
-				<span>
-					http://www.index.go.kr...
-				</span>
-				<span class="plus"></span>
-			</a>
-		</li>
-		<li>
-			<a href="#">
-				e나라지표
-				<span>
-					http://www.index.go.kr...
-				</span>
-				<span class="plus"></span>
-			</a>
-		</li>
-		<li>
-			<a href="#">
-				e나라지표
-				<span>
-					http://www.index.go.kr...
-				</span>
-				<span class="plus"></span>
-			</a>
-		</li>
-		<li>
-			<a href="#">
-				e나라지표
-				<span>
-					http://www.index.go.kr...
-				</span>
-				<span class="plus"></span>
-			</a>
-		</li>
-	</ul>
-</div>
-<div class="col-md-6 site">
-	<ul>
-		<li>
-			<a href="#">
-				e나라지표
-				<span>
-					http://www.index.go.kr...
-				</span>
-				<span class="plus"></span>
-			</a>
-		</li>
-		<li>
-			<a href="#">
-				e나라지표
-				<span>
-					http://www.index.go.kr...
-				</span>
-				<span class="plus"></span>
-			</a>
-		</li>
-		<li>
-			<a href="#">
-				e나라지표
-				<span>
-					http://www.index.go.kr...
-				</span>
-				<span class="plus"></span>
-			</a>
-		</li>
-		<li>
-			<a href="#">
-				e나라지표
-				<span>
-					http://www.index.go.kr...
-				</span>
-				<span class="plus"></span>
-			</a>
-		</li>
-	</ul>
-</div>
-<h3><span>02</span>국토교통통계포털 자료수록기관 사이트</h3>
-<div class="col-md-6 site">
-	<ul>
 		<li>
 			<a href="#">
 				e나라지표
@@ -181,8 +100,81 @@
 		</li>
 	</ul>
 </div>
-<div class="col-md-6 site">
+<h3><span>02</span>국토교통통계포털 자료수록기관 사이트</h3>
+<div class="site">
 	<ul>
+		<li>
+			<a href="#">
+				e나라지표
+				<span>
+					http://www.index.go.kr...
+				</span>
+				<span class="plus"></span>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				e나라지표
+				<span>
+					http://www.index.go.kr...
+				</span>
+				<span class="plus"></span>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				e나라지표
+				<span>
+					http://www.index.go.kr...
+				</span>
+				<span class="plus"></span>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				e나라지표
+				<span>
+					http://www.index.go.kr...
+				</span>
+				<span class="plus"></span>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				e나라지표
+				<span>
+					http://www.index.go.kr...
+				</span>
+				<span class="plus"></span>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				e나라지표
+				<span>
+					http://www.index.go.kr...
+				</span>
+				<span class="plus"></span>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				e나라지표
+				<span>
+					http://www.index.go.kr...
+				</span>
+				<span class="plus"></span>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				e나라지표
+				<span>
+					http://www.index.go.kr...
+				</span>
+				<span class="plus"></span>
+			</a>
+		</li>
 		<li>
 			<a href="#">
 				e나라지표
