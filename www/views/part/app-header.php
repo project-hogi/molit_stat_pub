@@ -1,7 +1,7 @@
 <?php
 $config["sitename"] = "국토교통부 통계누리";
 $config["mode"] = "front";
-$config["isDev"] = false;
+$config["isDev"] = true;
 $config["cssTableMinWidth"] = 640;
 $config["cssDesktopMinWidth"] = 1024;
 $config["cssLargeDesktopMinWidth"] = 1280;

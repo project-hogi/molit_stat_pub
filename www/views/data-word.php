@@ -39,8 +39,8 @@
 </ul>
 <div class="tab-content row">
 	<div role="tabpanel" class="tab-pane active" id="field-tab1">
-		<div class="col-md-3">
-			<ul>
+		<div>
+			<ul class="stat-list">
 				<li>
 					<a href="data-word-view.php" class="trigger-modal-box" data-modal-box-width="580">가등기의 효력</a>
 				</li>
@@ -95,10 +95,6 @@
 				<li>
 					<a href="data-word-view.php" class="trigger-modal-box" data-modal-box-width="580">가등기의 효력</a>
 				</li>
-			</ul>
-		</div>
-		<div class="col-md-3">
-			<ul>
 				<li>
 					<a href="data-word-view.php" class="trigger-modal-box" data-modal-box-width="580">가등기의 효력</a>
 				</li>
@@ -153,10 +149,6 @@
 				<li>
 					<a href="data-word-view.php" class="trigger-modal-box" data-modal-box-width="580">가등기의 효력</a>
 				</li>
-			</ul>
-		</div>
-		<div class="col-md-3">
-			<ul>
 				<li>
 					<a href="data-word-view.php" class="trigger-modal-box" data-modal-box-width="580">가등기의 효력</a>
 				</li>
@@ -211,10 +203,6 @@
 				<li>
 					<a href="data-word-view.php" class="trigger-modal-box" data-modal-box-width="580">가등기의 효력</a>
 				</li>
-			</ul>
-		</div>
-		<div class="col-md-3">
-			<ul>
 				<li>
 					<a href="data-word-view.php" class="trigger-modal-box" data-modal-box-width="580">가등기의 효력</a>
 				</li>
