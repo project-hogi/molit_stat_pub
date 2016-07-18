@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="국토교통부 통계누리 홈페이지 입니다." />
+<title>국토교통부 통계누리</title>
+<link rel="apple-touch-icon" sizes="57x57" href="/resources/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/resources/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/resources/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/resources/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/resources/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/resources/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/resources/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/resources/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/resources/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/resources/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/resources/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/resources/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/resources/favicon/favicon-16x16.png">
+<link rel="shortcut icon" href="/resources/favicon/favicon.ico">
+<link rel="manifest" href="/resources/favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/resources/favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="/resources/front/css/style.min.css" />
+<link rel="stylesheet" href="/resources/front-legacy/css/legacy-style.css" />
+<!--[if lt IE 9]><script src="/resources/front/js/vendor/jquery-1.12.2.min.js"></script><![endif]-->
+<!--[if gte IE 9]><!--><script src="/resources/front/js/vendor/jquery.min.js"></script><![endif]-->
+<script src="/resources/front/js/script.min.js"></script>
+</head>
+<body class="page- layout-page">
+<div id="wrap">
+	<div id="header">
+		<div class="container">
+			<h1 class="site-logo"><a href="/index.php" title="메인으로 이동">국토교통 통계누리</a></h1>
+			<div class="gnb">
+				<ul>
+					<li>
+						<a href="#">로그인</a>
+					</li>
+					<li>
+						<a href="#">회원가입</a>
+					</li>
+					<li>
+						<a href="#">MY스크랩</a>
+					</li>
+					<li>
+						<a href="#">이용안내</a>
+					</li>
+					<li>
+						<a href="#">English</a>
+					</li>
+				</ul>
+			</div>
+			<p class="site-map">
+				<a href="#">사이트맵</a>
+			</p>
+			<div class="lnb">
+				<ul>
+					<li><a href="notice-use.php">알림마당</a></li>
+					<li class="stat"><a href="stat-field.php">통계마당</a></li>
+					<li><a href="data-year.php">자료마당</a></li>
+					<li><a href="community-report.php">참여마당</a></li>
+				</ul>
+			</div>
+			<div class="search-box">
+				<p class="select-click">
+					통합검색
+				</p>
+				<input type="text" />
+				<input type="button" value="검색" />
+			</div>
+		</div>
+	</div>
+	<div class="stat-depth2" style="display:none;">
+		<p class="img">
+			<img src="/resources/front/images/common/stat-depth2.png" alt="" />
+			<div id="container">
+				<ul class="menu">
+					<li>
+						<a href="stat-field.php">분야별통계</a>
+					</li>
+					<li>
+						<a href="stat-department.php">부서별통계</a>
+					</li>
+					<li>
+						<a href="stat-name.php">명칭별통계</a>
+					</li>
+					<li>
+						<a href="stat-area.php">지역별통계</a>
+					</li>
+					<li>
+						<a href="stat-field.php">영문통계</a>
+					</li>
+					<li>
+						<a href="stat-other.php">타기관통계</a>
+					</li>
+				</ul>
+				<p class="close">
+					<a href="#">close</a>
+				</p>
+			</div>
+		</p>
+	</div>
+	<div class="body">
+		<div id="container">
+<div class="snb">
+	<ul>
+		<li class="home">
+			<a href="/index.php">홈</a>
+		</li>
+		<li>
+															<ul>
+				<li><a href="notice-use.php">알림마당</a></li>
+				<li><a href="stat-field.php">통계마당</a></li>
+				<li><a href="data-year.php">자료마당</a></li>
+				<li><a href="community-event.php">참여마당</a></li>
+			</ul>
+		</li>
+									</ul>
+</div>
+<div class="container">
+	<div id="content"><h2>타기관통계</h2>
+<p class="additional">통계청 국가통계포탈(KOSIS)에서 제공되는 자료를 확인할 수 있습니다.</p>
+<dl class="paging">
+	<dt class="skip">현재 페이지 경로</dt>
+	<dd>
+		<a href="/views/index.php">홈</a>
+		<a href="stat-field.php">통계마당</a>
+		<span>타기관통계</span>
+	</dd>
+</dl>
+<ul class="nav nav-tabs" role="tablist" id="myTab">
+	<li role="presentation" class="active"><a href="#field-tab1" aria-controls="home" role="tab" data-toggle="tab">전체보기</a></li>
+	<li role="presentation"><a href="#field-tab2" aria-controls="profile" role="tab" data-toggle="tab">중앙행정기관</a></li>
+	<li role="presentation"><a href="#field-tab3" aria-controls="messages" role="tab" data-toggle="tab">지방자치단체</a></li>
+	<li role="presentation"><a href="#field-tab4" aria-controls="messages" role="tab" data-toggle="tab">금융기관</a></li>
+	<li role="presentation"><a href="#field-tab5" aria-controls="messages" role="tab" data-toggle="tab">공사&#47;공단</a></li>
+	<li role="presentation"><a href="#field-tab6" aria-controls="messages" role="tab" data-toggle="tab">연구기관</a></li>
+	<li role="presentation"><a href="#field-tab7" aria-controls="messages" role="tab" data-toggle="tab">협회&#47;조합</a></li>
+	<li role="presentation"><a href="#field-tab8" style="border-right:0px;" aria-controls="settings" role="tab" data-toggle="tab">기타기관</a></li>
+</ul>
+<div class="tab-content">
+	<div role="tabpanel" class="tab-pane active" id="field-tab1">
+		<table class="board-primary">
+			<thead>
+				<tr>
+					<th>
+						번호
+					</th>
+					<th>
+						기관구분
+					</th>
+					<th>
+						기관명
+					</th>
+					<th>
+						통계제공홈페이지
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+						1
+					</td>
+					<td>
+						중앙행정기관
+					</td>
+					<td>
+						검찰청
+					</td>
+					<td>
+						<a href="http://www.spo.go.kr/" target="_blank">
+							http://www.spo.go.kr/
+							<span class="plus"></span>
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						2
+					</td>
+					<td>
+						중앙행정기관
+					</td>
+					<td>
+						검찰청
+					</td>
+					<td>
+						<a href="http://www.spo.go.kr/" target="_blank">
+							http://www.spo.go.kr/
+							<span class="plus"></span>
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						3
+					</td>
+					<td>
+						중앙행정기관
+					</td>
+					<td>
+						검찰청
+					</td>
+					<td>
+						<a href="http://www.spo.go.kr/" target="_blank">
+							http://www.spo.go.kr/
+							<span class="plus"></span>
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						4
+					</td>
+					<td>
+						중앙행정기관
+					</td>
+					<td>
+						검찰청
+					</td>
+					<td>
+						<a href="http://www.spo.go.kr/" target="_blank">
+							http://www.spo.go.kr/
+							<span class="plus"></span>
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						5
+					</td>
+					<td>
+						중앙행정기관
+					</td>
+					<td>
+						검찰청
+					</td>
+					<td>
+						<a href="http://www.spo.go.kr/" target="_blank">
+							http://www.spo.go.kr/
+							<span class="plus"></span>
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						6
+					</td>
+					<td>
+						중앙행정기관
+					</td>
+					<td>
+						검찰청
+					</td>
+					<td>
+						<a href="http://www.spo.go.kr/" target="_blank">
+							http://www.spo.go.kr/
+							<span class="plus"></span>
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						7
+					</td>
+					<td>
+						중앙행정기관
+					</td>
+					<td>
+						검찰청
+					</td>
+					<td>
+						<a href="http://www.spo.go.kr/" target="_blank">
+							http://www.spo.go.kr/
+							<span class="plus"></span>
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						8
+					</td>
+					<td>
+						중앙행정기관
+					</td>
+					<td>
+						검찰청
+					</td>
+					<td>
+						<a href="http://www.spo.go.kr/" target="_blank">
+							http://www.spo.go.kr/
+							<span class="plus"></span>
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						9
+					</td>
+					<td>
+						중앙행정기관
+					</td>
+					<td>
+						검찰청
+					</td>
+					<td>
+						<a href="http://www.spo.go.kr/" target="_blank">
+							http://www.spo.go.kr/
+							<span class="plus"></span>
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						10
+					</td>
+					<td>
+						중앙행정기관
+					</td>
+					<td>
+						검찰청
+					</td>
+					<td>
+						<a href="http://www.spo.go.kr/" target="_blank">
+							http://www.spo.go.kr/
+							<span class="plus"></span>
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						11
+					</td>
+					<td>
+						중앙행정기관
+					</td>
+					<td>
+						검찰청
+					</td>
+					<td>
+						<a href="http://www.spo.go.kr/" target="_blank">
+							http://www.spo.go.kr/
+							<span class="plus"></span>
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						12
+					</td>
+					<td>
+						중앙행정기관
+					</td>
+					<td>
+						검찰청
+					</td>
+					<td>
+						<a href="http://www.spo.go.kr/" target="_blank">
+							http://www.spo.go.kr/
+							<span class="plus"></span>
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						13
+					</td>
+					<td>
+						중앙행정기관
+					</td>
+					<td>
+						검찰청
+					</td>
+					<td>
+						<a href="http://www.spo.go.kr/" target="_blank">
+							http://www.spo.go.kr/
+							<span class="plus"></span>
+						</a>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+
+	</div>
+</div>
+		</div>
+		<div id="footer">
+			<div class="ft_list">
+				<nav>
+			    	<ul>
+						<li>
+							<a href="#">국토교통통계소개</a>					
+						</li>
+						<li>
+							<a href="#">통계누리연혁</a>					
+						</li>
+						<li>
+							<a href="#">저작권보호정책</a>					
+						</li>
+						<li>
+							<a href="#">개인정보처리방침</a>					
+						</li>
+						<li>
+							<a href="#">국토교통인클린생활10선</a>					
+						</li>
+						<li>
+							<a href="#">자주묻는질문</a>					
+						</li>
+					</ul>
+			    </nav>
+			</div>
+			<div class="container">
+				<address>
+					30064 세종특별자치시 도움6로 11 국토교통부 ⁄ 민원(주)1599-0001 (야)044-201-4672 ⁄ FAX (주)044-860-8500 (야)044-201-5700<br>
+					본 홈페이지는 게시된 이메일 주소가 자동 수집되는 것을 거부하며, 이를 위반 시 정보통신망법에 의해 처벌됨을 유념하여 주시기 바랍니다.
+					<p class="copy">
+						Copyright (c) 2016 Ministry of Land, Infrastructure and Transport. All Rights Reserved.
+					</p>
+				</address>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
