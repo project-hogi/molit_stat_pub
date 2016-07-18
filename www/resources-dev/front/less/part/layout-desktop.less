@@ -754,41 +754,84 @@ table.board-primary {
 	z-index: 200;
 	overflow: hidden;
 	background-color: #fff;
-	height:197px;
+	height:177px;
 	
-	.ft_list {
-		height:71px;
+	.ft_list-w {
+		height:54px;
 		border-top:1px solid #d5d5d5;
 		border-bottom:1px solid #d5d5d5;
-		
-		ul {
+	
+		.ft_list {
+			position: relative;
+			height:54px;
 			width:1000px;
 			margin:0 auto;
-			text-align:center;
 			
-			li {
-				display:inline-block;
-				padding:0 13px;
-				background:url('../images/common/bg_ft_list.png') no-repeat 0 50%;
+			ul {
+				width:1000px;
+				margin:0 auto;
+				padding-left:20px; 
 				
-				&:first-child {
-					background:none;
-				}
-				
-				a {
+				li {
 					display:inline-block;
-					height:70px;
-					line-height:70px;
-					font-size:14px;
-					color:#333;
-					font-weight:600;
-					letter-spacing:-0.045em;
+					padding:0 13px;
+					background:url('../images/common/bg_ft_list.png') no-repeat 0 50%;
 					
-					&:hover {
-						border-bottom:3px solid #034a87;
+					&:first-child {
+						background:none;
+					}
+					
+					a {
+						display:inline-block;
+						height:53px;
+						line-height:53px;
+						font-size:14px;
+						color:#333;
+						font-weight:600;
+						letter-spacing:-0.045em;
+						
+						&:hover {
+							border-bottom:3px solid #034a87;
+						}
+					}
+					
+				}
+			}
+			
+			p.site {
+				position: absolute;
+				top:10px;
+				right:0;
+				
+				span {
+					display:inline-block;
+					width:160px;
+					height:33px;
+					background:url('../images/common/bg_ft-site.png') no-repeat 0 0;
+					font-size:11px;
+					line-height:33px;
+					
+					a {
+						display:block;
+						width:100%;
+						height:100%;
+						color:#666;
+						padding-left:10px;
 					}
 				}
 				
+				a.go-page {
+					display:inline-block;
+					width:34px;
+					height:33px;
+					text-align:center;
+					line-height:33px;
+					color:#fff;
+					background-color:#034a87;
+					border-radius:2px;
+					font-size:11px;
+					font-family:'돋움',Dotum; 
+				}
 			}
 		}
 	}
@@ -797,7 +840,7 @@ table.board-primary {
 		position: relative;
 		height: 126px;
 		padding-left:145px;
-		background:url('../images/common/ft_logo.png') no-repeat 0 20px;
+		background:url('../images/common/ft_logo.png') no-repeat 40px 20px;
 		
 		address {
 			padding-top:25px;
@@ -1408,14 +1451,15 @@ table.board-primary {
 			z-index:999;
 		}
 	}
-	
 	#container {
 		width:1000px;
 		height:420px;
 		margin:0 auto;
 		position:relative;
 		padding:0;
+		min-height: 0;
 		z-index:99999;
+		background:transparent !important;
 		
 		ul.menu {
 			position:absolute;

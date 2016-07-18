@@ -83,8 +83,8 @@
 							$iframe.height($contents.find('body').outerHeight());
 						}
 						
-						if($modal.height() < $iframe.parent().parent().outerHeight()){
-							$modal.height($iframe.parent().parent().outerHeight());
+						if($modal.height() < $('body').prop("scrollHeight")){
+							$modal.height($('body').prop("scrollHeight"));
 						}
 					}).trigger('init');
 					

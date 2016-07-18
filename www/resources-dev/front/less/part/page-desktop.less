@@ -1,18 +1,459 @@
 /* 메인 */
 .page-index #container {
-	background-color: #eee;
+	background:#eee url('../images/main/bg_main-container.png') no-repeat left 120px;
 	
 	.contents {
 		width:920px;
 		margin:0 auto;
 		padding-top:20px;
+		
+		.bx-wrapper .bx-viewport {
+			height:61px !important;
+		} 
+		.stat-slide-w {
+			position:relative;
+			
+			ul.stat-slide {
+				height:54px;
+				background-color:#024583;
+				margin-top:7px;
+				position: relative;
+				
+				> li {
+					h3 {
+						display:inline-block;
+						padding:0 8px;
+						height:26px;
+						line-height:26px;
+						color:#003a72;
+						font-size:13px;
+						margin:14px;
+						width:145px;
+						background:#fff url('../images/main/bg_main-h3.png') no-repeat 93% 50%;
+						border-radius:3px;
+					}
+					
+					> ul {
+						position:absolute;
+						top:13px;
+						left:174px;
+						overflow:hidden;
+						display:block;
+						width:855px;
+						
+						> li {
+							display:block;
+							float:left;
+							color:#c7c7c7;
+							font-size:12px;
+							padding:0 12px;
+							background:url('../images/main/stat-slide-li.png') no-repeat 0 55%;
+							vertical-align:middle;
+							letter-spacing:-0.045em;
+							
+							&:first-child {
+								padding-left:0;
+								background:none;
+							}
+							
+							strong {
+								display:inline-block;
+								font-size:20px;
+								font-family:'Arial';
+								color:#fff;
+								vertical-align:middle;
+								padding:0 4px;
+								
+								em {
+									display:inline-block;
+									font-size:14px;
+									vertical-align:middle;
+									font-style:normal;
+								}
+							}
+						}
+					}
+				}
+			}
+			
+			.btn_slide_prev {
+				position:absolute;
+				top:15px;
+				right:58px;
+				z-index:99999;
+				display:block;
+				width:21px;
+				height:23px;
+				text-indent:-9999px;
+				background:url('../images/main/prev.png') no-repeat 50% 50%;
+			}
+			
+			.btn_slide_next {
+				position:absolute;
+				top:15px;
+				right:15px;
+				z-index:99999;
+				display:block;
+				width:21px;
+				height:23px;
+				text-indent:-9999px;
+				background:url('../images/main/next.png') no-repeat 50% 50%;
+			}
+			
+			.visual-roller {
+				position:absolute;
+				z-index:9999;
+				top:15px;
+				right:15px;
+				width:64px;
+				height:23px;
+				background:url('../images/main/bg_visual-roller.png') no-repeat 0 0;
+				
+				a.btn_pager_play {
+					display:block; 
+					width:22px;
+					height:23px;
+					margin-left:21px;
+					text-indent:-9999px;
+					background:url('../images/main/pause.png') no-repeat 50% 50%;
+				}
+				
+				a.btn_pager_play.on {
+					background-image:url('../images/main/play.png');	
+				}
+				
+				.btn_pager {
+					text-indent:-9999px;
+				}
+			}
+		}
+		
+		.grid-t {
+			padding-top:7px;
+			
+			ul {
+				overflow:hidden;
+				
+				li {
+					float:left;
+					width:306px;
+					border-right:1px solid #e0e0e0;
+					height:169px;
+					
+					&:first-child {
+						background:url('../images/main/bg_grid-t-1.png') no-repeat 0 0;
+					}
+					
+					&:nth-of-type(2) {
+						background:url('../images/main/bg_grid-t-2.png') no-repeat 0 0;
+					}
+					&:last-child {
+						border-right:0px none;
+						background:url('../images/main/bg_grid-t-3.png') no-repeat 0 0;
+					}
+					
+					a {
+						display:block;
+						width:100%;
+						height:100%;
+					}
+					
+					h3 {
+						padding:25px;
+						font-size:21px;
+						color:#333;
+						font-weight:normal;
+						margin:0;
+						padding-bottom:7px;
+						
+						strong {
+							font-weight:600;
+						}
+					}
+					
+					p {
+						font-size:12px;
+						color:#999;
+						padding:0 25px;
+						letter-spacing:-0.045em;
+					}
+				}
+			}
+		}
+		
+		.grid-b {
+			padding-bottom:40px;
+			
+			> ul {
+				overflow:hidden;
+				
+				> li {
+					float:left;
+					width:306px;
+					height:169px;
+					
+					&:first-child {
+						background-color:#fff;
+						border-top:1px solid #e0e0e0;
+						position:relative;
+
+						ul.tab {
+							overflow:hidden;
+							padding:24px 0 15px 24px;
+							
+							li {
+								float:left;
+								padding:0 7px;
+								background:url('../images/main/bg_notice-li.png') no-repeat 0 50%;
+								
+								&:first-child {
+									padding-left:0;
+									background:none;
+								}
+								
+								a {
+									display:block;
+									font-size:16px;
+									color:#c5c5c5;
+									font-weight:600;
+									letter-spacing:-0.045em;
+								}
+								
+								&.active a {
+									border-bottom:2px solid #333;
+									color:#333;
+								}
+							}
+						}
+						
+						ul.list {
+							margin-left:24px;
+							li {
+								a {
+									font-size:12px;
+									color:#666;
+								}
+							}
+						}
+						
+						p.more {
+							position: absolute;
+							right:18px;
+							top:28px;
+							
+							a {
+								font-size:11px;
+								color:#999;
+								display:block;
+								padding-right:10px;
+								background:url('../images/main/notice-more.png') no-repeat 100% 50%;
+							}	
+						}
+					}
+					
+					&:nth-of-type(2) {
+						height:170px;
+						background:#0094f2 url(../images/main/bg_stat-down.png) no-repeat right bottom;
+						a {
+							display:block;
+							height:100%;
+						}
+						
+						h3 {
+							margin:0;
+							font-size:13px;
+							font-weight:600;
+							color:#fff;
+							padding-left:30px;
+							padding-top:35px;
+							
+							span {
+								display:block;
+								font-size:38px;
+								font-weight:normal;
+								padding-top:4px;
+								
+								
+								strong {
+									font-weight:600;
+								}
+							}
+						}
+						
+						em {
+							font-size:12px;
+							font-weight:normal;
+							color:#fff;
+							font-style:normal;
+							display:block;
+							margin:19px 0 0 58px;
+						}
+					}
+					
+					&:last-child {
+						background-color:#ffc100;
+
+						.bx-wrapper .bx-viewport {
+							height:170px !important;
+						} 
+						
+						ul.main-slider {
+							li {
+								display:block;
+								width:306px !important;
+								height:170px;
+								
+								&:first-child {
+									background:url('../images/main/bg_b-last-1.png') no-repeat right bottom;
+								}
+								
+								&:nth-of-type(2) {
+									background:url('../images/main/bg_b-last-2.png') no-repeat right bottom;
+								}
+								
+								span {
+									display:block;
+									margin:40px 0 0 30px;
+									font-size:28px;
+									line-height:1.1em;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
 	}
 	
+	/** RESET AND LAYOUT
+	===================================*/
+	
+	.bx-wrapper {
+		position: relative;
+		width:100%;
+		margin: 0 auto;
+		height:100%;
+		padding: 0;
+		*zoom: 1;
+	}
+	
+	
+	/** THEME
+	===================================*/
+	
+	.bx-wrapper .bx-viewport {
+		
+		/*fix other elements on the page moving (on Chrome)*/
+		-webkit-transform: translatez(0);
+		-moz-transform: translatez(0);
+	    	-ms-transform: translatez(0);
+	    	-o-transform: translatez(0);
+	    	transform: translatez(0);
+	}
+	
+	.bx-wrapper .bx-pager,
+	.bx-wrapper .bx-controls-auto {
+		position: absolute;
+		bottom: -1px;
+	}
+	
+	/* PAGER */
+	
+	.bx-wrapper .bx-pager {
+		position:absolute;
+		padding-top: 0px;
+		top:20px;
+		right:0;
+		width:50px !important;
+	}
+	
+	.bx-wrapper .bx-pager .bx-pager-item,
+	.bx-wrapper .bx-controls-auto .bx-controls-auto-item {
+		display: inline-block;
+		*zoom: 1;
+		*display: inline;
+	}
+	
+	.bx-wrapper .bx-pager.bx-default-pager a {
+		text-indent: -9999px;
+		display: block;
+		width: 7px;
+		height: 7px;
+		margin: 0 2px;
+		outline: 0;
+		background:url('../images/main/bul.png') no-repeat 0 0;
+	}
+	
+	.bx-wrapper .bx-pager.bx-default-pager a:hover,
+	.bx-wrapper .bx-pager.bx-default-pager a.active {
+		background:url('../images/main/bul-over.png') no-repeat 0 0;
+	}
+	
+	/* DIRECTION CONTROLS (NEXT / PREV) */
+	
+	.bx-wrapper .bx-controls-direction {
+		display:none;
+		width:1200px;
+		margin:0 auto;
+		position:relative;
+	}
+	
+	.bx-wrapper .bx-controls-direction a {
+		position: absolute;
+		outline: 0;
+		width: 50px;
+		height: 50px;
+		text-indent: -9999px;
+		transition:background 0.2s ease;
+	}
+	
+	.bx-wrapper .bx-controls-direction a.disabled {
+		display: block;
+	}
+	
+	
+	.bx-wrapper .bx-controls-auto .bx-stop:hover,
+	.bx-wrapper .bx-controls-auto .bx-stop.active {
+		background-position: -86px -33px;
+	}
+	
+	/* PAGER WITH AUTO-CONTROLS HYBRID LAYOUT */
+	
+	.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
+		text-align: center;
+		width: 100%;
+	}
+	
+	.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
+		right: 0;
+		width: 35px;
+	}
+	
+	/* IMAGE CAPTIONS */
+	
+	.bx-wrapper .bx-caption {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		background: #666\9;
+		background: rgba(80, 80, 80, 0.75);
+		width: 100%;
+	}
+	
+	.bx-wrapper .bx-caption span {
+		color: #fff;
+		font-family: Arial;
+		display: block;
+		font-size: .85em;
+		padding: 10px;
+	}
+		
+	
 	.main-on{
-	display:none;
-	position: absolute;
-	left: 0;
-	top: 0;
+		display:none;
+		position: absolute;
+		left: 0;
+		top: 0;
 	}
 	.main-on2{
 		display:none;
@@ -29,12 +470,6 @@
 		position:relative;	
 	}
 	
-	.menu-pos {
-		position:absolute;
-		top:232px;
-		left:290px;
-	}
-	
 	.menu-wrap {
 		position:relative;
 		width:920px;
@@ -44,12 +479,12 @@
 	}
 	
 	.menu-wrap .menu {
-		width:66.6%;
+		width: 612px;
 		position:absolute;
 		top:0;
 		left:0;
 		height:349px;
-		z-index:200;
+		z-index:400;
 	}
 	
 	.menu-wrap .menu > ul {
@@ -98,6 +533,11 @@
 		left:0;
 		z-index:500;
 		width:100%;
+		display: none;
+	}
+	
+	.menu-wrap .menu > ul > li:hover .depth2 {
+		display: inline-block;
 	}
 	
 	.menu-wrap .menu > ul > li .depth2 h3 {
@@ -114,13 +554,17 @@
 	
 	.menu-wrap .menu > ul > li .depth2 h3 strong {
 		position:absolute;
-		top:21px;
+		top:16px;
 		left:15px;
+	}
+	
+	.menu-wrap .menu > ul > li .depth2 h3 strong.txt {
+		top:21px;
 	}
 	
 	.menu-wrap .menu > ul > li .depth2 h3 span {
 		position:absolute;
-		top:18px;
+		top:12%;
 		right:20px;
 	}
 	
@@ -132,6 +576,7 @@
 		position:absolute;
 		bottom:1px;
 		border-top:1px solid rgba(0,0,0,0.2);
+		z-index:999;
 	}
 	
 	.menu-wrap .menu > ul > li .depth2 > ul > li > a {
@@ -205,11 +650,98 @@
 	}
 	
 	
+	.menu-wrap .stat {
+		width:306px;
+		height:347px;
+		
+		.bx-wrapper .bx-viewport {
+			height:347px !important;
+			
+			ul.menu-slide {
+				height:347px;
+				width:306px;
+				
+				li {
+					height:347px !important;
+					width:306px !important;
+					background:#f9f9f9 url('../images/main/menu-slide1.png') no-repeat 50% 60%;
+					position: relative;
+					
+					h3 {
+						display:block;
+						font-size:24px;
+						color:#024583;
+						margin:23px;
+						
+						strong {
+							font-weight:600;
+						}
+						em {
+							font-style:normal;
+							display:block;
+							font-size:12px;
+							color:#a9a9a9;
+						}
+					}
+					
+					span {
+						display:block;
+						width:100%;
+						text-align:center;
+						position: absolute;
+						bottom:20px;
+						font-size:13px;
+						font-weight: 600;
+						color:#444;
+					}
+				}
+			}
+		}
+		
+		.bx-wrapper .bx-pager {
+			position:absolute;
+			padding-top: 0px;
+			top:33px;
+			right:26px;
+			width:50px !important;
+		}
+		
+		.bx-wrapper .bx-pager.bx-default-pager a {
+			background:url('../images/main/menu-slide-bul.png') no-repeat 0 0;
+			width:8px;
+			height:8px;
+		}
+		
+		.bx-wrapper .bx-pager.bx-default-pager a:hover,
+		.bx-wrapper .bx-pager.bx-default-pager a.active {
+			background:url('../images/main/menu-slide-bul-over.png') no-repeat 0 0;
+		}
+		
+	}
+	
 	.menu-wrap .more-click {
 		position:absolute;
 		top:0;
 		left:612px;
 		z-index:300;
+		display: inline-block;
+		width: 46px;
+		height: 347px;
+	}
+	.menu-wrap .more-click a{
+		position: absolute;
+		left: 0;
+		top: 0;
+		display: block;
+		width: 100%;
+		height: 347px;
+		
+		img {
+			height:100%;
+		}
+	}
+	.menu-wrap .more-click a.close {
+		display: none;
 	}
 	
 	.menu-wrap .stat {
@@ -218,6 +750,7 @@
 		top:0;
 		z-index:100;
 	}
+
 }
 
 /* 알림마당 - 국토교통통계 소개 */
@@ -1090,7 +1623,7 @@
 				
 				a {
 					display:block;
-					height:31px;
+					min-height:31px;
 					line-height:31px;
 					font-size:12px;
 					color:#666;
@@ -1106,7 +1639,7 @@
 
 .page-data-system, .page-data-quality {
 	dl.purpose {
-		height:252px;
+		padding-bottom:20px;
 		padding-left:290px;
 		background:url('../images/sub/bg_data-system_dl.png') no-repeat 70px 50%;
 		
@@ -1174,7 +1707,7 @@
 		}
 	}
 	
-	.tab1-con {
+	.tab-pane {
 		 h3 {
 		 	font-size:22px;
 		 	color:#034a87;
@@ -1194,6 +1727,12 @@
 		 			}
 		 			
 		 			dd {
+		 				line-height:1.6em;
+		 				
+		 				a {
+		 					display:block;
+		 					color:#444;
+		 				}
 		 			
 		 				>ul {
 		 				
@@ -1638,4 +2177,27 @@
 		color:#444;
 		line-height:1.6em;
 	}
+}
+
+.quality-detail {
+	padding-bottom:40px;
+	h2 {
+		font-size:19px;
+		font-weight: 600;
+	}
+	
+	h3 {
+		font-size:16px;
+	}
+	
+	ol {
+		li {
+			line-height:1.6em;
+			padding-bottom:10px;
+		}
+	}
+}
+
+.center {
+	text-align:center;
 }
