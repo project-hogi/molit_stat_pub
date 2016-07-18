@@ -123,3 +123,40 @@ jQuery(function($) {
 	});
 
 });
+
+jQuery(function($){
+	
+	$(document).on('click', 'area[href$=toggle-lnb]', function(event){
+		event.preventDefault();
+		
+		if($('#wrap').hasClass('on')){
+			$('#wrap').removeClass('on');
+			$('.main-on').stop().fadeOut();
+		}else{
+			$('#wrap').addClass('on');
+			$('.main-on').stop().fadeIn();
+		}
+		
+	});
+	$(document).on('click', 'area[href$=toggle-lnb2]', function(event){
+		event.preventDefault();
+		
+		if($('#wrap').hasClass('on')){
+			$('#wrap').removeClass('on');
+			$('.main-on2').stop().fadeOut();
+		}else{
+			$('#wrap').addClass('on');
+			$('.main-on2').stop().fadeIn();
+		}
+		
+	});
+	$(document).on('click', 'area[href$=close-toppopup]', function(event){
+		event.preventDefault();
+		
+		$('.toppopup').stop().animate({"margin-top":-80}, 800, "easeInOutExpo");
+	});
+	setTimeout(function(){
+		$('.toppopup').stop().animate({"margin-top":0}, 1600, "easeInOutExpo");
+	}, 1000);
+
+});
