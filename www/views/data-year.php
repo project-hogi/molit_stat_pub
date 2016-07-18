@@ -26,7 +26,10 @@
 					Statistical Year Book of MOLIT
 				</dd>
 				<dd class="img">
-					<span class="upload-img" style="background-image:url('<?php echo $config["imageFolder"]; ?>/temp_data/data-year-img1.png');"></span>
+					<span class="upload-img">
+						<em class="img-detail" style="background-image:url('<?php echo $config["imageFolder"]; ?>/temp_data/data-year-img1.png');">
+						</em>
+					</span>
 				</dd>
 				<dd class="detail">
 					자세히보기
@@ -42,7 +45,10 @@
 					Statistical Year Book of MOLIT
 				</dd>
 				<dd class="img">
-					<span class="upload-img" style="background-image:url('<?php echo $config["imageFolder"]; ?>/temp_data/data-year-img2.png');"></span>
+					<span class="upload-img">
+						<em class="img-detail" style="background-image:url('<?php echo $config["imageFolder"]; ?>/temp_data/data-year-img2.png');">
+						</em>
+					</span>
 				</dd>
 				<dd class="detail">
 					자세히보기
@@ -58,7 +64,10 @@
 					Statistical Year Book of MOLIT
 				</dd>
 				<dd class="img">
-					<span class="upload-img" style="background-image:url('<?php echo $config["imageFolder"]; ?>/temp_data/data-year-img3.png');"></span>
+					<span class="upload-img">
+						<em class="img-detail" style="background-image:url('<?php echo $config["imageFolder"]; ?>/temp_data/data-year-img3.png');">
+						</em>
+					</span>
 				</dd>
 				<dd class="detail">
 					자세히보기

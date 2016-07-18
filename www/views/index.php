@@ -553,9 +553,9 @@
 		</div><!-- //menu-wrap -->
 	</div><!-- //menu-pos -->
 	<div class="stat-slide-w">
+		<h3>숫자로 보는 국토교통</h3>
 		<ul class="stat-slide">
 			<li>
-				<h3>숫자로 보는 국토교통</h3>
 				<ul>
 					<li>
 						전구도로연장 <strong>105,673<em>km</em></strong>(2014년)
@@ -569,7 +569,6 @@
 				</ul>
 			</li>
 			<li>
-				<h3>숫자로 보는 국토교통</h3>
 				<ul>
 					<li>
 						전구도로연장 <strong>101,243<em>km</em></strong>(2014년)
@@ -583,7 +582,6 @@
 				</ul>
 			</li>
 			<li>
-				<h3>숫자로 보는 국토교통</h3>
 				<ul>
 					<li>
 						전구도로연장 <strong>195,502<em>km</em></strong>(2014년)
@@ -639,36 +637,99 @@
 	</div>
 	<div class="grid-b">
 		<ul>
-			<li>
-				<ul class="tab">
-					<li class="active">
-						<a href="#">공지</a>
+			<li class="notice-slide">
+				<ul>
+					<li>
+						<ul class="tab">
+							<li class="active">
+								<a href="#">공지</a>
+							</li>
+							<li>
+								<a href="#">보도자료</a>
+							</li>
+							<li>
+								<a href="#">통계관련파일</a>
+							</li>
+						</ul>
+						<ul class="list">
+							<li>
+								<a href="#">통계알리미 장려상(당신은 행복하십니까?)</a>
+							</li>
+							<li>
+								<a href="#">통계알리미 장려상(당신은 행복하십니까?)</a>
+							</li>
+							<li>
+								<a href="#">통계알리미 장려상(당신은 행복하십니까?)</a>
+							</li>
+							<li>
+								<a href="#">통계알리미 장려상(당신은 행복하십니까?)</a>
+							</li>
+						</ul>
+						<p class="more">
+							<a href="#">더보기</a>
+						</p>
 					</li>
 					<li>
-						<a href="#">보도자료</a>
+						<ul class="tab">
+							<li>
+								<a href="#">공지</a>
+							</li>
+							<li class="active">
+								<a href="#">보도자료</a>
+							</li>
+							<li>
+								<a href="#">통계관련파일</a>
+							</li>
+						</ul>
+						<ul class="list">
+							<li>
+								<a href="#">통계알리미 장려상(당신은 행복하십니까?)</a>
+							</li>
+							<li>
+								<a href="#">통계알리미 장려상(당신은 행복하십니까?)</a>
+							</li>
+							<li>
+								<a href="#">통계알리미 장려상(당신은 행복하십니까?)</a>
+							</li>
+							<li>
+								<a href="#">통계알리미 장려상(당신은 행복하십니까?)</a>
+							</li>
+						</ul>
+						<p class="more">
+							<a href="#">더보기</a>
+						</p>
 					</li>
 					<li>
-						<a href="#">통계관련파일</a>
+						<ul class="tab">
+							<li>
+								<a href="#">공지</a>
+							</li>
+							<li>
+								<a href="#">보도자료</a>
+							</li>
+							<li class="active">
+								<a href="#">통계관련파일</a>
+							</li>
+						</ul>
+						<ul class="list">
+							<li>
+								<a href="#">통계알리미 장려상(당신은 행복하십니까?)</a>
+							</li>
+							<li>
+								<a href="#">통계알리미 장려상(당신은 행복하십니까?)</a>
+							</li>
+							<li>
+								<a href="#">통계알리미 장려상(당신은 행복하십니까?)</a>
+							</li>
+							<li>
+								<a href="#">통계알리미 장려상(당신은 행복하십니까?)</a>
+							</li>
+						</ul>
+						<p class="more">
+							<a href="#">더보기</a>
+						</p>
 					</li>
 				</ul>
-				<ul class="list">
-					<li>
-						<a href="#">통계알리미 장려상(당신은 행복하십니까?)</a>
-					</li>
-					<li>
-						<a href="#">통계알리미 장려상(당신은 행복하십니까?)</a>
-					</li>
-					<li>
-						<a href="#">통계알리미 장려상(당신은 행복하십니까?)</a>
-					</li>
-					<li>
-						<a href="#">통계알리미 장려상(당신은 행복하십니까?)</a>
-					</li>
-					
-				</ul>
-				<p class="more">
-					<a href="#">더보기</a>
-				</p>
 			</li>
 			<li>
 				<a href="#">

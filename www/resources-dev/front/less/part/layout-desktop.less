@@ -13,7 +13,6 @@ body.layout-page {
 	left: 0;
 	top: 0;
 	z-index: 300;
-	overflow: hidden;
 	
 	&, .container{
 		height: 100px;
@@ -183,7 +182,6 @@ body.layout-page {
 		position:absolute;
 		top:67px;
 		left:668px;
-		overflow:hidden;
 		width:240px;
 		height:34px;
 		background:url('../images/common/bg_search-box.png') no-repeat 0 0;
@@ -197,6 +195,7 @@ body.layout-page {
 		text-indent:-9999px;
 		margin:0;
 		line-height:34px;
+		cursor:pointer;
 	}
 	
 	.search-box input {
@@ -213,6 +212,40 @@ body.layout-page {
 		height:34px;
 		background:url('../images/common/search-btn.png') no-repeat 50% 50%;
 		text-indent:-9999px;
+	}
+	
+	
+	.search-box .select-click-over {
+		display:none;
+		position:absolute;
+		z-index:9999;
+		top:34px;
+		left:0;
+		width:70px;
+		
+		ul {
+			overflow:hidden;
+			border:1px solid #e3e3e3;
+			
+			li {
+				border-bottom:1px solid #e3e3e3;
+				
+				&:last-child {
+					border-bottom:0px none;
+				}
+				
+				a {
+					display:block;
+					width:160px;
+					height:33px;
+					line-height:33px;
+					background-color:#fff;
+					padding-left:10px;
+					font-size:11px;
+					color:#666;
+				}
+			}
+		}
 	}
 	
 }
@@ -752,7 +785,6 @@ table.board-primary {
 #footer{
 	position: relative;
 	z-index: 200;
-	overflow: hidden;
 	background-color: #fff;
 	height:177px;
 	
@@ -767,41 +799,44 @@ table.board-primary {
 			width:1000px;
 			margin:0 auto;
 			
-			ul {
-				width:1000px;
-				margin:0 auto;
-				padding-left:20px; 
+			nav {
 				
-				li {
-					display:inline-block;
-					padding:0 13px;
-					background:url('../images/common/bg_ft_list.png') no-repeat 0 50%;
+				ul {
+					width:1000px;
+					margin:0 auto;
+					padding-left:20px; 
 					
-					&:first-child {
-						background:none;
-					}
-					
-					a {
+					li {
 						display:inline-block;
-						height:53px;
-						line-height:53px;
-						font-size:14px;
-						color:#333;
-						font-weight:600;
-						letter-spacing:-0.045em;
+						padding:0 13px;
+						background:url('../images/common/bg_ft_list.png') no-repeat 0 50%;
 						
-						&:hover {
-							border-bottom:3px solid #034a87;
+						&:first-child {
+							background:none;
 						}
+						
+						a {
+							display:inline-block;
+							height:53px;
+							line-height:53px;
+							font-size:14px;
+							color:#333;
+							font-weight:600;
+							letter-spacing:-0.05em;
+							
+							&:hover {
+								border-bottom:3px solid #034a87;
+							}
+						}
+						
 					}
-					
 				}
 			}
 			
 			p.site {
 				position: absolute;
 				top:10px;
-				right:0;
+				right:30px;
 				
 				span {
 					display:inline-block;
@@ -817,6 +852,7 @@ table.board-primary {
 						height:100%;
 						color:#666;
 						padding-left:10px;
+						cursor:pointer;
 					}
 				}
 				
@@ -831,6 +867,37 @@ table.board-primary {
 					border-radius:2px;
 					font-size:11px;
 					font-family:'돋움',Dotum; 
+				}
+			}
+			
+			.site-over {
+				display:none;
+				position:absolute;
+				right:67px;
+				bottom:44px;
+				
+				ul {
+					overflow:hidden;
+					border:1px solid #e3e3e3;
+					
+					li {
+						border-bottom:1px solid #e3e3e3;
+						
+						&:last-child {
+							border-bottom:0px none;
+						}
+						
+						a {
+							display:block;
+							width:160px;
+							height:33px;
+							line-height:33px;
+							background-color:#fff;
+							padding-left:10px;
+							font-size:11px;
+							color:#666;
+						}
+					}
 				}
 			}
 		}
@@ -924,7 +991,6 @@ table.board-primary {
 				}
 							
 				.search-box {
-					overflow:hidden;
 					width:240px;
 					height:34px;
 					background:url('../images/common/bg_search-box.png') no-repeat 0 0;

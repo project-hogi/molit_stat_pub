@@ -25,9 +25,28 @@
 						</ul>
 				    </nav>
 				    <p class="site">
-				    	<span><a href="#">국외 통계사이트</a></span>
+				    	<span><a>국외 통계사이트</a></span>
 				    	<a href="#" class="go-page">이동</a>
 				    </p>
+				    <div class="site-over">
+				    	<ul>
+				    		<li>
+				    			<a href="#">OECD 통계포털</a>
+				    		</li>
+				    		<li>
+				    			<a href="#">OECD 통계포털</a>
+				    		</li>
+				    		<li>
+				    			<a href="#">OECD 통계포털</a>
+				    		</li>
+				    		<li>
+				    			<a href="#">OECD 통계포털</a>
+				    		</li>
+				    		<li>
+				    			<a href="#">OECD 통계포털</a>
+				    		</li>
+				    	</ul>
+				    </div>
 				</div>
 				<div class="container">
 					<address>

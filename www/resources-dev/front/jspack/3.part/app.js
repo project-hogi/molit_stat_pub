@@ -235,5 +235,48 @@ jQuery(function($) {
 		});
 		
 	});
+	
+	$('.page-index').each(function() {
+		$('.notice-slide').each(function() {
+			var $visual = $(this);
+			var $visualContent = $('>ul', $visual);
+			var options = {
+				slides : '>li',
+				timeout: 2400,
+				fx: 'fade',
+				log: false,
+				pauseOnHover: true,
+				pagerActiveClass: 'on'
+			};
+			var $prev = $('.btn_slide_prev', $visual).each(function(){
+				options.prev = this;
+			});
+			var $next = $('.btn_slide_next', $visual).each(function(){
+				var $this = $(this);
+				
+				options.next = this;
+				
+				setTimeout(function(){
+					$this.click();
+				}, 2000);
+			});
+			var $pager = $('.btn_pager', $visual).each(function(){
+				options.pager = this;
+				options.pagerTemplate = '';
+				options.pagerEvent = 'mouseover';
+			});
+						
+			$visualContent.cycle(options);
+		});
+		
+		$('p.site').on('click', function() {
+			$('.site-over').toggle();
+		});
+		
+	});
+	
+	$('.select-click').on('click', function() {
+		$('.select-click-over').toggle();
+	});
 
 });
