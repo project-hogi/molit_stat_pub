@@ -2084,144 +2084,156 @@
 .data-year-view {
 	overflow:hidden;
 	
-		.le {
-			float:left;
+	.le {
+		float:left;
+		width:172px;
+		
+		strong {
+			display:block;
 			width:172px;
+			height:236px;
+			background:url('../images/sub/data-year-view-2014.png') no-repeat 0 0;
+			text-indent:-9999px;	
+		}
+		
+		span {
+			display:block;
+			margin-top:7px;
+			overflow:hidden;
+			vertical-align:middle;
+			padding-right:10px;
 			
-			strong {
-				display:block;
-				width:172px;
-				height:236px;
-				background:url('../images/sub/data-year-view-2014.png') no-repeat 0 0;
-				text-indent:-9999px;	
+			a {
+				display:inline-block;
+				vertical-align:middle;
+				margin:0 2px;
+				
+				&.all {
+					width:100px;
+					height:30px;
+					border:1px solid #d9d9d9;
+					border-radius:2px;
+					text-align:center;
+					line-height:30px;
+					font-size:11px;
+					font-family:'돋움', Dotum;
+					color:#444;
+					background:url('../images/sub/data-year-all-down.png') no-repeat 9px 50%;
+					padding-left:17px;
+					letter-spacing:-0.045em;
+				}
 			}
 			
-			span {
-				display:block;
-				margin-top:7px;
-				overflow:hidden;
-				vertical-align:middle;
-				padding-right:10px;
+			em {
+				float:right;
 				
 				a {
-					display:inline-block;
-					vertical-align:middle;
-					margin:0 2px;
-					
-					&.all {
-						width:100px;
-						height:30px;
-						border:1px solid #d9d9d9;
-						border-radius:2px;
-						text-align:center;
-						line-height:30px;
-						font-size:11px;
-						font-family:'돋움', Dotum;
-						color:#444;
-						background:url('../images/sub/data-year-all-down.png') no-repeat 9px 50%;
-						padding-left:17px;
-						letter-spacing:-0.045em;
-					}
-				}
-				
-				em {
-					float:right;
-					
-					a {
 
-						&.acrobat {
-							width:16px;
-							height:16px;
-							text-indent:-9999px;
-							background:url('../images/sub/down-acrobat.png') no-repeat 0 0;
-						}
-						
-						&.excel {
-							width:16px;
-							height:16px;
-							text-indent:-9999px;
-							background:url('../images/sub/down-excel.png') no-repeat 0 0;
-						}
+					&.acrobat {
+						width:16px;
+						height:16px;
+						text-indent:-9999px;
+						background:url('../images/sub/down-acrobat.png') no-repeat 0 0;
+					}
+					
+					&.excel {
+						width:16px;
+						height:16px;
+						text-indent:-9999px;
+						background:url('../images/sub/down-excel.png') no-repeat 0 0;
 					}
 				}
 			}
 		}
+	}
+	.ri {
+		float:right;
+		width:520px;
+		font-family:'돋움', Dotum;
 		
-		.ri {
-			float:right;
-			width:520px;
+		>ul {
+			border-top:2px solid #034a87;
 			
-			>ul {
-				border-top:2px solid #034a87;
-				li {
-					dl {
-						margin:0;
-						font-family:'돋움', Dotum;
-					
-						dt {
-							height:46px;
-							line-height:46px;
-							padding-left:15px;
-							font-size:14px;
-							color:#444;
+			li{
+				position: relative;
+			}
+			>li {
+				>span:first-child{
+					display: block;
+					border-bottom:1px solid #e7e7e7;
+					background:#fff url('../images/sub/bg_db_list-arrow.png') no-repeat 99% 50%;
+					cursor:pointer;
+					height:46px;
+					line-height:46px;
+					padding-left:15px;
+					font-size:14px;
+					font-weight: bold;
+					color:#444;
+				}
+				&.closed{
+					>span:first-child{
+						background-image: url('../images/sub/bg_db_list-arrow-closed.png');
+					}
+					>ul{
+						display: none;
+					}
+				}
+				>ul {
+					>li {
+						span:first-child{
+							display: block;
+							height:33px;
+							padding-left: 35px;
+							line-height:33px;
+							font-size:12px;
+							font-weight: bold;
+							color:#888;
+							background-color:#f9f9f9;
 							border-bottom:1px solid #e7e7e7;
-							background:#fff url('../images/sub/bg_db_list-arrow.png') no-repeat 99% 50%;
-							cursor:pointer;
 						}
-						
-						dd {
-							display:none;
-							
-							>ul {
-								li {
-									overflow:hidden;
-									height:33px;
-									line-height:33px;
-									font-size:12px;
-									color:#888;
-									background-color:#f9f9f9;
-									border-bottom:1px solid #e7e7e7;
-									
-									&.big {
-										padding-left:35px;
-										font-weight:600;									
-									}
-									
-									&.middle {
-										padding-left:65px;									
-									}
-									
-									&.small {
-										padding-left:80px;									
-									}
-									
-									span {
-										float:right;
-										
-										a {
-										vertical-align:middle;
-										display:inline-block;
-										text-indent:-9999px;
-										width:16px;
-										height:16px;
-										margin:0 2px;
-				
-										&.acrobat {
-											background:url('../images/sub/down-acrobat.png') no-repeat 0 0;
-										}
-										
-										&.excel {
-											background:url('../images/sub/down-excel.png') no-repeat 0 0;
-										}
-										
-										&.hangul {
-											background:url('../images/sub/down-hangul.png') no-repeat 0 0;
+						>ul{
+							>li{
+								span:first-child{
+									font-weight: normal;
+									padding-left: 65px;
+								}
+								>ul{
+									>li{
+										span:first-child{
+											padding-left: 80px;
 										}
 									}
 								}
 							}
 						}
 					}
+				}
+			}
+		}
+		.files{
+			position: absolute;
+			right: 5px;
+    		top: 4px;
+			
+			a {
+				vertical-align:middle;
+				display:inline-block;
+				text-indent:-9999px;
+				width:16px;
+				height:16px;
+				margin:0 2px;
+
+				&.acrobat {
+					background:url('../images/sub/down-acrobat.png') no-repeat 0 0;
+				}
+				&.excel {
+					background:url('../images/sub/down-excel.png') no-repeat 0 0;
+				}
+				&.hangul {
+					background:url('../images/sub/down-hangul.png') no-repeat 0 0;
+				}
+				&.zip {
+					background:url('../images/sub/down-zip.png') no-repeat 0 0;
 				}
 			}
 		}

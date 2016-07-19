@@ -9,8 +9,8 @@ jQuery(function($) {
 		$(this).parent('dl').find('dd').toggle();
 	});
 
-	$('.data-year-view .ri ul li dl dt').on('click', function() {
-		$(this).parent('dl').find('dd').toggle();
+	$('.data-year-view .ri>ul>li>span:first-child').on('click', function() {
+		$(this).parent().toggleClass("closed");
 	});
 
 	$('.lnb').each(function() {
