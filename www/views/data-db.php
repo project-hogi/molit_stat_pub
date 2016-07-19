@@ -1,9 +1,15 @@
 <?php $pagePath = __FILE__; ?>
 <?php $bodyClass = "layout-page"; ?>
 <?php require_once $_SERVER["DOCUMENT_ROOT"] . "/lib.php"; ?>
+<!--1111111144444441111111111111  -->
 <?php require "part/app-header.php"; ?>
+<!--111111111111111111111  -->
+<!--1111111115555555111111111111  -->
 <?php require "part/header.php"; ?>
+<!--111111111111111111111  -->
+<!--1111111666666611111111111111  -->
 <?php require "part/header-sub.php"; ?>
+<!--111111111111111111111  -->
 <h2>통계메타DB</h2>
 <p class="additional">통계메타DB 대한 출처, 발표주기 등의 메타정보를 확인하실 수 있습니다.</p>
 <dl class="paging">
@@ -1324,6 +1330,9 @@
 		</dl>
 	</li>
 </ul>
+<!-- 33333333333333333333333333333333 -->
 <?php require "part/footer-sub.php"; ?>
+<!-- 33333333333333333333333333333333 -->
 <?php require "part/footer.php"; ?>
+<!-- 33333333333333333333333333333333 -->
 <?php require "part/app-footer.php"; ?>

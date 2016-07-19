@@ -624,6 +624,9 @@
 			border-top:1px solid rgba(0,0,0,0.2);
 			z-index:999;
 			
+			>li{
+				position:relative;
+			}
 			> li > a {
 				display:block;
 				width:99%;
@@ -658,7 +661,11 @@
 		color:#00225c;
 	}
 	
+	.menu-wrap .menu > ul > li .depth2 > ul > li:hover > ul{
+		display: block;
+	}
 	.menu-wrap .menu > ul > li .depth2 > ul > li > ul {
+		display: none;
 		position:absolute;
 		top:0;
 		left:100%;
@@ -2169,6 +2176,10 @@
 					font-size:14px;
 					font-weight: bold;
 					color:#444;
+				}
+				>.files{
+					right: 42px;
+	   				top: 11px;
 				}
 				&.closed{
 					>span:first-child{

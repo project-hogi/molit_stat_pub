@@ -209,7 +209,7 @@ jQuery(function($) {
 			$moreOpen.stop().fadeOut(1200, 'easeInOutExpo');
 			$moreClose.stop().fadeIn(1200, 'easeInOutExpo');
 			setTimeout(function(){
-				$('img.menu4').attr('src','/resources-dev/front/images/main/menu4.png');
+				$('img.menu4').attr('src','/resources/front/images/main/menu4.png');
 			}, 600);
 		});
 		$obj.on('close', function(){
@@ -223,7 +223,7 @@ jQuery(function($) {
 			$moreOpen.stop().fadeIn(1200, 'easeInOutExpo');
 			$moreClose.stop().fadeOut(1200, 'easeInOutExpo');
 			setTimeout(function(){
-				$('img.menu4').attr('src','/resources-dev/front/images/main/menu4-ov.png');
+				$('img.menu4').attr('src','/resources/front/images/main/menu4-ov.png');
 			}, 600);
 		});
 	});
@@ -324,9 +324,9 @@ jQuery(function($) {
 	
 	$('.page-index').each(function(){
 		var images = [
-          "/resources-dev/front/images/common/bg_container-visual.png",
-          "/resources-dev/front/images/common/bg_container-visual2.png",
-          "/resources-dev/front/images/common/bg_container-visual3.png"
+          "/resources/front/images/common/bg_container-visual.png",
+          "/resources/front/images/common/bg_container-visual2.png",
+          "/resources/front/images/common/bg_container-visual3.png"
         ];
         var $body = $("body"),
             $bg = $(".page-index #bg"),
