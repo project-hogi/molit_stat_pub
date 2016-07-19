@@ -1,12 +1,57 @@
+.toppopup {
+	height:80px;
+	margin-top:-80px;
+	background:#024583 url('../images/main/bg_toppopup.png') no-repeat center 0;
+	
+	.toppopup-w {
+		width:1000px;
+		height:80px;
+		margin:0 auto;
+		position:relative;
+		
+		p.x-btn {
+			position:absolute;
+			bottom:0;
+			right:40px;
+			font-size:11px;
+			color:#fff;
+			vertical-align:middle;
+			margin:0;
+			line-height:22px;
+			
+			input {
+				vertical-align:top;
+			}
+			
+			a {
+				float:right;
+				display:block;
+				width:29px;
+				height:22px;
+				text-indent:-9999px;
+				background:url('../images/main/toppopup-btn.png') no-repeat 0 0;
+				margin-left:10px;
+			}
+		}
+	}
+}
 /* 메인 */
 .page-index #container {
-	background-color:#eee;
+	background:#eee url('../images/main/bg_header.png') repeat-x center 0;;
+	
+	#bg {		
+		position:absolute;
+		top:0;
+		width:100%;
+		height:100%;
+		background-position:center 55px;
+		background-repeat:no-repeat;
+	}
 	
 	.contents {
 		width:920px;
 		margin:0 auto;
 		padding-top:20px;
-		background:url('../images/main/bg_main-container.png') no-repeat left 0px;
 		
 		.bx-wrapper .bx-viewport {
 			height:61px !important;

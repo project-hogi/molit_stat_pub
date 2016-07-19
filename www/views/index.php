@@ -3,6 +3,7 @@
 <?php require_once $_SERVER["DOCUMENT_ROOT"] . "/lib.php"; ?>
 <?php require "part/app-header.php"; ?>
 <?php require "part/header.php"; ?>
+<?php require "part/header-main.php"; ?>
 <div class="contents">
 	<div class="menu-pos">
 		<div class="menu-wrap">
