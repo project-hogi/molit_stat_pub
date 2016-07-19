@@ -20,6 +20,7 @@
 		<div class="ri">
             <ul>
             	<li><span>Ⅰ.일반통계</span>
+            		<span class="files"> <a href="#" class="hangul"> 한글파일 다운 </a> </span>
             		<ul>
             			<li><span> Ⅰ-1. 일반통계</span> <span class="files"> <a href="#" class="hangul"> 한글파일 다운 </a> </span>
             				<ul>
