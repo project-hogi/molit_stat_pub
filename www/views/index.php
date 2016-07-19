@@ -607,7 +607,7 @@
 	<div class="grid-t">
 		<ul>
 			<li>
-				<a href="#">
+				<a href="stat-field.php">
 					<h3><strong>분야별</strong>통계</h3>
 					<p>
 						국토교통통계누리에서 분야별로 세분화된<br> 
@@ -616,7 +616,7 @@
 				</a>
 			</li>
 			<li>
-				<a href="#">
+				<a href="stat-department.php">
 					<h3><strong>부서별</strong>통계</h3>
 					<p>
 						국토교통통계누리에서 분야별로 세분화된 <br>
@@ -625,7 +625,7 @@
 				</a>
 			</li>
 			<li>
-				<a href="#">
+				<a href="stat-area.php">
 					<h3><strong>지역별</strong>통계</h3>
 					<p>
 						국토교통통계누리에서 분야별로 세분화된 <br>
@@ -666,7 +666,7 @@
 							</li>
 						</ul>
 						<p class="more">
-							<a href="#">더보기</a>
+							<a href="notice-notice.php">더보기</a>
 						</p>
 					</li>
 					<li>
@@ -696,7 +696,7 @@
 							</li>
 						</ul>
 						<p class="more">
-							<a href="#">더보기</a>
+							<a href="notice-colmn.php">더보기</a>
 						</p>
 					</li>
 					<li>
@@ -732,7 +732,7 @@
 				</ul>
 			</li>
 			<li>
-				<a href="#">
+				<a href="data-year.php">
 					<h3>통계자료 다운로드 서비스!<span><strong>통계</strong>연보</span></h3>
 					<em>다운로드</em>
 				</a>

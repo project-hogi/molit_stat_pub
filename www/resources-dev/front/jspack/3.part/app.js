@@ -15,8 +15,8 @@ jQuery(function($) {
 
 	$('.lnb').each(function() {
 		var $lnb = $(this);
-		var $statNav = $(this).find('>ul>li.stat');
-		var $statDepth2Wrap = $('.stat-depth2');
+		var $statNav = $(this).find('>ul>li.notice');
+		var $statDepth2Wrap = $('.depth2-1');
 		var timeoutId = null;
 
 		$statNav.on('mouseenter', function() {
@@ -62,6 +62,57 @@ jQuery(function($) {
 			}
 		});
 	});
+	
+	$('.lnb').each(function() {
+		var $lnb = $(this);
+		var $statNav = $(this).find('>ul>li.stat');
+		var $statDepth2Wrap = $('.depth2-2');
+		var timeoutId = null;
+
+		$statNav.on('mouseenter', function() {
+			$lnb.trigger('start');
+		});
+		$(this).find('>ul>li').not($statNav).on('mouseenter', function() {
+			$lnb.trigger('endNow');
+		});
+		$statNav.on('mouseleave', function() {
+			$lnb.trigger('end');
+		});
+		$statDepth2Wrap.find('>*').on('mouseenter', function() {
+			$lnb.trigger('start');
+		});
+		$statDepth2Wrap.find('>*').on('mouseleave', function() {
+			$lnb.trigger('end');
+		});
+		$statDepth2Wrap.find('.close a').on('click', function(event) {
+			event.preventDefault();
+			
+			$lnb.trigger('endNow');
+		});
+		$(this).on('start', function() {
+			$statDepth2Wrap.fadeIn();
+
+			timeoutId != null && clearTimeout(timeoutId);
+		});
+		$(this).on('end', function() {
+			timeoutId != null && clearTimeout(timeoutId);
+
+			timeoutId = setTimeout(function() {
+				$statDepth2Wrap.stop().fadeOut();
+			}, 500);
+		});
+		$(this).on('endNow', function() {
+			timeoutId != null && clearTimeout(timeoutId);
+
+			$statDepth2Wrap.stop().fadeOut();
+		});
+		$statDepth2Wrap.on("click mouseover", function(event){
+			if(event.target == event.currentTarget){
+				$lnb.triggerHandler("endNow");
+			}
+		});
+	});
+	
 
 	$(window).scroll(function() {
 
@@ -269,14 +320,14 @@ jQuery(function($) {
 			$visualContent.cycle(options);
 		});
 		
-		$('p.site').on('click', function() {
-			$('.site-over').toggle();
-		});
-		
 	});
 	
 	$('.select-click').on('click', function() {
 		$('.select-click-over').toggle();
+	});
+	
+	$('p.site').on('click', function() {
+		$('.site-over').toggle();
 	});
 
 });
