@@ -31,19 +31,19 @@
 				    <div class="site-over">
 				    	<ul>
 				    		<li>
-				    			<a href="#">OECD 통계포털</a>
+				    			<a href="javscript:;">OECD 통계포털</a>
 				    		</li>
 				    		<li>
-				    			<a href="#">OECD 통계포털</a>
+				    			<a href="javscript:;">OECD 통계포털</a>
 				    		</li>
 				    		<li>
-				    			<a href="#">OECD 통계포털</a>
+				    			<a href="javscript:;">OECD 통계포털</a>
 				    		</li>
 				    		<li>
-				    			<a href="#">OECD 통계포털</a>
+				    			<a href="javscript:;">OECD 통계포털</a>
 				    		</li>
 				    		<li>
-				    			<a href="#">OECD 통계포털</a>
+				    			<a href="javscript:;">OECD 통계포털</a>
 				    		</li>
 				    	</ul>
 				    </div>

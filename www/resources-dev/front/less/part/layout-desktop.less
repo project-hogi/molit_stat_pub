@@ -226,10 +226,16 @@ body.layout-index {
 				width:90px;
 				height:50px;
 				background:url('../images/common/select-click.png') no-repeat 55% 50%;
-				text-indent:-9999px;
 				margin:0;
-				line-height:34px;
+				line-height:50px;
 				cursor:pointer;
+				padding-left:14px;
+				font-size:12px;
+				color:#034a87;
+				
+				&.on {
+					background-image:url('../images/common/select-click-over.png');
+				}
 			}
 			
 			input {
@@ -250,7 +256,6 @@ body.layout-index {
 			}
 			
 			.select-click-over {
-				display:none;
 				position:absolute;
 				z-index:9999;
 				top:50px;
@@ -432,11 +437,17 @@ body.layout-page {
 				display:inline-block;
 				width:70px;
 				height:34px;
-				background:url('../images/common/select-click.png') no-repeat 80% 50%;
-				text-indent:-9999px;
+ 				background:url('../images/common/select-click.png') no-repeat 80% 50%;
 				margin:0;
 				line-height:34px;
 				cursor:pointer;
+				padding-left:10px;
+				font-size:11px;
+				color:#034a87;
+				
+				&.on {
+					background-image:url('../images/common/select-click-over.png');					
+				}
 			}
 			
 			input {
@@ -1258,6 +1269,10 @@ body.layout-page {
 					font-size:11px;
 					line-height:33px;
 					
+					&.on {
+						background-image:url('../images/common/bg_ft-site-over.png');
+					}
+					
 					a {
 						display:block;
 						width:100%;
@@ -1283,7 +1298,6 @@ body.layout-page {
 			}
 			
 			.site-over {
-				display:none;
 				position:absolute;
 				right:67px;
 				bottom:44px;
