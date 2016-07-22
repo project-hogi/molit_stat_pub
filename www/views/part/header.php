@@ -18,6 +18,3 @@
 		</p>
 	</div>
 </div>
-<div id="wrap">
-	<div id="header">
-		<div class="container">

@@ -24,26 +24,27 @@
 							</li>
 						</ul>
 				    </nav>
-				    <p class="site">
+				    <input type="hidden" name="searchOption" class="search-option" />
+				    <p class="site" data-value="">
 				    	<span><a>국외 통계사이트</a></span>
 				    	<a href="#" class="go-page">이동</a>
 				    </p>
 				    <div class="site-over">
 				    	<ul>
 				    		<li>
-				    			<a href="javscript:;">OECD 통계포털</a>
+				    			<a href="#" data-value="">국외 통계사이트</a>
 				    		</li>
 				    		<li>
-				    			<a href="javscript:;">OECD 통계포털</a>
+				    			<a href="#" data-value="1">OECD 통계포털</a>
 				    		</li>
 				    		<li>
-				    			<a href="javscript:;">OECD 통계포털</a>
+				    			<a href="#" data-value="2">OECD 통33333</a>
 				    		</li>
 				    		<li>
-				    			<a href="javscript:;">OECD 통계포털</a>
+				    			<a href="#" data-value="3">OECD 통계555554</a>
 				    		</li>
 				    		<li>
-				    			<a href="javscript:;">OECD 통계포털</a>
+				    			<a href="#" data-value="4">OECD 통444441</a>
 				    		</li>
 				    	</ul>
 				    </div>

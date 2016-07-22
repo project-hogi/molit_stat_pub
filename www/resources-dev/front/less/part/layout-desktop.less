@@ -1,11 +1,140 @@
 body.layout-page {
 	background-color:#f9f9f9;
+	
+	.toppopup {
+		display:none;
+	}
+	
 }
 
 #wrap{
 	position: relative;
 	height: 100%;
 	min-width:1000px !important;
+
+.dim { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: #000; opacity: 0.5; z-index: 900;}
+.sitemap_pc {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url("../images/common/bg_trans_blank.png") repeat center;
+	overflow-y: auto;
+	z-index: 10000;
+}
+
+.sitemap_pc.on {
+	display: block;
+}
+.sitemap_pc_wrap {
+	margin: 0 auto;
+	padding: 70px 41px 130px 41px;
+	width: 1000px;
+}
+
+.sitemap_pc_wrap h3 {
+	font-size:36px;
+	color:#fff;
+	font-weight:normal;
+	
+	strong {
+		font-weight:600;
+	}
+	
+	em {
+		display:block;
+		font-style:normal;
+		font-size:12px;
+		color:#8f8f8f;
+		margin-top:10px;
+		margin-bottom:30px;
+	}
+}
+
+.sitemap_pc_wrap>ul {
+	border-top:2px solid #8f8f8f;
+}
+.sitemap_pc_wrap>ul:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.sitemap_pc_wrap>ul>li {
+	position: relative;
+	padding: 30px 0 30px 25px;
+	width:100%;
+	border-bottom:1px solid #353535;
+}
+.sitemap_pc_wrap>ul>li>a {
+	display: block;
+	position: absolute;
+	width: 225px;
+	top: 30px;
+	left: 0;
+	color: #ff6b24;
+	font-size: 38px;
+}
+.sitemap_pc_wrap>ul>li:first-child + li + li {
+	clear: both;
+}
+.sitemap_pc_wrap>ul>li>ul {
+	margin-left: 200px;
+	overflow:hidden;
+}
+.sitemap_pc_wrap>ul>li>ul>li {
+	width:33.33%;
+	float:left;
+}
+.sitemap_pc_wrap>ul>li>ul>li>a {
+	display: block;
+	color: #fff;
+	line-height: 34px;
+	font-size: 16px;
+	
+	&:hover {
+		color:#ff6b24;
+		text-decoration:underline;
+	}
+}
+.sitemap_pc_wrap>ul>li>ul>li>a {
+	display: block;
+	position: relative;
+	padding-left: 17px;
+	color: #fff;
+	line-height: 24px;
+	font-size: 14px;
+}
+.sitemap_pc_wrap>ul>li>ul>li>a:before {
+	content: "";
+	position: absolute;
+	top: 12px;
+	left: 7px;
+	width: 2px;
+	height: 2px;
+	background: #fff;
+	border-radius:2px;
+}
+.sitemap_pc_wrap>ul>li>ul>li>ul {
+	margin-bottom: 8px;
+}
+.sitemap_pc_wrap>ul>li>ul>li>ul>li>a {
+	font-size: 12px;
+	line-height: 1.4em;
+	color: #ccc;
+	padding: 0 0 0 18px;
+}
+.btn_sitemap_pc_close {
+	position: absolute;
+	top: 70px;
+	right: 105px;
+	padding-top: 95px;
+	width: 95px;
+	height: 0;
+	background: url("../images/common/btn_sitemap_pc_close.png") no-repeat center;
+	overflow: hidden;
+}
 }
 
 #header{
@@ -50,6 +179,10 @@ body.layout-page {
 	.container{
 		position: relative;
 	}
+	
+	&.on {
+		padding-top:49px;
+	}
 }
 
 .container {
@@ -74,6 +207,10 @@ body.layout-page {
 }
 
 body.layout-index {
+	
+	#wrap {
+		height:100
+	}
 	
 	#header {
 		width:100%;
@@ -232,6 +369,12 @@ body.layout-index {
 				padding-left:14px;
 				font-size:12px;
 				color:#034a87;
+				padding-right:25px;
+				text-overflow: ellipsis; 
+				-o-text-overflow: ellipsis; 
+				overflow: hidden; 
+				white-space: nowrap; 
+				word-wrap: normal !important;
 				
 				&.on {
 					background-image:url('../images/common/select-click-over.png');
@@ -260,7 +403,6 @@ body.layout-index {
 				z-index:9999;
 				top:50px;
 				left:0;
-				width:90px;
 				
 				ul {
 					overflow:hidden;
@@ -275,13 +417,18 @@ body.layout-index {
 						
 						a {
 							display:block;
-							width:160px;
+							
 							height:33px;
 							line-height:33px;
 							background-color:#fff;
 							padding-left:15px;
+							padding-right:15px;
 							font-size:11px;
 							color:#666;
+							
+							&:hover {
+								background-color:#f1f1f1;
+							}
 						}
 					}
 				}
@@ -442,8 +589,14 @@ body.layout-page {
 				line-height:34px;
 				cursor:pointer;
 				padding-left:10px;
+				padding-right:10px;
 				font-size:11px;
 				color:#034a87;
+				text-overflow: ellipsis; 
+				-o-text-overflow: ellipsis; 
+				overflow: hidden; 
+				white-space: nowrap; 
+				word-wrap: normal !important;
 				
 				&.on {
 					background-image:url('../images/common/select-click-over.png');					
@@ -472,7 +625,6 @@ body.layout-page {
 				z-index:9999;
 				top:34px;
 				left:0;
-				width:70px;
 				
 				ul {
 					overflow:hidden;
@@ -487,13 +639,17 @@ body.layout-page {
 						
 						a {
 							display:block;
-							width:160px;
 							height:33px;
 							line-height:33px;
 							background-color:#fff;
 							padding-left:10px;
+							padding-right:10px;
 							font-size:11px;
 							color:#666;
+							
+							&:hover {
+								background-color:#f1f1f1;
+							}
 						}
 					}
 				}
@@ -1034,20 +1190,24 @@ table.board-primary {
 }
 
 body.layout-index {
+	
+	height:auto;
+	
 	.side_w {
 		position:absolute;
 		right:0;
 		top:0;
-		background-color:#fff;
-		z-index:999999;
+		z-index:9999;
 		height:100%;
 		width:55px;
 		margin:0 0 0 40px;
+		margin-bottom:-177px;
 		padding-bottom:177px;
 		
 		.side {
 			position:relative;
 			height:100%;
+			background-color:#fff;
 		
 			p.site-map {
 				width:55px;
@@ -1058,9 +1218,14 @@ body.layout-index {
 				cursor:pointer;
 				margin:0;
 				
-				span {
-					color:#fff;
-					font-size:21px;
+				a {
+					display:block;
+					width:55px;
+					height:55px;
+					span {
+						color:#fff;
+						font-size:21px;
+					}
 				}
 			}
 			
@@ -1120,32 +1285,42 @@ body.layout-index {
 
 body.layout-page {
 	.side_w {
-		position:absolute;
-		right:0;
-		top:0;
-		background-color:#fff;
-		z-index:999999;
-		height:100%;
+		position:fixed;
+		top:128px;
+		right: 0;
+		bottom: 0;
+		z-index:9999;
 		width:55px;
-		margin:126px 0 0 40px;
-		padding-bottom:303px;
+		
+		&.on {
+			position:fixed;
+			top:0;
+			margin:0;
+			padding:0;
+		}
 		
 		.side {
 			position:relative;
-			height:100%;
-		
+			background-color:#fff;
+			height: 100%;
+			
 			p.site-map {
 				width:55px;
-				height:51px;
+				height:49px;
 				background-color:#ff6b24;
 				text-align:center;
 				line-height:60px;
 				cursor:pointer;
 				margin:0;
 				
-				span {
-					color:#fff;
-					font-size:21px;
+				a {
+					display:block;
+					width:55px;
+					height:50px;
+					span {
+						color:#fff;
+						font-size:21px;
+					}
 				}
 			}
 			
@@ -1209,7 +1384,7 @@ body.layout-page {
 	position: relative;
 	z-index: 200;
 	background-color: #fff;
-	height:177px;
+	height:180px;
 	
 	.ft_list-w {
 		height:54px;
@@ -2071,7 +2246,13 @@ body.layout-page {
 	}
 }
 
-.fixed {
-	position:fixed;
-	top:0;
+body.layout-page.fixed {
+	.snb {
+		position:fixed;
+		top:0;
+	}
+	#container {
+		padding-top:128px + 49px;
+	}
+	
 }
