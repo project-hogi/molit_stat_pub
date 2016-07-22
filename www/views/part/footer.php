@@ -5,22 +5,22 @@
 					<nav>
 				    	<ul>
 							<li>
-								<a href="#">국토교통통계소개</a>					
+								<a href="notice-introduce.php">국토교통통계소개</a>					
 							</li>
 							<li>
-								<a href="#">통계누리연혁</a>					
+								<a href="service-history.php">통계누리연혁</a>					
 							</li>
 							<li>
-								<a href="#">저작권보호정책</a>					
+								<a href="service-copyright.php">저작권보호정책</a>					
 							</li>
 							<li>
-								<a href="#">개인정보처리방침</a>					
+								<a href="service-info.php">개인정보처리방침</a>					
 							</li>
 							<li>
-								<a href="#">국토교통인클린생활10선</a>					
+								<a href="service-ten.php">국토교통인클린생활10선</a>					
 							</li>
 							<li>
-								<a href="#">자주묻는질문</a>					
+								<a href="notice-faq.php">자주묻는질문</a>					
 							</li>
 						</ul>
 				    </nav>

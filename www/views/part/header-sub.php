@@ -451,11 +451,15 @@
 			<?php if(getDepthId(0) == 'community'){ ?>
 				<a href="#">참여마당</a>
 			<?php } ?>
+			<?php if(getDepthId(0) == 'service'){ ?>
+				<a href="#">서비스정책</a>
+			<?php } ?>
 			<ul>
 				<li><a href="notice-use.php">알림마당</a></li>
 				<li><a href="stat-field.php">통계마당</a></li>
 				<li><a href="data-year.php">자료마당</a></li>
 				<li><a href="community-event.php">참여마당</a></li>
+				<li><a href="service-history.php">서비스정책</a></li>
 			</ul>
 		</li>
 		<?php if(getDepthId(0) == 'notice'){ ?>
@@ -580,6 +584,28 @@
 					<li><a href="http://eminwon.molit.go.kr/" target="_blank">민원마당</a></li>
 					<li><a href="community-event.php">이벤트</a></li>
 					<li><a href="community-report.php">통계 불일치 신고센터</a></li>
+				</ul>
+			</li>
+		<?php } ?>
+		<?php if(getDepthId(0) == 'service'){ ?>
+			<li>
+				<?php if(getDepthId(1) == 'history'){ ?>
+					<a href="service-history.php">통계누리연혁</a>
+				<?php } ?>
+				<?php if(getDepthId(1) == 'copyright'){ ?>
+					<a href="service-copyright.php">저작권보호정책</a>
+				<?php } ?>
+				<?php if(getDepthId(1) == 'info'){ ?>
+					<a href="service-info.php">개인정보보호방침</a>
+				<?php } ?>
+				<?php if(getDepthId(1) == 'ten'){ ?>
+					<a href="service-ten.php">국토교통인클린생활10선</a>
+				<?php } ?>
+				<ul>
+					<li><a href="service-history.php">통계누리연혁</a></li>
+					<li><a href="service-copyright.php">저작권보호정책</a></li>
+					<li><a href="service-info.php">개인정보보호방침</a></li>
+					<li><a href="service-ten.php">국토교통인클린생활</a></li>
 				</ul>
 			</li>
 		<?php } ?>
