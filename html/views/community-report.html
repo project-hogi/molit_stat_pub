@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="국토교통부 통계누리 홈페이지 입니다." />
+<title>국토교통부 통계누리</title>
+<link rel="apple-touch-icon" sizes="57x57" href="/resources/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/resources/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/resources/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/resources/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/resources/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/resources/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/resources/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/resources/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/resources/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/resources/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/resources/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/resources/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/resources/favicon/favicon-16x16.png">
+<link rel="shortcut icon" href="/resources/favicon/favicon.ico">
+<link rel="manifest" href="/resources/favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/resources/favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="/resources/front/css/style.min.css" />
+<link rel="stylesheet" href="/resources/front-legacy/css/legacy-style.css" />
+<!--[if lt IE 9]><script src="/resources/front/js/vendor/jquery-1.12.2.min.js"></script><![endif]-->
+<!--[if gte IE 9]><!--><script src="/resources/front/js/vendor/jquery.min.js"></script><![endif]-->
+<script src="/resources/front/js/script.min.js"></script>
+</head>
+<body class="page- layout-page">
+<div class="toppopup">
+	<div class="toppopup-w">
+		<ul class="top-slide">
+			<li>
+				<img src="/resources/front/images/main/bg_toppopup.png" alt="" />
+			</li>
+			<li>
+				<img src="/resources/front/images/main/bg_toppopup.png" alt="" />
+			</li>
+			<li>
+				<img src="/resources/front/images/main/bg_toppopup.png" alt="" />
+			</li>
+		</ul>
+		<p class="x-btn">
+			<input type="checkbox" />
+			1일간 열지않음
+			<a href="#close-toppopup">닫기</a>
+		</p>
+	</div>
+</div>
+<div id="wrap">
+	<div id="header">
+		<div class="container">			<div class="gnb">
+				<ul>
+					<li>
+						<a href="/">Home</a>
+					</li>
+					<li>
+						<a href="notice-use.php">이용안내</a>
+					</li>
+					<li>
+						<a href="data-db.php">통계메타DB</a>
+					</li>
+					<li>
+						<a href="javascript:alert('준비중입니다.');">English</a>
+					</li>
+					<!--
+					<li class="gnb-display">
+						화면조절
+						<span class="controls">
+							<a href="#" class="zoom-in"></a>
+							<a href="#" class="rotation"></a>
+							<a href="#" class="zoom-out"></a>
+						</span>
+					</li>
+					-->
+				</ul>
+			</div>
+			<div class="contents">
+				<h1 class="site-logo"><a href="/index.php" title="메인으로 이동">국토교통 통계누리</a></h1>
+				<div class="lnb">
+					<ul>
+						<li class="notice"><a href="notice-use.php">알림마당</a></li>
+						<li class="stat"><a href="stat-field.php">통계마당</a></li>
+						<li class="data"><a href="data-year.php">자료마당</a></li>
+						<li class="community"><a href="community-report.php">참여마당</a></li>
+					</ul>
+				</div>
+				<div class="search-box">
+					<p class="select-click">
+						통합검색
+					</p>
+					<input type="text" />
+					<input type="button" value="검색" />
+					<div class="select-click-over">
+						<ul>
+							<li>
+								<a href="#">1111</a>
+							</li>
+							<li>
+								<a href="#">2222</a>
+							</li>
+							<li>
+								<a href="#">3333</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--
+	<div class="depth2-t depth2-1" style="display:none;">
+		<div class="depth2-w">
+			<div id="container">
+				<p class="txt1">
+					다양한 <strong>정보</strong>와<br>
+					정확한 <strong>통계분석</strong> 콘텐츠를<br>
+					<strong>제공</strong>합니다.
+					<span>국토교통통계누리의 다양한 <stronG>통계 서비스</stronG>를 만나보세요!</span>
+				</p>
+				<ul class="depth2-menu">
+					<li>
+						<dl>
+							<a href="stat-field.php">
+								<dt>분야별통계</dt>
+								<dd>국토교통통계누리 분야별통계를 확인하세요!</dd>
+							</a>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<a href="stat-department.php">
+								<dt>부서별통계</dt>
+								<dd>국토교통통계누리 분야별통계를 확인하세요!</dd>
+							</a>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<a href="stat-name.php">
+								<dt>명칭별통계</dt>
+								<dd>국토교통통계누리 분야별통계를 확인하세요!</dd>
+							</a>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<a href="stat-area.php">
+								<dt>지역별통계</dt>
+								<dd>국토교통통계누리 분야별통계를 확인하세요!</dd>
+							</a>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<a href="#">
+								<dt>영문통계</dt>
+								<dd>국토교통통계누리 분야별통계를 확인하세요!</dd>
+							</a>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<a href="stat-other.php">
+								<dt>타기관통계</dt>
+								<dd>국토교통통계누리 분야별통계를 확인하세요!</dd>
+							</a>
+						</dl>
+					</li>
+				</ul>
+				<p class="close-btn">
+					<a href="#">close</a>
+				</p>
+			</div>
+		</div>
+	</div>
+	-->
+	<div class="depth2-t depth2-2" style="display:none;">
+		<div class="depth2-w">
+			<div id="container">
+				<p class="txt1">
+					다양한 <strong>정보</strong>와<br>
+					정확한 <strong>통계분석</strong> 콘텐츠를<br>
+					<strong>제공</strong>합니다.
+					<span>국토교통통계누리의 다양한 <stronG>통계 서비스</stronG>를 만나보세요!</span>
+				</p>
+				<ul class="depth2-menu">
+					<li>
+						<dl>
+							<a href="stat-field.php">
+								<dt>분야별통계</dt>
+								<dd>국토교통통계누리 분야별통계를 확인하세요!</dd>
+							</a>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<a href="stat-department.php">
+								<dt>부서별통계</dt>
+								<dd>국토교통통계누리 분야별통계를 확인하세요!</dd>
+							</a>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<a href="stat-name.php">
+								<dt>명칭별통계</dt>
+								<dd>국토교통통계누리 분야별통계를 확인하세요!</dd>
+							</a>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<a href="stat-area.php">
+								<dt>지역별통계</dt>
+								<dd>국토교통통계누리 분야별통계를 확인하세요!</dd>
+							</a>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<a href="#">
+								<dt>영문통계</dt>
+								<dd>국토교통통계누리 분야별통계를 확인하세요!</dd>
+							</a>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<a href="stat-other.php">
+								<dt>타기관통계</dt>
+								<dd>국토교통통계누리 분야별통계를 확인하세요!</dd>
+							</a>
+						</dl>
+					</li>
+				</ul>
+				<p class="close-btn">
+					<a href="#">close</a>
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="body">
+		<div id="container">
+			<div id="bg">
+			</div>
+			<div class="side_w">
+				<div class="side">
+					<p class="site-map">
+						<span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+					</p>
+					<ul class="link">
+						<li>
+							<a href="#">KOSIS<br>국가통계</a>
+						</li>
+						<li>
+							<a href="#">온나라<br>부동산</a>
+						</li>
+						<li>
+							<a href="#">세움터<br>건축행정</a>
+						</li>
+						<li>
+							<a href="#">국가교통<br>DB센터</a>
+						</li>
+					</ul>
+					<p class="go-top">
+						<a href="#">Top</a>
+					</p>
+				</div>
+			</div>
+<div class="snb">
+	<ul>
+		<li class="home">
+			<a href="/index.php">홈</a>
+		</li>
+		<li>
+															<ul>
+				<li><a href="notice-use.php">알림마당</a></li>
+				<li><a href="stat-field.php">통계마당</a></li>
+				<li><a href="data-year.php">자료마당</a></li>
+				<li><a href="community-event.php">참여마당</a></li>
+			</ul>
+		</li>
+									</ul>
+</div>
+<div class="container">
+	<div id="content"><h2>통계 불일치 신고센터</h2>
+<p class="additional">국토교통통계누리의 통계 오류정보에 대해 알려주세요!</p>
+<dl class="paging">
+	<dt class="skip">현재 페이지 경로</dt>
+	<dd>
+		<a href="/views/index.php">홈</a>
+		<a href="community-report.php">참여마당</a>
+		<span>통계 불일치 신고센터</span>
+	</dd>
+</dl>
+<p class="write-btn">
+	<a href="community-report-write.php">글쓰기</a>
+</p>
+<table class="board-primary">
+	<thead>
+		<tr>
+			<th>
+				번호
+			</th>
+			<th>
+				제목
+			</th>
+			<th>
+				등록일
+			</th>
+			<th>
+				처리상태
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>
+				30
+			</td>
+			<td>
+				<a href="community-report-view.php">국토면적 관련한 통계 불일치 신고</a>
+			</td>
+			<td>
+				2016-07-01
+			</td>
+			<td>
+				<span class="success-btn">처리완료</span>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				29
+			</td>
+			<td>
+				<a href="community-report-view.php">국토면적 관련한 통계 불일치 신고</a>
+			</td>
+			<td>
+				2016-07-01
+			</td>
+			<td>
+				<span class="success-btn">처리완료</span>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				28
+			</td>
+			<td>
+				<a href="community-report-view.php">국토면적 관련한 통계 불일치 신고</a>
+			</td>
+			<td>
+				2016-07-01
+			</td>
+			<td>
+				<span class="success-btn">처리완료</span>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				27
+			</td>
+			<td>
+				<a href="community-report-view.php">국토면적 관련한 통계 불일치 신고</a>
+			</td>
+			<td>
+				2016-07-01
+			</td>
+			<td>
+				<span class="receive-btn">접수완료</span>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				26
+			</td>
+			<td>
+				<a href="community-report-view.php">국토면적 관련한 통계 불일치 신고</a>
+			</td>
+			<td>
+				2016-07-01
+			</td>
+			<td>
+				<span class="receive-btn">접수완료</span>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				25
+			</td>
+			<td>
+				<a href="community-report-view.php">국토면적 관련한 통계 불일치 신고</a>
+			</td>
+			<td>
+				2016-07-01
+			</td>
+			<td>
+				<span class="receive-btn">접수완료</span>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				24
+			</td>
+			<td>
+				<a href="community-report-view.php">국토면적 관련한 통계 불일치 신고</a>
+			</td>
+			<td>
+				2016-07-01
+			</td>
+			<td>
+				<span class="receive-btn">접수완료</span>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				23
+			</td>
+			<td>
+				<a href="community-report-view.php">국토면적 관련한 통계 불일치 신고</a>
+			</td>
+			<td>
+				2016-07-01
+			</td>
+			<td>
+				<span class="receive-btn">접수완료</span>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				22
+			</td>
+			<td>
+				<a href="community-report-view.php">국토면적 관련한 통계 불일치 신고</a>
+			</td>
+			<td>
+				2016-07-01
+			</td>
+			<td>
+				<span class="receive-btn">접수완료</span>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				21
+			</td>
+			<td>
+				<a href="community-report-view.php">국토면적 관련한 통계 불일치 신고</a>
+			</td>
+			<td>
+				2016-07-01
+			</td>
+			<td>
+				<span class="receive-btn">접수완료</span>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<div class="page-nav-box">
+	<ul class="pagination">
+		<li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+		<li><a href="#">2</a></li>
+		<li><a href="#">3</a></li>
+		<li><a href="#">4</a></li>
+		<li><a href="#">5</a></li>
+		<li><a href="#" aria-label="Previous" class="prev"><span aria-hidden="true">이전 페이지</span></a></li>
+		<li><a href="#" aria-label="Next" class="next"><span aria-hidden="true">다음 페이지</span></a></li>
+	</ul>
+	<div class="search">
+		<select class="search-select">
+			<option value="">제목+내용</option>
+			<option value="">제목</option>
+			<option value="">내용</option>
+		</select>
+		<input type="text" class="input-text-primary" />
+		<input type="button" value="검색" class="search-btn" />
+	</div>
+</div>
+	</div>
+</div>
+		</div>
+		<div id="footer">
+			<div class="ft_list-w">
+				<div class="ft_list">
+					<nav>
+				    	<ul>
+							<li>
+								<a href="#">국토교통통계소개</a>					
+							</li>
+							<li>
+								<a href="#">통계누리연혁</a>					
+							</li>
+							<li>
+								<a href="#">저작권보호정책</a>					
+							</li>
+							<li>
+								<a href="#">개인정보처리방침</a>					
+							</li>
+							<li>
+								<a href="#">국토교통인클린생활10선</a>					
+							</li>
+							<li>
+								<a href="#">자주묻는질문</a>					
+							</li>
+						</ul>
+				    </nav>
+				    <p class="site">
+				    	<span><a>국외 통계사이트</a></span>
+				    	<a href="#" class="go-page">이동</a>
+				    </p>
+				    <div class="site-over">
+				    	<ul>
+				    		<li>
+				    			<a href="javscript:;">OECD 통계포털</a>
+				    		</li>
+				    		<li>
+				    			<a href="javscript:;">OECD 통계포털</a>
+				    		</li>
+				    		<li>
+				    			<a href="javscript:;">OECD 통계포털</a>
+				    		</li>
+				    		<li>
+				    			<a href="javscript:;">OECD 통계포털</a>
+				    		</li>
+				    		<li>
+				    			<a href="javscript:;">OECD 통계포털</a>
+				    		</li>
+				    	</ul>
+				    </div>
+				</div>
+				<div class="container">
+					<address>
+						30064 세종특별자치시 도움6로 11 국토교통부 ⁄ 민원(주)1599-0001 (야)044-201-4672 ⁄ FAX (주)044-860-8500 (야)044-201-5700<br>
+						본 홈페이지는 게시된 이메일 주소가 자동 수집되는 것을 거부하며, 이를 위반 시 정보통신망법에 의해 처벌됨을 유념하여 주시기 바랍니다.
+						<p class="copy">
+							Copyright (c) 2016 Ministry of Land, Infrastructure and Transport. All Rights Reserved.
+						</p>
+					</address>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
