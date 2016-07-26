@@ -84,7 +84,7 @@ jQuery(function($) {
 		$statDepth2Wrap.find('>*').on('mouseleave', function() {
 			$lnb.trigger('end');
 		});
-		$statDepth2Wrap.find('.close a').on('click', function(event) {
+		$statDepth2Wrap.find('.close-btn a').on('click', function(event) {
 			event.preventDefault();
 
 			$lnb.trigger('endNow');
@@ -207,66 +207,63 @@ jQuery(function($) {
 		});
 	});
 
-	$('.menu-pos').each(
-			function() {
-				var $obj = $(this);
-				var $menu = $(this).find('.menu');
-				var $more = $(this).find('.more-click');
-				var $moreOpen = $more.find('.open');
-				var $moreClose = $more.find('.close');
-				var isOpened = false;
+	$('.menu-pos').each(function() {
+		var $obj = $(this);
+		var $menu = $(this).find('.menu');
+		var $more = $(this).find('.more-click');
+		var $moreOpen = $more.find('.open');
+		var $moreClose = $more.find('.close');
+		var isOpened = false;
 
-				$more.find('a').on('click', function(event) {
-					event.preventDefault();
+		$more.find('a').on('click', function(event) {
+			event.preventDefault();
 
-					$obj.trigger('toggles');
-				});
-				$obj.on('toggles', function() {
-					if (isOpened) {
-						$obj.trigger('close');
-					} else {
-						$obj.trigger('open');
-					}
-				});
-				$obj.on('open', function() {
-					if (isOpened)
-						return;
+			$obj.trigger('toggles');
+		});
+		$obj.on('toggles', function() {
+			if (isOpened) {
+				$obj.trigger('close');
+			} else {
+				$obj.trigger('open');
+			}
+		});
+		$obj.on('open', function() {
+			if (isOpened)
+				return;
 
-					isOpened = true;
+			isOpened = true;
 
-					$menu.stop().animate({
-						'width' : 872
-					}, 1200, 'easeInOutExpo');
-					$more.stop().animate({
-						'left' : 872
-					}, 1200, 'easeInOutExpo');
-					$moreOpen.stop().fadeOut(1200, 'easeInOutExpo');
-					$moreClose.stop().fadeIn(1200, 'easeInOutExpo');
-					setTimeout(function() {
-						$('img.menu4').attr('src',
-								'/resources/front/images/main/menu4.png');
-					}, 600);
-				});
-				$obj.on('close', function() {
-					if (!isOpened)
-						return;
+			$menu.stop().animate({
+				'width' : 872
+			}, 1200, 'easeInOutExpo');
+			$more.stop().animate({
+				'left' : 872
+			}, 1200, 'easeInOutExpo');
+			$moreOpen.stop().fadeOut(1200, 'easeInOutExpo');
+			$moreClose.stop().fadeIn(1200, 'easeInOutExpo');
+			setTimeout(function() {
+				$('img.menu4').attr('src', '/resources/front/images/main/menu4.png');
+			}, 600);
+		});
+		$obj.on('close', function() {
+			if (!isOpened)
+				return;
 
-					isOpened = false;
+			isOpened = false;
 
-					$menu.stop().animate({
-						'width' : 612
-					}, 1200, 'easeInOutExpo');
-					$more.stop().animate({
-						'left' : 612
-					}, 1200, 'easeInOutExpo');
-					$moreOpen.stop().fadeIn(1200, 'easeInOutExpo');
-					$moreClose.stop().fadeOut(1200, 'easeInOutExpo');
-					setTimeout(function() {
-						$('img.menu4').attr('src',
-								'/resources/front/images/main/menu4-ov.png');
-					}, 600);
-				});
-			});
+			$menu.stop().animate({
+				'width' : 612
+			}, 1200, 'easeInOutExpo');
+			$more.stop().animate({
+				'left' : 612
+			}, 1200, 'easeInOutExpo');
+			$moreOpen.stop().fadeIn(1200, 'easeInOutExpo');
+			$moreClose.stop().fadeOut(1200, 'easeInOutExpo');
+			setTimeout(function() {
+				$('img.menu4').attr('src', '/resources/front/images/main/menu4-ov.png');
+			}, 600);
+		});
+	});
 
 	$('ul.main-slider').bxSlider({
 		auto : true,
@@ -367,37 +364,29 @@ jQuery(function($) {
 
 	});
 
-	$('.page-index')
-			.each(
-					function() {
-						var images = [
-								"/resources/front/images/common/bg_container-visual.png",
-								"/resources/front/images/common/bg_container-visual2.png",
-								"/resources/front/images/common/bg_container-visual3.png" ];
-						var $body = $("body"), $bg = $(".page-index #bg"), n = images.length, c = 0; // Loop
-						// Counter
+	$('.page-index').each(function() {
+		var images = [ "/resources/front/images/common/bg_container-visual.png", "/resources/front/images/common/bg_container-visual2.png", "/resources/front/images/common/bg_container-visual3.png" ];
+		var $body = $("body"), $bg = $(".page-index #bg"), n = images.length, c = 0; // Loop
+		// Counter
 
-						// Preload Array of images...
-						for (var i = 0; i < n; i++) {
-							var tImg = new Image();
-							tImg.src = images[i];
-						}
+		// Preload Array of images...
+		for (var i = 0; i < n; i++) {
+			var tImg = new Image();
+			tImg.src = images[i];
+		}
 
-						$body.css({
-							backgroundImage : "url(" + images[c] + ")"
-						});
+		$body.css({
+			backgroundImage : "url(" + images[c] + ")"
+		});
 
-						(function loopBg() {
-							$bg.hide().css(
-									{
-										backgroundImage : "url("
-												+ images[++c % n] + ")"
-									}).fadeTo(3000, 1, 'easeOutExpo',
-									function() {
-										loopBg();
-									});
-						}());
-					});
+		(function loopBg() {
+			$bg.hide().css({
+				backgroundImage : "url(" + images[++c % n] + ")"
+			}).fadeTo(3000, 1, 'easeOutExpo', function() {
+				loopBg();
+			});
+		}());
+	});
 
 	$('.search-box').each(function() {
 		var $hiddenInput = $(this).find('input.search-option');
@@ -513,6 +502,55 @@ jQuery(function($) {
 
 	$('.btn_sitemap_pc_close').on('click', function() {
 		$('.sitemap_pc').hide();
+	});
+
+	$('.page-index').each(function() {
+		$('.stat ul.menu-slide li').each(function(i) {
+			var $span = $(this).find('span');
+
+			var chart = new Highcharts.Chart({
+				exporting : {
+					enabled : false
+				},
+				credits : {
+					enabled : false
+				},
+				chart : {
+		            type: 'column',
+		            options3d: {
+		                enabled: true,
+		                alpha: 15,
+		                beta: 15,
+		                viewDistance: 25,
+		                depth: 40
+		            },
+					renderTo: 'chart' + (i + 1),
+					plotBorderWidth : 0,
+					backgroundColor : 'transparent',
+					width : 228,
+					height : 240
+				},
+				plotOptions : {
+					pie : {
+						innerSize : 300,
+						depth : 45
+					}
+				},
+				series: [{
+		            name: 'John',
+		            data: [3]
+		        }, {
+		            name: 'Joe',
+		            data: [3]
+		        }, {
+		            name: 'Jane',
+		            data: [4]
+		        }]
+
+			})
+			
+			$span.css('display', 'block');
+		});
 	});
 
 });

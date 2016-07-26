@@ -57,7 +57,7 @@
 	</div>
 	<p class="btm-btn">
 		<a href="community-report.php" class="btn btn-default"><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>리스트</a>
-		<a href="community-report.php" class="btn btn-warning">삭제</a>
+		<a href="community-report-password.php" class="btn btn-warning trigger-modal-box" data-modal-box-width="600">삭제</a>
 	</p>
 </div>
 <?php require "part/footer-sub.php"; ?>

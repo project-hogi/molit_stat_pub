@@ -21,16 +21,37 @@
 			<li>
 				<a href="/">이용안내</a>
 			</li>
-			<li>
-				<div class="search-box">
-					<p class="select-click">
-						통합검색
-					</p>
-					<input type="text" />
-					<input type="button" value="검색" />
-				</div>
-			</li>
 		</ul>
+		<div class="search-box">
+			<input type="hidden" name="searchOption" class="search-option" />
+			<p class="select-click" data-value="">
+				통합검색
+			</p>
+			<input type="text" />
+			<input type="button" value="검색" />
+			<div class="select-click-over">
+				<ul>
+					<li>
+						<a href="#" data-value="">통합검색</a>
+					</li>
+					<li>
+						<a href="#" data-value="1">통합검색-1</a>
+					</li>
+					<li>
+						<a href="#" data-value="2">통합검색-2</a>
+					</li>
+					<li>
+						<a href="#" data-value="3">통합검색-3 통합검색-3</a>
+					</li>
+					<li>
+						<a href="#" data-value="4">통합검색-4</a>
+					</li>
+					<li>
+						<a href="#" data-value="5">통합검색-5</a>
+					</li>
+				</ul>
+			</div>
+		</div>
 	</div>
 	<div class="graph-wrap">
 		<div class="graph-menu">
@@ -50,20 +71,20 @@
 				</li>
 			</ul>
 			<p class="menu">
-				<a href="#"></a>
+				<a></a>
 			</p>
 			
 		</div>
 		<div class="graph-view">
 			<ul class="top-tab">
 				<li class="active">
-					<a href="#">통계표보기</a>
+					<a href="graph-view.php">통계표보기</a>
 				</li>
 				<li>
-					<a href="#">메타정보</a>
+					<a href="graph-view-meta.php">메타정보</a>
 				</li>
 				<li>
-					<a href="#">관련파일</a>
+					<a href="graph-view-file.php">관련파일</a>
 				</li>
 			</ul>
 			<table class="type">
@@ -439,7 +460,7 @@
 						<a href="#">요약정보</a>
 					</li>
 					<li>
-						<a href="#">My 스크립</a>
+						<a>&nbsp;</a>
 					</li>
 				</ul>
 				<ul class="chk-list">

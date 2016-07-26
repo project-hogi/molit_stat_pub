@@ -45,6 +45,9 @@ $config["imageFolder"] = ($config['isDev'] === true && (isset($config['isBuild']
 <!--[if gte IE 9]><!--><script src="/resources-dev/<?php echo $config["mode"]; ?>/jsvendor-dev-only/jquery.js"></script><![endif]-->
 <script src="/resources-dev/<?php echo $config["mode"]; ?>/jspack/1.vendor/jquery.bxslider.js"></script>
 <script src="/resources-dev/<?php echo $config["mode"]; ?>/jspack/1.vendor/jquery-ui/jquery-ui.min.js"></script>
+<script src="/resources-dev/<?php echo $config["mode"]; ?>/jspack/1.vendor/highcharts/highcharts.js"></script>
+<script src="/resources-dev/<?php echo $config["mode"]; ?>/jspack/1.vendor/highcharts/highcharts-3d.js"></script>
+<script src="/resources-dev/<?php echo $config["mode"]; ?>/jspack/1.vendor/highcharts/exporting.js"></script>
 <?php echoJsInPath('/resources-dev/' . $config["mode"] . '/jspack/'); ?>
 <?php } else { ?>
 <!--[if lt IE 9]><script src="/resources/<?php echo $config["mode"]; ?>/js/vendor/jquery-1.12.2.min.js"></script><![endif]-->
