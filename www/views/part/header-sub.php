@@ -580,10 +580,14 @@
 				<?php if(getDepthId(1) == 'event'){ ?>
 					<a href="community-event.php">이벤트</a>
 				<?php } ?>
+				<?php if(getDepthId(1) == 'publicize'){ ?>
+					<a href="community-publicize.php">홍보자료</a>
+				<?php } ?>
 				<ul>
 					<li><a href="http://eminwon.molit.go.kr/" target="_blank">민원마당</a></li>
 					<li><a href="community-event.php">이벤트</a></li>
 					<li><a href="community-report.php">통계 불일치 신고센터</a></li>
+					<li><a href="community-publicize.php">홍보자료</a></li>
 				</ul>
 			</li>
 		<?php } ?>

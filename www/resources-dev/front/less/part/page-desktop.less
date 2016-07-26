@@ -2658,3 +2658,105 @@
 		}
 	}
 } 
+
+/* 홍보자료 */
+.page-community-publicize {
+	#content {
+		ul.nav-tabs {
+			li {
+				width:20%;
+			}
+		}
+		
+		ul.publicize-list {
+			margin-top:45px;
+			border-top:2px solid #034a87;
+			
+			li {
+				border-bottom:1px solid #e6e6e6;
+				
+				dl {
+					padding-left:183px;
+					height:126px;
+					margin:0;
+					position: relative;
+					
+					&:hover {
+						background-color:#fff;
+					}
+					
+					dt {
+						padding-top:58px;
+						
+						a {
+							overflow:hidden;
+							display:block;
+							font-size:14px;
+							color:#444;
+							font-weight:normal;
+							font-family:'돋움', Dotum;
+							padding-right:24px;
+							
+							span {
+								float:right;
+								display:block;
+								width:15px;
+								height:15px;
+								background:url('../images/sub/publicize-plus.png') no-repeat 0 0;
+								text-indent:-9999px;
+							}
+						}
+					}
+					
+					dd.name {
+						font-size:12px;
+						color:#aaa;
+						font-family:'돋움', Dotum;
+						padding-top:8px;
+					}
+					
+					dd.badge {
+						position:absolute;
+						left:183px;
+						top:31px;
+						padding:0;
+						background:transparent;
+						
+						span {
+							display:inline-block;
+							height:22px;
+							line-height:22px;
+							background-color:#9f9f9f;
+							border-radius:2px;
+							padding:0 6px;
+							font-size:11px;
+							font-family:'돋움', Dotum;
+							font-weight:normal;
+							border:1px solid #8d8d8d;
+							
+							&.top {
+								background-color:#17b708;
+								border:1px solid #21a710;
+							}
+							
+							&.excellent {
+								background-color:#ff9a00;
+								border:1px solid #e58a00;
+							}
+						}
+					}
+					
+					dd.img {
+						position: absolute;
+						top:8px;
+						left:5px;
+						width:160px;
+						height:110px;
+						background-color:#ddd;
+						overflow:hidden;
+					}
+				}
+			}
+		}
+	}
+}
