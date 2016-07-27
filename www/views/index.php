@@ -8385,6 +8385,148 @@
 						<em class="chart-title">2016년도 전국 임대주택 통계</em>						
 					</li>
 				</ul>
+				<script>
+				jQuery(function($){
+    				$('#chart1').each(function() {
+    					var $this = $(this);
+    
+    					var chart = new Highcharts.Chart({
+    						exporting : {
+    							enabled : false
+    						},
+    						credits : {
+    							enabled : false
+    						},
+    						chart : {
+    							type : 'column',
+    							options3d : {
+    								enabled : true,
+    								alpha : 15,
+    								beta : 15,
+    								viewDistance : 25,
+    								depth : 40
+    							},
+    							renderTo : $this.attr("id"),
+    							plotBorderWidth : 0,
+    							backgroundColor : 'transparent',
+    							width : 228,
+    							height : 240
+    						},
+    						plotOptions : {
+    							pie : {
+    								innerSize : 300,
+    								depth : 45
+    							}
+    						},
+    						series : [ {
+    							name : 'John',
+    							data : [ 3 ]
+    						}, {
+    							name : 'Joe',
+    							data : [ 3 ]
+    						}, {
+    							name : 'Jane',
+    							data : [ 4 ]
+    						} ]
+    
+    					})
+    
+    					$this.css('display', 'block');
+    				});
+    				$('#chart2').each(function() {
+    					var $this = $(this);
+    
+    					var chart = new Highcharts.Chart({
+    						exporting : {
+    							enabled : false
+    						},
+    						credits : {
+    							enabled : false
+    						},
+    						chart : {
+    							type : 'column',
+    							options3d : {
+    								enabled : true,
+    								alpha : 15,
+    								beta : 15,
+    								viewDistance : 25,
+    								depth : 40
+    							},
+    							renderTo : $this.attr("id"),
+    							plotBorderWidth : 0,
+    							backgroundColor : 'transparent',
+    							width : 228,
+    							height : 240
+    						},
+    						plotOptions : {
+    							pie : {
+    								innerSize : 300,
+    								depth : 45
+    							}
+    						},
+    						series : [ {
+    							name : 'John',
+    							data : [ 3 ]
+    						}, {
+    							name : 'Joe',
+    							data : [ 3 ]
+    						}, {
+    							name : 'Jane',
+    							data : [ 4 ]
+    						} ]
+    
+    					})
+    
+    					$this.css('display', 'block');
+    				});
+    				$('#chart3').each(function() {
+    					var $this = $(this);
+    
+    					var chart = new Highcharts.Chart({
+    						exporting : {
+    							enabled : false
+    						},
+    						credits : {
+    							enabled : false
+    						},
+    						chart : {
+    							type : 'column',
+    							options3d : {
+    								enabled : true,
+    								alpha : 15,
+    								beta : 15,
+    								viewDistance : 25,
+    								depth : 40
+    							},
+    							renderTo : $this.attr("id"),
+    							plotBorderWidth : 0,
+    							backgroundColor : 'transparent',
+    							width : 228,
+    							height : 240
+    						},
+    						plotOptions : {
+    							pie : {
+    								innerSize : 300,
+    								depth : 45
+    							}
+    						},
+    						series : [ {
+    							name : 'John',
+    							data : [ 3 ]
+    						}, {
+    							name : 'Joe',
+    							data : [ 3 ]
+    						}, {
+    							name : 'Jane',
+    							data : [ 4 ]
+    						} ]
+    
+    					})
+    
+    					$this.css('display', 'block');
+    				});
+				});
+				</script>
 			</div>
 		</div><!-- //menu-wrap -->
 	</div><!-- //menu-pos -->
