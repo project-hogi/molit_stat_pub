@@ -273,138 +273,257 @@
 			</div>
 		</div>
 	</div>
-	<!--
-	<div class="depth2-t depth2-1" style="display:none;">
+	
+	<div class="depth2-t" style="display:none;">
 		<div class="depth2-w">
-			<div id="container">
-				<p class="txt1">
-					다양한 <strong>정보</strong>와<br>
-					정확한 <strong>통계분석</strong> 콘텐츠를<br>
-					<strong>제공</strong>합니다.
-					<span>국토교통통계누리의 다양한 <stronG>통계 서비스</stronG>를 만나보세요!</span>
-				</p>
-				<ul class="depth2-menu">
-					<li>
-						<dl>
-							<a href="stat-field.php">
-								<dt>분야별통계</dt>
-								<dd>국토교통통계누리 분야별통계를 확인하세요!</dd>
-							</a>
-						</dl>
-					</li>
-					<li>
-						<dl>
-							<a href="stat-department.php">
-								<dt>부서별통계</dt>
-								<dd>국토교통통계누리 분야별통계를 확인하세요!</dd>
-							</a>
-						</dl>
-					</li>
-					<li>
-						<dl>
-							<a href="stat-name.php">
-								<dt>명칭별통계</dt>
-								<dd>국토교통통계누리 분야별통계를 확인하세요!</dd>
-							</a>
-						</dl>
-					</li>
-					<li>
-						<dl>
-							<a href="stat-area.php">
-								<dt>지역별통계</dt>
-								<dd>국토교통통계누리 분야별통계를 확인하세요!</dd>
-							</a>
-						</dl>
-					</li>
-					<li>
-						<dl>
-							<a href="#">
-								<dt>영문통계</dt>
-								<dd>국토교통통계누리 분야별통계를 확인하세요!</dd>
-							</a>
-						</dl>
-					</li>
-					<li>
-						<dl>
-							<a href="stat-other.php">
-								<dt>타기관통계</dt>
-								<dd>국토교통통계누리 분야별통계를 확인하세요!</dd>
-							</a>
-						</dl>
-					</li>
-				</ul>
+			<div class="container">
+				<div class="eq0">
+					<p class="txt1">
+						다양한 <strong>정보</strong>와<br>
+						정확한 <strong>통계분석</strong> 콘텐츠를<br>
+						<strong>제공</strong>합니다.
+						<span>국토교통통계누리의 다양한 <stronG>통계 서비스</stronG>를 만나보세요!</span>
+					</p>
+					<ul class="depth2-menu">
+						<li>
+							<dl>
+								<a href="notice-use.php">
+									<dt>이용안내</dt>
+									<dd>이용에 도움이 되는 주요기능 및 부가정보를 제공합니다.</dd>
+								</a>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<a href="notice-introduce.php">
+									<dt>국토교통통계소개</dt>
+									<dd>주요 통계를 한 곳에 모아 이용자가 원하는 통계 제공!</dd>
+								</a>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<a href="notice-notice.php">
+									<dt>공지사항</dt>
+									<dd>국토교통통계누리의 새소식을 신속하게 알려 드립니다.</dd>
+								</a>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<a href="notice-faq.php">
+									<dt>자주묻는질문</dt>
+									<dd>자주하는 질문과 답변을 보실 수 있습니다.</dd>
+								</a>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<a href="notice-colmn.php">
+									<dt>보도자료</dt>
+									<dd>국민들에게 알리기 위하여 언론에 제공하는 자료를 확인하세요!</dd>
+								</a>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<a href="notice-schedule.php">
+									<dt>통계공표일정</dt>
+									<dd>정부승인통계를 대상으로 통계공표 사전예고제를 실시합니다.</dd>
+								</a>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<a href="notice-statdep.php">
+									<dt>통계담당부서안내</dt>
+									<dd>각통계의 담당자와 연락할 수 있는 전화번호입니다.</dd>
+								</a>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<a href="notice-site.php">
+									<dt>관련사이트</dt>
+									<dd>통계관련사이트와 통계관련시스템 정보를 확인하실 수 있습니다.</dd>
+								</a>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<a href="notice-viewer.php">
+									<dt>뷰어다운로드</dt>
+									<dd>원활한 서비스 이용을 위한 뷰어프로그램을 제공합니다.</dd>
+								</a>
+							</dl>
+						</li>
+					</ul>
+				</div>
+				<div class="eq1">
+					<p class="txt1">
+						다양한 <strong>정보</strong>와<br>
+						정확한 <strong>통계분석</strong> 콘텐츠를<br>
+						<strong>제공</strong>합니다.
+						<span>국토교통통계누리의 다양한 <stronG>통계 서비스</stronG>를 만나보세요!</span>
+					</p>
+					<ul class="depth2-menu">
+						<li>
+							<dl>
+								<a href="stat-field.php">
+									<dt>분야별통계</dt>
+									<dd>국토교통통계누리 분야별통계를 확인하세요!</dd>
+								</a>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<a href="stat-department.php">
+									<dt>부서별통계</dt>
+									<dd>국토교통통계누리 부서별통계를 확인하세요!</dd>
+								</a>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<a href="stat-name.php">
+									<dt>명칭별통계</dt>
+									<dd>국토교통통계누리 명칭별통계를 확인하세요!</dd>
+								</a>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<a href="stat-area.php">
+									<dt>지역별통계</dt>
+									<dd>국토교통통계누리 지역별통계를 확인하세요!</dd>
+								</a>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<a href="stat-other.php">
+									<dt>타기관통계</dt>
+									<dd>국토교통통계누리 타기관통계를 확인하세요!</dd>
+								</a>
+							</dl>
+						</li>
+					</ul>
+				</div>
+				<div class="eq2">
+					<p class="txt1">
+						다양한 <strong>정보</strong>와<br>
+						정확한 <strong>통계분석</strong> 콘텐츠를<br>
+						<strong>제공</strong>합니다.
+						<span>국토교통통계누리의 다양한 <stronG>통계 서비스</stronG>를 만나보세요!</span>
+					</p>
+					<ul class="depth2-menu">
+						<li>
+							<dl>
+								<a href="data-year.php">
+									<dt>통계연보</dt>
+									<dd>연도별로 국토교통부에서 발행되는 통계자료를 다운로드 받으세요.</dd>
+								</a>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<a href="data-period.php">
+									<dt>간행물</dt>
+									<dd>국토교통관련 통계 및 보고서 자료 파일 다운로드!</dd>
+								</a>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<a href="data-db.php">
+									<dt>통계메타DB</dt>
+									<dd>통계메타DB 대한 출처, 발표주기 등 메타정보를 확인하세요!</dd>
+								</a>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<a href="data-word.php">
+									<dt>통계용어</dt>
+									<dd>가나다순으로 쉽게 통계정보를 확인할 수 있습니다.</dd>
+								</a>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<a href="data-legal.php">
+									<dt>통계법령자료</dt>
+									<dd>국토교통통계관련 법령자료들을 확인하실 수 있습니다.</dd>
+								</a>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<a href="data-stat.php">
+									<dt>통계서식정보</dt>
+									<dd>국토교통통계관련 서식자료들을 확인하실 수 있습니다.</dd>
+								</a>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<a href="data-system.php">
+									<dt>통계기반정책관리제도</dt>
+									<dd>통계와 정책간 연계성 강화를 위한 제도 입니다.</dd>
+								</a>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<a href="data-quality.php">
+									<dt>품질진단안내</dt>
+									<dd>통계와 정책간 연계성 강화를 위한 제도 입니다.</dd>
+								</a>
+							</dl>
+						</li>
+					</ul>
+				</div>
+				<div class="eq3">
+					<p class="txt1">
+						다양한 <strong>정보</strong>와<br>
+						정확한 <strong>통계분석</strong> 콘텐츠를<br>
+						<strong>제공</strong>합니다.
+						<span>국토교통통계누리의 다양한 <stronG>통계 서비스</stronG>를 만나보세요!</span>
+					</p>
+					<ul class="depth2-menu">
+						<li>
+							<dl>
+								<a href="http://eminwon.molit.go.kr/" target="_blank">
+									<dt>민원마당</dt>
+									<dd>민원마당과 함께하는 생활의 작은 기쁨!</dd>
+								</a>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<a href="community-event.php">
+									<dt>이벤트</dt>
+									<dd>국토교통통계누리의 다양한 이벤트에 참여하세요!</dd>
+								</a>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<a href="community-report.php">
+									<dt>통계불일치 신고센터</dt>
+									<dd>홈페이지에서 통계불일치 부분이 있으신가요?</dd>
+								</a>
+							</dl>
+						</li>
+					</ul>
+				</div>
 				<p class="close-btn">
 					<a href="#">close</a>
 				</p>
 			</div>
 		</div>
 	</div>
-	-->
-	<div class="depth2-t depth2-2" style="display:none;">
-		<div class="depth2-w">
-			<div id="container">
-				<p class="txt1">
-					다양한 <strong>정보</strong>와<br>
-					정확한 <strong>통계분석</strong> 콘텐츠를<br>
-					<strong>제공</strong>합니다.
-					<span>국토교통통계누리의 다양한 <stronG>통계 서비스</stronG>를 만나보세요!</span>
-				</p>
-				<ul class="depth2-menu">
-					<li>
-						<dl>
-							<a href="stat-field.php">
-								<dt>분야별통계</dt>
-								<dd>국토교통통계누리 분야별통계를 확인하세요!</dd>
-							</a>
-						</dl>
-					</li>
-					<li>
-						<dl>
-							<a href="stat-department.php">
-								<dt>부서별통계</dt>
-								<dd>국토교통통계누리 분야별통계를 확인하세요!</dd>
-							</a>
-						</dl>
-					</li>
-					<li>
-						<dl>
-							<a href="stat-name.php">
-								<dt>명칭별통계</dt>
-								<dd>국토교통통계누리 분야별통계를 확인하세요!</dd>
-							</a>
-						</dl>
-					</li>
-					<li>
-						<dl>
-							<a href="stat-area.php">
-								<dt>지역별통계</dt>
-								<dd>국토교통통계누리 분야별통계를 확인하세요!</dd>
-							</a>
-						</dl>
-					</li>
-					<li>
-						<dl>
-							<a href="#">
-								<dt>영문통계</dt>
-								<dd>국토교통통계누리 분야별통계를 확인하세요!</dd>
-							</a>
-						</dl>
-					</li>
-					<li>
-						<dl>
-							<a href="stat-other.php">
-								<dt>타기관통계</dt>
-								<dd>국토교통통계누리 분야별통계를 확인하세요!</dd>
-							</a>
-						</dl>
-					</li>
-				</ul>
-				<p class="close-btn">
-					<a href="#">close</a>
-				</p>
-			</div>
-		</div>
-	</div>
+
 	<div class="body">
 		<div id="container">
 			<div class="side_w">

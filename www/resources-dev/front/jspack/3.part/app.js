@@ -65,17 +65,17 @@ jQuery(function($) {
 
 	$('.lnb').each(function() {
 		var $lnb = $(this);
-		var $statNav = $(this).find('>ul>li.stat');
-		var $statDepth2Wrap = $('.depth2-2');
+		var $statNav = $(this).find('>ul>li');
+		var $statDepth2Wrap = $('.depth2-t');
 		var timeoutId = null;
+		var $container = $statDepth2Wrap.find(".container");
 
 		$statNav.on('mouseenter', function() {
 			$lnb.trigger('start');
+			var index = $statNav.index(this);
+			$container.find("div").hide().eq(index).show();
 		});
-		$(this).find('>ul>li').not($statNav).on('mouseenter', function() {
-			$lnb.trigger('endNow');
-		});
-		$statNav.on('mouseleave', function() {
+		$lnb.on('mouseleave', function() {
 			$lnb.trigger('end');
 		});
 		$statDepth2Wrap.find('>*').on('mouseenter', function() {
@@ -90,7 +90,7 @@ jQuery(function($) {
 			$lnb.trigger('endNow');
 		});
 		$(this).on('start', function() {
-			$statDepth2Wrap.fadeIn();
+			$statDepth2Wrap.stop().fadeIn();
 
 			timeoutId != null && clearTimeout(timeoutId);
 		});
@@ -99,7 +99,7 @@ jQuery(function($) {
 
 			timeoutId = setTimeout(function() {
 				$statDepth2Wrap.stop().fadeOut();
-			}, 500);
+			}, 4000);
 		});
 		$(this).on('endNow', function() {
 			timeoutId != null && clearTimeout(timeoutId);
@@ -516,15 +516,15 @@ jQuery(function($) {
 					enabled : false
 				},
 				chart : {
-		            type: 'column',
-		            options3d: {
-		                enabled: true,
-		                alpha: 15,
-		                beta: 15,
-		                viewDistance: 25,
-		                depth: 40
-		            },
-					renderTo: 'chart' + (i + 1),
+					type : 'column',
+					options3d : {
+						enabled : true,
+						alpha : 15,
+						beta : 15,
+						viewDistance : 25,
+						depth : 40
+					},
+					renderTo : 'chart' + (i + 1),
 					plotBorderWidth : 0,
 					backgroundColor : 'transparent',
 					width : 228,
@@ -536,19 +536,19 @@ jQuery(function($) {
 						depth : 45
 					}
 				},
-				series: [{
-		            name: 'John',
-		            data: [3]
-		        }, {
-		            name: 'Joe',
-		            data: [3]
-		        }, {
-		            name: 'Jane',
-		            data: [4]
-		        }]
+				series : [ {
+					name : 'John',
+					data : [ 3 ]
+				}, {
+					name : 'Joe',
+					data : [ 3 ]
+				}, {
+					name : 'Jane',
+					data : [ 4 ]
+				} ]
 
 			})
-			
+
 			$span.css('display', 'block');
 		});
 	});
