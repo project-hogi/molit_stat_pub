@@ -1,11 +1,12 @@
 <?php
 $config["sitename"] = "국토교통부 통계누리";
 $config["mode"] = "front";
-$config["isDev"] = true;
+$config["isDev"] = false;
 $config["cssTableMinWidth"] = 640;
 $config["cssDesktopMinWidth"] = 1024;
 $config["cssLargeDesktopMinWidth"] = 1280;
-$config["imageFolder"] = ($config['isDev'] === true && (isset($config['isBuild']) && !$config['isBuild'] || !isset($config['isBuild']))) ? "/resources-dev/" . $config["mode"] . "/images" : "/resources/" . $config["mode"] . "/images";
+$config["resourcesFolder"] = ($config['isDev'] === true && (isset($config['isBuild']) && !$config['isBuild'] || !isset($config['isBuild']))) ? "/resources-dev/" . $config["mode"] : "/resources/" . $config["mode"];
+$config["imageFolder"] = $config["resourcesFolder"]  . "/images";
 ?><!DOCTYPE html>
 <html lang="ko-KR">
 <head>
@@ -43,16 +44,17 @@ $config["imageFolder"] = ($config['isDev'] === true && (isset($config['isBuild']
 <?php if($config['isDev'] === true && (isset($config['isBuild']) && !$config['isBuild'] || !isset($config['isBuild']))){ ?>
 <!--[if lt IE 9]><script src="/resources-dev/<?php echo $config["mode"]; ?>/jsvendor/jquery-1.12.2.min.js"></script><![endif]-->
 <!--[if gte IE 9]><!--><script src="/resources-dev/<?php echo $config["mode"]; ?>/jsvendor-dev-only/jquery.js"></script><![endif]-->
-<script src="/resources-dev/<?php echo $config["mode"]; ?>/jspack/1.vendor/jquery.bxslider.js"></script>
-<script src="/resources-dev/<?php echo $config["mode"]; ?>/jspack/1.vendor/jquery-ui/jquery-ui.min.js"></script>
-<script src="/resources-dev/<?php echo $config["mode"]; ?>/jspack/1.vendor/highcharts/highcharts.js"></script>
-<script src="/resources-dev/<?php echo $config["mode"]; ?>/jspack/1.vendor/highcharts/highcharts-3d.js"></script>
-<script src="/resources-dev/<?php echo $config["mode"]; ?>/jspack/1.vendor/highcharts/exporting.js"></script>
 <?php echoJsInPath('/resources-dev/' . $config["mode"] . '/jspack/'); ?>
+<script src="<?php echo $config["resourcesFolder"]; ?>/jsvendor/highcharts/highcharts.js"></script>
+<script src="<?php echo $config["resourcesFolder"]; ?>/jsvendor/highcharts/highcharts-3d.js"></script>
+<script src="<?php echo $config["resourcesFolder"]; ?>/jsvendor/highcharts/exporting.js"></script>
 <?php } else { ?>
 <!--[if lt IE 9]><script src="/resources/<?php echo $config["mode"]; ?>/js/vendor/jquery-1.12.2.min.js"></script><![endif]-->
 <!--[if gte IE 9]><!--><script src="/resources/<?php echo $config["mode"]; ?>/js/vendor/jquery.min.js"></script><![endif]-->
 <script src="/resources/<?php echo $config["mode"]; ?>/js/script.min.js"></script>
+<script src="<?php echo $config["resourcesFolder"]; ?>/js/vendor/highcharts/highcharts.js"></script>
+<script src="<?php echo $config["resourcesFolder"]; ?>/js/vendor/highcharts/highcharts-3d.js"></script>
+<script src="<?php echo $config["resourcesFolder"]; ?>/js/vendor/highcharts/exporting.js"></script>
 <?php } ?>
 </head>
 <body class="<?php echo getBodyClass($bodyClass); ?>">
