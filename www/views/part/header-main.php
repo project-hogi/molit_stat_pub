@@ -262,10 +262,164 @@
 				<h1 class="site-logo"><a href="/index.php" title="메인으로 이동">국토교통 통계누리</a></h1>
 				<div class="lnb">
 					<ul>
-						<li class="notice"><a href="notice-use.php">알림마당</a></li>
-						<li class="stat"><a href="stat-field.php">통계마당</a></li>
-						<li class="data"><a href="data-year.php">자료마당</a></li>
-						<li class="community"><a href="community-report.php">참여마당</a></li>
+						<li class="notice">
+							<a href="notice-use.php">알림마당</a>
+        			        <ul class="children-count-6">
+        			            <li class="nav-depth-2">
+        			                <a href="notice-use.php">
+        			                    <span>이용안내</span>
+        			                </a>
+        			            </li>
+        			            <li class="nav-depth-2">
+        			                <a href="notice-introduce.php">
+        			                    <span>국토교통통계소개</span>
+        			                </a>
+        			            </li>
+        			            <li class="nav-depth-2">
+        			                <a href="notice-notice.php">
+        			                    <span>공지사항</span>
+        			                </a>
+        			            </li>
+        			            <li class="nav-depth-2">
+        			                <a href="notice-statstory.php">
+        			                    <span>통계이야기</span>
+        			                </a>
+        			            </li>
+        			            <li class="nav-depth-2">
+        			                <a href=notice-faq.php>
+        			                    <span>자주묻는질문</span>
+        			                </a>
+        			            </li>
+        			            <li class="nav-depth-2">
+        			                <a href="notice-colmn.php">
+        			                    <span>보도자료</span>
+        			                </a>
+        			            </li>
+        			            <li class="nav-depth-2">
+        			                <a href="notice-schedule.php">
+        			                    <span>통계공표일정</span>
+        			                </a>
+        			            </li>
+        			            
+        			            <li class="nav-depth-2">
+        			                <a href="notice-statdep.php">
+        			                    <span>통계담당부서안내</span>
+        			                </a>
+        			            </li>
+        			            
+        			            <li class="nav-depth-2">
+        			                <a href="notice-site.php">
+        			                    <span>관련사이트</span>
+        			                </a>
+        			            </li>
+        			            
+        			            <li class="nav-depth-2">
+        			                <a href="notice-viewer.php">
+        			                    <span>뷰어다운로드</span>
+        			                </a>
+        			            </li>
+        			        </ul>
+						</li>
+						<li class="stat">
+							<a href="stat-field.php">통계마당</a>
+        			        <ul class="children-count-4">
+        			            <li class="nav-depth-2">
+        			                <a href="stat-field.php">
+        			                    <span>분야별통계</span>
+        			                </a>
+        			            </li>
+        			            <li class="nav-depth-2">
+        			                <a href="stat-department.php">
+        			                    <span>부서별통계</span>
+        			                </a>
+        			            </li>
+        			            <li class="nav-depth-2">
+        			                <a href="stat-name.php">
+        			                    <span>명칭별통계</span>
+        			                </a>
+        			            </li>
+        			            <li class="nav-depth-2">
+        			                <a href="stat-area.php">
+        			                    <span>지역별통계</span>
+        			                </a>
+        			            </li>
+        			            <li class="nav-depth-2">
+        			                <a href="stat-other.php">
+        			                    <span>타기관통계</span>
+        			                </a>
+        			            </li>
+        			        </ul>
+						</li>
+						<li class="data">
+							<a href="data-year.php">자료마당</a>
+        			        <ul class="children-count-2">
+        			            <li class="nav-depth-2">
+        			                <a href="data-year.php">
+        			                    <span>통계연보</span>
+        			                </a>
+        			            </li>
+        			            <li class="nav-depth-2">
+        			                <a href="data-period.php">
+        			                    <span>간행물</span>
+        			                </a>
+        			            </li>
+        			            <li class="nav-depth-2">
+        			                <a href="data-db.php">
+        			                    <span>통계메타DB</span>
+        			                </a>
+        			            </li>
+        			            <li class="nav-depth-2">
+        			                <a href="data-word.php">
+        			                    <span>통계용어</span>
+        			                </a>
+        			            </li>
+        			            <li class="nav-depth-2">
+        			                <a href="data-legal.php">
+        			                    <span>통계법령자료</span>
+        			                </a>
+        			            </li>
+        			            <li class="nav-depth-2">
+        			                <a href="data-stat.php">
+        			                    <span>통계서식정보</span>
+        			                </a>
+        			            </li>
+        			            <li class="nav-depth-2">
+        			                <a href="data-system.php">
+        			                    <span>통계기반정책관리제도</span>
+        			                </a>
+        			            </li>
+        			            <li class="nav-depth-2">
+        			                <a href="data-quality.php">
+        			                    <span>품질진단안내</span>
+        			                </a>
+        			            </li>
+        			        </ul>
+						</li>
+						<li class="community">
+							<a href="community-report.php">참여마당</a>
+        			        <ul class="children-count-4">
+        			            <li class="nav-depth-2">
+        			                <a href="http://eminwon.molit.go.kr/" target="_blank">
+        			                    <span>민원마당</span>
+        			                </a>
+        			            </li>
+        			            <li class="nav-depth-2">
+        			                <a href="community-event.php">
+        			                    <span>이벤트</span>
+        			                </a>
+        			            </li>
+        			            <li class="nav-depth-2">
+        			                <a href="community-report.php">
+        			                    <span>통계불일치신고센터</span>
+        			                </a>
+        			            </li>
+        			            <li class="nav-depth-2">
+        			                <a href="community-publicize.php">
+        			                    <span>홍보자료</span>
+        			                </a>
+        			            </li>
+        			        </ul>
+						</li>
 					</ul>
 				</div>
 				<div class="search-box">

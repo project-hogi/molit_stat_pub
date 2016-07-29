@@ -13,9 +13,14 @@ jQuery(function($) {
 		$(this).parent().toggleClass("closed");
 	});
 
-		
-	$('body.page-index').each(function(){
-		
+	$('body.page-graph-view').each(function() {
+		setInterval(function() {
+			$('.graph-view').css('min-height', $('.chk-list').outerHeight() + 40);
+		}, 100);
+	});
+
+	$('body.page-index').each(function() {
+
 		$('.lnb').each(function() {
 			var $lnb = $(this);
 			var $statNav = $(this).find('>ul>li');
@@ -23,10 +28,20 @@ jQuery(function($) {
 			var timeoutId = null;
 			var $container = $statDepth2Wrap.find(".container");
 
-			$statNav.on('mouseenter', function() {
-				$lnb.trigger('start');
-				var index = $statNav.index(this);
-				$container.find("div").hide().eq(index).show();
+			$statNav.find('>a').click(function(event) {
+				event.preventDefault();
+			});
+			$statNav.on('click', function(event) {
+				if ($(this).hasClass('on')) {
+					$statNav.removeClass('on');
+					$lnb.triggerHandler('endNow');
+				} else {
+					$statNav.removeClass('on');
+					$(this).addClass('on');
+					$lnb.trigger('start');
+					var index = $statNav.index(this);
+					$container.find("div").hide().eq(index).show();
+				}
 			});
 			$lnb.on('mouseleave', function() {
 				$lnb.trigger('end');
@@ -52,7 +67,8 @@ jQuery(function($) {
 
 				timeoutId = setTimeout(function() {
 					$statDepth2Wrap.stop().fadeOut();
-				}, 1000);
+					$statNav.removeClass('on');
+				}, 600);
 			});
 			$(this).on('endNow', function() {
 				timeoutId != null && clearTimeout(timeoutId);
@@ -65,11 +81,11 @@ jQuery(function($) {
 				}
 			});
 		});
-		
+
 	});
-	
-	$('body.layout-page').each(function(){
-		
+
+	$('body.layout-page').each(function() {
+
 		$('.lnb').each(function() {
 			var $lnb = $(this);
 			var $statNav = $(this).find('>ul>li');
@@ -119,7 +135,7 @@ jQuery(function($) {
 				}
 			});
 		});
-		
+
 	});
 
 	$('body.layout-page').each(function() {
@@ -341,14 +357,14 @@ jQuery(function($) {
 	$('.page-index').each(function() {
 		$('.notice-slide').each(function() {
 			var $visual = $(this);
-			var $visualContent = $('>ul', $visual);
+			var $visualContent = $('.slide-content', $visual);
 			var options = {
-				slides : '>li',
+				slides : '>div',
 				timeout : 2400,
 				fx : 'fade',
 				log : false,
 				pauseOnHover : true,
-				pagerActiveClass : 'on'
+				pagerActiveClass : 'active'
 			};
 			var $prev = $('.btn_slide_prev', $visual).each(function() {
 				options.prev = this;
@@ -362,7 +378,7 @@ jQuery(function($) {
 					$this.click();
 				}, 2000);
 			});
-			var $pager = $('.btn_pager', $visual).each(function() {
+			var $pager = $('.pager', $visual).each(function() {
 				options.pager = this;
 				options.pagerTemplate = '';
 				options.pagerEvent = 'mouseover';

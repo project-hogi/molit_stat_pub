@@ -402,59 +402,67 @@
 						background-color:#fff;
 						border-top:1px solid #e0e0e0;
 						position:relative;
-
-						ul.tab {
-							overflow:hidden;
-							padding:24px 0 15px 24px;
-							width:306px;
-							
-							li {
-								float:left;
-								padding:0 7px;
-								background:url('../images/main/bg_notice-li.png') no-repeat 0 50%;
-								
-								&:first-child {
-									padding-left:0;
-									background:none;
-								}
-								
-								a {
-									display:block;
-									font-size:16px;
-									color:#c5c5c5;
-									font-weight:600;
-									letter-spacing:-0.045em;
-								}
-								
-								&.active a {
-									border-bottom:2px solid #333;
-									color:#333;
-								}
-							}
-						}
+						padding: 60px 0 0;
 						
-						ul.list {
-							margin-left:24px;
-							li {
-								a {
-									font-size:12px;
-									color:#666;
-								}
-							}
-						}
-						
-						p.more {
+						ul.pager {
 							position: absolute;
-							right:18px;
-							top:28px;
+							left: 20px;
+							top: 20px;
+							margin: 0;
 							
 							a {
-								font-size:11px;
-								color:#999;
-								display:block;
-								padding-right:10px;
-								background:url('../images/main/notice-more.png') no-repeat 100% 50%;
-							}	
+								float:left;
+								display: inline-block;
+								padding:0 7px;
+								background:url('../images/main/bg_notice-li.png') no-repeat 0 50%;
+								font-size:16px;
+								color:#c5c5c5;
+								font-weight:600;
+								letter-spacing:-0.045em;
+								
+								&:first-child {
+									background:none;
+								}
+								&.active {
+									span{
+										border-bottom:2px solid #333;
+									}
+									color:#333;
+								}
+								span{
+									display: block;
+								}
+							}
+						}
+						.slide-content{
+							>div{
+								position: relative;
+								width: 100%;
+								
+								ul.list {
+									margin-left:24px;
+									
+									li {
+										a {
+											font-size:12px;
+											color:#666;
+										}
+									}
+								}
+								p.more {
+									position: absolute;
+									right:18px;
+									top:-36px;
+									
+									a {
+										font-size:11px;
+										color:#999;
+										display:block;
+										padding-right:10px;
+										background:url('../images/main/notice-more.png') no-repeat 100% 50%;
+									}	
+								}
+							}
 						}
 					}
 					
@@ -663,7 +671,15 @@
 								right:20px;
 							}
 						}
-						
+						a{
+							background: url("../images/main/m.png") no-repeat 100% 50%;
+						}
+						li:hover>a{
+							background-image: url("../images/main/m2.png");
+						}
+						ul.to-many-child{
+							top: -105px !important;
+						}
 						> ul {
 							width:100%;
 							margin:0;
@@ -680,15 +696,13 @@
 								> a {
 									display:block;
 									width:99%;
-									height:32px;
-									line-height:32px;
 									background-color:#fff;
 									color:#333;
 									font-size:13px;
 									text-decoration:none;
 									box-sizing:border-box;
-									padding-left:13px;
-									padding-right:14px;
+									line-height: 18px;
+									padding:7px 30px 7px 13px;
 									text-align:left;
 									
 									> span {
@@ -726,17 +740,15 @@
 										> a {
 											display:block;
 											width:250px;
-											height:32px;
-											line-height:32px;
 											background-color:#fff;
 											color:#333;
 											font-size:13px;
 											text-decoration:none;
 											box-sizing:border-box;
-											padding-left:13px;
-											padding-right:14px;
 											text-align:left;
 											letter-spacing:-0.045em;
+											line-height: 18px;
+											padding:7px 30px 7px 13px;
 											
 											> span {
 												float:right;
@@ -767,17 +779,15 @@
 												> a {
 													display:block;
 													width:250px;
-													height:32px;
-													line-height:32px;
 													background-color:#fff;
 													color:#333;
 													font-size:13px;
 													text-decoration:none;
 													box-sizing:border-box;
-													padding-left:13px;
-													padding-right:14px;
 													text-aligN:left;
 													letter-spacing:-0.045em;
+													line-height: 18px;
+													padding:7px 30px 7px 13px;
 													
 													> span {
 														float:right;
@@ -879,8 +889,10 @@
 			padding-top: 0px;
 			top:33px;
 			right:26px;
-			width:50px !important;
+			width:150px !important;
 			height:20px;
+			text-align: right !important;
+			font-size: 0;
 		}
 		
 		.bx-wrapper .bx-pager.bx-default-pager a {
