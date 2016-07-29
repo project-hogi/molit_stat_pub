@@ -60,11 +60,6 @@
 			                </a>
 			            </li>
 			            <li class="nav-depth-2">
-			                <a href="notice-statstory.php">
-			                    <span>통계이야기</span>
-			                </a>
-			            </li>
-			            <li class="nav-depth-2">
 			                <a href=notice-faq.php>
 			                    <span>자주묻는질문</span>
 			                </a>
@@ -202,8 +197,8 @@
 			                </a>
 			            </li>
 			            <li class="nav-depth-2">
-			                <a href="community-publicize.php">
-			                    <span>홍보자료</span>
+			                <a href="notice-statstory.php">
+			                    <span>통계이야기</span>
 			                </a>
 			            </li>
 			        </ul>
@@ -278,11 +273,6 @@
         			            <li class="nav-depth-2">
         			                <a href="notice-notice.php">
         			                    <span>공지사항</span>
-        			                </a>
-        			            </li>
-        			            <li class="nav-depth-2">
-        			                <a href="notice-statstory.php">
-        			                    <span>통계이야기</span>
         			                </a>
         			            </li>
         			            <li class="nav-depth-2">
@@ -414,8 +404,8 @@
         			                </a>
         			            </li>
         			            <li class="nav-depth-2">
-        			                <a href="community-publicize.php">
-        			                    <span>홍보자료</span>
+        			                <a href="notice-statstory.php">
+        			                    <span>통계이야기</span>
         			                </a>
         			            </li>
         			        </ul>
@@ -693,6 +683,14 @@
 								<a href="community-report.php">
 									<dt>통계불일치 신고센터</dt>
 									<dd>홈페이지에서 통계불일치 부분이 있으신가요?</dd>
+								</a>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<a href="data-period.php">
+									<dt>통계이야기</dt>
+									<dd>재미있는 통계홍보자료를 만나보세요!</dd>
 								</a>
 							</dl>
 						</li>
