@@ -2428,6 +2428,19 @@
 }
 
 .page-data-quality {
+	
+	ul.system-con1 {
+		li {
+			dl {
+				dt {
+					display:block;
+					padding-left:7px;
+					background:url('../images/sub/bg_db-list-dd-arrow.png') no-repeat 0 50%;
+				}
+			}
+		}
+	}
+	
 	.quality-con1 {
 	
 		ul {
@@ -2436,13 +2449,36 @@
 			padding:36px 0 36px 48px;
 		
 			li {
+				padding-bottom:26px;
+				
 				dl {
 					overflow:hidden;
+					margin:0;
 					
 					dt {
 						float:left;
 						width:272px;
 						height:205px;		
+						background:url('../images/sub/bg_quality-con1.png') no-repeat 0 0;
+						text-align:center;
+						
+						strong {
+							display:block;
+							padding-top:20px;
+							font-size:14px;
+							color:#fff;
+						}
+						
+						span {
+							padding-top:95px;
+							display: block;
+							font-weight: 600;
+						}
+						
+						em {
+							font-style:normal;
+							font-weight: normal;
+						}
 					}
 					
 					dd {
@@ -2450,9 +2486,72 @@
 						width:660px;
 						height:205px;
 						padding-left:25px;
+						
+						strong {
+							margin-top: 30px;
+						    display: block;
+   							padding-left: 7px;
+   							background: url('../images/sub/bg_db-list-dd-arrow.png') no-repeat 0 50%;
+						}
+						
+						span {
+							display: block;
+							padding-left:7px;
+						}
+					}
+				}
+				
+				&:nth-of-type(2) {
+					dl {
+						dt {
+							background-image:url('../images/sub/bg_quality-con2.png');							
+						}
+					}
+				}
+				
+				&:last-child {
+					padding-bottom:0;
+					
+					dl {
+						dt {
+							background-image:url('../images/sub/bg_quality-con3.png');							
+						}
 					}
 				}
 			}
+		}
+	}
+	
+	.quality-con2 {
+		dl.purpose {
+			background:url('../images/sub/bg_quality-con2-dl.png') no-repeat 52px 50%
+		}
+		
+		ul.step {
+			overflow:hidden;
+			height:295px;
+			background:url('../images/sub/bg_quality-con2-step.png') no-repeat 0 0;
+			
+			li {
+				float:left;
+				width:180px;
+				text-align:center;
+				color:#fff;
+				font-weight:600;
+				font-size:14px;
+				padding-top:153px;
+				margin-left:52px;
+				
+				&:first-child {
+					margin-left:60px;
+				}
+			}
+		}
+	}
+	
+	.quality-con5 {
+		dl.purpose {
+			background:url('../images/sub/bg_quality-con5-dl.png') no-repeat 52px 50%
 		}
 	}
 }
