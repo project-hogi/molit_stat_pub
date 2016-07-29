@@ -326,28 +326,101 @@ body.layout-index {
 			position:absolute;
 			top:170px;
 			left:310px;
-			overflow:hidden;
+			#util>.clearFloat();
 			
-			li {
-				float:left;
-				padding:0 16px;
-				background:url('../images/main/lnb_li.png') no-repeat 0 12px;
-				
-				&:first-child {
-					background:none;
-				}
-				
-				a {
-					display:inline-block;
-					padding-bottom:32px;
-					color:#024583;
-					font-size:18px;
-					font-weight:600;
-					letter-spacing:-0.045em;
+			>ul{
+				>li {
+					float:left;
+					padding:0 16px;
+					background:url('../images/main/lnb_li.png') no-repeat 0 12px;
+					position: relative;
 					
-					&:hover {
-						color:#ff6b24;
-						border-bottom:3px solid #ff6b24;
+					&:first-child {
+						background:none;
+					}
+					
+					>a {
+						display:inline-block;
+						padding-bottom:32px;
+						color:#024583;
+						font-size:18px;
+						font-weight:600;
+						letter-spacing:-0.045em;
+					}
+					>ul{
+						display: none;
+						position: absolute;
+						left: -210px;
+						top: 29px;
+						background-color: #fff;
+						-webkit-border-radius: 100px;
+						-moz-border-radius: 100px;
+						border-radius: 100px;
+						padding: 4px 8px;
+						box-shadow: 1px 1px 2px rgba(0, 0, 0, .06);
+						z-index: 100;
+						overflow: hidden;
+						text-align: center;
+						
+						>li{
+							display: inline-block;
+							padding: 0 6px 0 2px;
+							background:url('../images/main/lnb.png') no-repeat 100% 50%;
+							
+							a{
+								display: block;
+								font-size: 13px;
+								line-height: 1.4em;
+								color: #333;
+								
+								&:hover, &:focus{
+									color: #024583;
+								}
+							}
+							&:last-child{
+								background: none;
+							}
+						}
+					}
+					&:hover{
+						>a {
+							color:#ff6b24;
+						}
+						>ul{
+							display: block;
+						}
+					}
+					&.on{
+						>a {
+							border-bottom:3px solid #ff6b24;
+						}
+						>ul{
+							display: none !important;
+						}
+					}
+					&.notice{
+						>ul{
+							left: -210px;
+							width: 820px;
+						}
+					}
+					&.stat{
+						>ul{
+							left: -139px;
+							width: 382px;
+						}
+					}
+					&.data{
+						>ul{
+							left: -319px;
+							width: 684px;
+						}
+					}
+					&.community{
+						>ul{
+							left: -131px;
+							width: 317px;
+						}
 					}
 				}
 			}
@@ -2084,7 +2157,7 @@ body.layout-page {
 				width:300px;
 				border:1px solid #c2c5c8;
 				height:100%;
-				background:#fff url('../images/graph/bg_graph-info.png') no-repeat right bottom;
+				background:#fff url('../images/graph/bg_graph-info.png') no-repeat 50% 200px;
 				
 				ul.info-tab {
 					overflow:hidden;
