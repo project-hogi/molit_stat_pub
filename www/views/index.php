@@ -9073,7 +9073,7 @@
 			</li>
 			<li>
 				<ul class="main-slider">
-					<li>
+					<li class="eq-0">
 						<a href="">
     						<span>
     							<strong>함께</strong>하는<br>
@@ -9082,28 +9082,28 @@
     						</span>
 						</a>
 					</li>
-					<li>
+					<li class="eq-1">
 						<span>
 							<strong>정부</strong>승인<br>
 							<strong>통계공표</strong><br>
 							<strong>일정</strong>보기
 						</span>
 					</li>
-					<li>
+					<li class="eq-2">
 						<span>
 							<strong>통계</strong>불일치<br>
 							<strong>신고</strong>센터<br>
 							<strong>바로</strong>가기
 						</span>
 					</li>
-					<li>
+					<li class="eq-3">
 						<span>
 							<strong>재미</strong>있는<br>
 							<strong>통계</strong>이야기<br>
 							<strong>바로</strong>가기
 						</span>
 					</li>
-					<li>
+					<li class="eq-4">
 						<span>
 							<strong>통계</strong><br>
 							<strong>담당</strong>부서<br>
