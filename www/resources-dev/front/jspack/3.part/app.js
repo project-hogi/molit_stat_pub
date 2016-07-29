@@ -13,104 +13,129 @@ jQuery(function($) {
 		$(this).parent().toggleClass("closed");
 	});
 
-	$('.lnb').each(function() {
-		var $lnb = $(this);
-		var $statNav = $(this).find('>ul>li.notice');
-		var $statDepth2Wrap = $('.depth2-1');
-		var timeoutId = null;
-
-		$statNav.on('mouseenter', function() {
-			$lnb.trigger('start');
-		});
-		$(this).find('>ul>li').not($statNav).on('mouseenter', function() {
-			$lnb.trigger('endNow');
-		});
-		$statNav.on('mouseleave', function() {
-			$lnb.trigger('end');
-		});
-		$statDepth2Wrap.find('>*').on('mouseenter', function() {
-			$lnb.trigger('start');
-		});
-		$statDepth2Wrap.find('>*').on('mouseleave', function() {
-			$lnb.trigger('end');
-		});
-		$statDepth2Wrap.find('.close a').on('click', function(event) {
-			event.preventDefault();
-
-			$lnb.trigger('endNow');
-		});
-		$(this).on('start', function() {
-			$statDepth2Wrap.fadeIn();
-
-			timeoutId != null && clearTimeout(timeoutId);
-		});
-		$(this).on('end', function() {
-			timeoutId != null && clearTimeout(timeoutId);
-
-			timeoutId = setTimeout(function() {
-				$statDepth2Wrap.stop().fadeOut();
-			}, 500);
-		});
-		$(this).on('endNow', function() {
-			timeoutId != null && clearTimeout(timeoutId);
-
-			$statDepth2Wrap.stop().fadeOut();
-		});
-		$statDepth2Wrap.on("click mouseover", function(event) {
-			if (event.target == event.currentTarget) {
-				$lnb.triggerHandler("endNow");
-			}
-		});
+	$('body.page-graph-view').each(function() {
+		setInterval(function() {
+			$('.graph-view').css('min-height', $('.chk-list').outerHeight() + 40);
+		}, 100);
 	});
 
-	$('.lnb').each(function() {
-		var $lnb = $(this);
-		var $statNav = $(this).find('>ul>li');
-		var $statDepth2Wrap = $('.depth2-t');
-		var timeoutId = null;
-		var $container = $statDepth2Wrap.find(".container");
+	$('body.page-index').each(function() {
 
-		$statNav.on('mouseenter', function() {
-			$lnb.trigger('start');
-			var index = $statNav.index(this);
-			$container.find("div").hide().eq(index).show();
-		});
-		$lnb.on('mouseleave', function() {
-			$lnb.trigger('end');
-		});
-		$statDepth2Wrap.find('>*').on('mouseenter', function() {
-			$lnb.trigger('start');
-		});
-		$statDepth2Wrap.find('>*').on('mouseleave', function() {
-			$lnb.trigger('end');
-		});
-		$statDepth2Wrap.find('.close-btn a').on('click', function(event) {
-			event.preventDefault();
+		$('.lnb').each(function() {
+			var $lnb = $(this);
+			var $statNav = $(this).find('>ul>li');
+			var $statDepth2Wrap = $('.depth2-t');
+			var timeoutId = null;
+			var $container = $statDepth2Wrap.find(".container");
 
-			$lnb.trigger('endNow');
-		});
-		$(this).on('start', function() {
-			$statDepth2Wrap.stop().fadeIn();
+			$statNav.find('>a').click(function(event) {
+				event.preventDefault();
+			});
+			$statNav.on('click', function(event) {
+				if ($(this).hasClass('on')) {
+					$statNav.removeClass('on');
+					$lnb.triggerHandler('endNow');
+				} else {
+					$statNav.removeClass('on');
+					$(this).addClass('on');
+					$lnb.trigger('start');
+					var index = $statNav.index(this);
+					$container.find("div").hide().eq(index).show();
+				}
+			});
+			$lnb.on('mouseleave', function() {
+				$lnb.trigger('end');
+			});
+			$container.find('>*').on('mouseenter', function() {
+				$lnb.trigger('start');
+			});
+			$container.find('>*').on('mouseleave', function() {
+				$lnb.trigger('end');
+			});
+			$statDepth2Wrap.find('.close-btn a').on('click', function(event) {
+				event.preventDefault();
 
-			timeoutId != null && clearTimeout(timeoutId);
-		});
-		$(this).on('end', function() {
-			timeoutId != null && clearTimeout(timeoutId);
+				$lnb.trigger('endNow');
+			});
+			$(this).on('start', function() {
+				$statDepth2Wrap.stop().fadeIn();
 
-			timeoutId = setTimeout(function() {
+				timeoutId != null && clearTimeout(timeoutId);
+			});
+			$(this).on('end', function() {
+				timeoutId != null && clearTimeout(timeoutId);
+
+				timeoutId = setTimeout(function() {
+					$statDepth2Wrap.stop().fadeOut();
+					$statNav.removeClass('on');
+				}, 600);
+			});
+			$(this).on('endNow', function() {
+				timeoutId != null && clearTimeout(timeoutId);
+
 				$statDepth2Wrap.stop().fadeOut();
-			}, 4000);
+			});
+			$statDepth2Wrap.on("click mouseover", function(event) {
+				if (event.target == event.currentTarget) {
+					$lnb.triggerHandler("endNow");
+				}
+			});
 		});
-		$(this).on('endNow', function() {
-			timeoutId != null && clearTimeout(timeoutId);
 
-			$statDepth2Wrap.stop().fadeOut();
+	});
+
+	$('body.layout-page').each(function() {
+
+		$('.lnb').each(function() {
+			var $lnb = $(this);
+			var $statNav = $(this).find('>ul>li');
+			var $statDepth2Wrap = $('.depth2-t');
+			var timeoutId = null;
+			var $container = $statDepth2Wrap.find(".container");
+
+			$statNav.on('mouseenter', function() {
+				$lnb.trigger('start');
+				var index = $statNav.index(this);
+				$container.find("div").hide().eq(index).show();
+			});
+			$lnb.on('mouseleave', function() {
+				$lnb.trigger('end');
+			});
+			$statDepth2Wrap.find('>*').on('mouseenter', function() {
+				$lnb.trigger('start');
+			});
+			$statDepth2Wrap.find('>*').on('mouseleave', function() {
+				$lnb.trigger('end');
+			});
+			$statDepth2Wrap.find('.close-btn a').on('click', function(event) {
+				event.preventDefault();
+
+				$lnb.trigger('endNow');
+			});
+			$(this).on('start', function() {
+				$statDepth2Wrap.stop().fadeIn();
+
+				timeoutId != null && clearTimeout(timeoutId);
+			});
+			$(this).on('end', function() {
+				timeoutId != null && clearTimeout(timeoutId);
+
+				timeoutId = setTimeout(function() {
+					$statDepth2Wrap.stop().fadeOut();
+				}, 4000);
+			});
+			$(this).on('endNow', function() {
+				timeoutId != null && clearTimeout(timeoutId);
+
+				$statDepth2Wrap.stop().fadeOut();
+			});
+			$statDepth2Wrap.on("click mouseover", function(event) {
+				if (event.target == event.currentTarget) {
+					$lnb.triggerHandler("endNow");
+				}
+			});
 		});
-		$statDepth2Wrap.on("click mouseover", function(event) {
-			if (event.target == event.currentTarget) {
-				$lnb.triggerHandler("endNow");
-			}
-		});
+
 	});
 
 	$('body.layout-page').each(function() {
@@ -332,14 +357,14 @@ jQuery(function($) {
 	$('.page-index').each(function() {
 		$('.notice-slide').each(function() {
 			var $visual = $(this);
-			var $visualContent = $('>ul', $visual);
+			var $visualContent = $('.slide-content', $visual);
 			var options = {
-				slides : '>li',
+				slides : '>div',
 				timeout : 2400,
 				fx : 'fade',
 				log : false,
 				pauseOnHover : true,
-				pagerActiveClass : 'on'
+				pagerActiveClass : 'active'
 			};
 			var $prev = $('.btn_slide_prev', $visual).each(function() {
 				options.prev = this;
@@ -353,7 +378,7 @@ jQuery(function($) {
 					$this.click();
 				}, 2000);
 			});
-			var $pager = $('.btn_pager', $visual).each(function() {
+			var $pager = $('.pager', $visual).each(function() {
 				options.pager = this;
 				options.pagerTemplate = '';
 				options.pagerEvent = 'mouseover';
