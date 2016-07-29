@@ -205,7 +205,6 @@
 	
 	.contents {
 		position: relative;
-		z-index: 400;
 		width:920px;
 		margin:0 auto;
 		padding-top:20px;
@@ -276,7 +275,6 @@
 									font-size:14px;
 									vertical-align:middle;
 									font-style:normal;
-									color: #333;
 								}
 							}
 						}
@@ -444,14 +442,14 @@
 								width: 100%;
 								
 								ul.list {
-									margin-left:24px;
-									
 									li {
 										a {
 											display: block;
 											#util>.ellipsis();
-											padding-right: 20px;
+											background: url("../images/main/latest.png") no-repeat 25px 50%;
+											padding: 2px 22px 2px 32px;
 											font-size:12px;
+											line-height: 1.4em;
 											color:#666;
 										}
 									}
@@ -689,6 +687,7 @@
 							background: url("../images/main/m.png") no-repeat 100% 50%;
 						}
 						li:hover>a{
+							background-color:#f1f1f1;
 							background-image: url("../images/main/m2.png");
 						}
 						ul.to-many-child{
@@ -904,6 +903,7 @@
 						font-style:normal;
 						text-align:center;
 						font-size:13px;
+						color: #333;
 					}
 				}
 			}
