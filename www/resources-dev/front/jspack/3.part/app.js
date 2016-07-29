@@ -13,104 +13,113 @@ jQuery(function($) {
 		$(this).parent().toggleClass("closed");
 	});
 
-	$('.lnb').each(function() {
-		var $lnb = $(this);
-		var $statNav = $(this).find('>ul>li.notice');
-		var $statDepth2Wrap = $('.depth2-1');
-		var timeoutId = null;
+		
+	$('body.page-index').each(function(){
+		
+		$('.lnb').each(function() {
+			var $lnb = $(this);
+			var $statNav = $(this).find('>ul>li');
+			var $statDepth2Wrap = $('.depth2-t');
+			var timeoutId = null;
+			var $container = $statDepth2Wrap.find(".container");
 
-		$statNav.on('mouseenter', function() {
-			$lnb.trigger('start');
-		});
-		$(this).find('>ul>li').not($statNav).on('mouseenter', function() {
-			$lnb.trigger('endNow');
-		});
-		$statNav.on('mouseleave', function() {
-			$lnb.trigger('end');
-		});
-		$statDepth2Wrap.find('>*').on('mouseenter', function() {
-			$lnb.trigger('start');
-		});
-		$statDepth2Wrap.find('>*').on('mouseleave', function() {
-			$lnb.trigger('end');
-		});
-		$statDepth2Wrap.find('.close a').on('click', function(event) {
-			event.preventDefault();
+			$statNav.on('mouseenter', function() {
+				$lnb.trigger('start');
+				var index = $statNav.index(this);
+				$container.find("div").hide().eq(index).show();
+			});
+			$lnb.on('mouseleave', function() {
+				$lnb.trigger('end');
+			});
+			$container.find('>*').on('mouseenter', function() {
+				$lnb.trigger('start');
+			});
+			$container.find('>*').on('mouseleave', function() {
+				$lnb.trigger('end');
+			});
+			$statDepth2Wrap.find('.close-btn a').on('click', function(event) {
+				event.preventDefault();
 
-			$lnb.trigger('endNow');
-		});
-		$(this).on('start', function() {
-			$statDepth2Wrap.fadeIn();
+				$lnb.trigger('endNow');
+			});
+			$(this).on('start', function() {
+				$statDepth2Wrap.stop().fadeIn();
 
-			timeoutId != null && clearTimeout(timeoutId);
-		});
-		$(this).on('end', function() {
-			timeoutId != null && clearTimeout(timeoutId);
+				timeoutId != null && clearTimeout(timeoutId);
+			});
+			$(this).on('end', function() {
+				timeoutId != null && clearTimeout(timeoutId);
 
-			timeoutId = setTimeout(function() {
+				timeoutId = setTimeout(function() {
+					$statDepth2Wrap.stop().fadeOut();
+				}, 1000);
+			});
+			$(this).on('endNow', function() {
+				timeoutId != null && clearTimeout(timeoutId);
+
 				$statDepth2Wrap.stop().fadeOut();
-			}, 500);
+			});
+			$statDepth2Wrap.on("click mouseover", function(event) {
+				if (event.target == event.currentTarget) {
+					$lnb.triggerHandler("endNow");
+				}
+			});
 		});
-		$(this).on('endNow', function() {
-			timeoutId != null && clearTimeout(timeoutId);
-
-			$statDepth2Wrap.stop().fadeOut();
-		});
-		$statDepth2Wrap.on("click mouseover", function(event) {
-			if (event.target == event.currentTarget) {
-				$lnb.triggerHandler("endNow");
-			}
-		});
+		
 	});
+	
+	$('body.layout-page').each(function(){
+		
+		$('.lnb').each(function() {
+			var $lnb = $(this);
+			var $statNav = $(this).find('>ul>li');
+			var $statDepth2Wrap = $('.depth2-t');
+			var timeoutId = null;
+			var $container = $statDepth2Wrap.find(".container");
 
-	$('.lnb').each(function() {
-		var $lnb = $(this);
-		var $statNav = $(this).find('>ul>li');
-		var $statDepth2Wrap = $('.depth2-t');
-		var timeoutId = null;
-		var $container = $statDepth2Wrap.find(".container");
+			$statNav.on('mouseenter', function() {
+				$lnb.trigger('start');
+				var index = $statNav.index(this);
+				$container.find("div").hide().eq(index).show();
+			});
+			$lnb.on('mouseleave', function() {
+				$lnb.trigger('end');
+			});
+			$statDepth2Wrap.find('>*').on('mouseenter', function() {
+				$lnb.trigger('start');
+			});
+			$statDepth2Wrap.find('>*').on('mouseleave', function() {
+				$lnb.trigger('end');
+			});
+			$statDepth2Wrap.find('.close-btn a').on('click', function(event) {
+				event.preventDefault();
 
-		$statNav.on('mouseenter', function() {
-			$lnb.trigger('start');
-			var index = $statNav.index(this);
-			$container.find("div").hide().eq(index).show();
-		});
-		$lnb.on('mouseleave', function() {
-			$lnb.trigger('end');
-		});
-		$statDepth2Wrap.find('>*').on('mouseenter', function() {
-			$lnb.trigger('start');
-		});
-		$statDepth2Wrap.find('>*').on('mouseleave', function() {
-			$lnb.trigger('end');
-		});
-		$statDepth2Wrap.find('.close-btn a').on('click', function(event) {
-			event.preventDefault();
+				$lnb.trigger('endNow');
+			});
+			$(this).on('start', function() {
+				$statDepth2Wrap.stop().fadeIn();
 
-			$lnb.trigger('endNow');
-		});
-		$(this).on('start', function() {
-			$statDepth2Wrap.stop().fadeIn();
+				timeoutId != null && clearTimeout(timeoutId);
+			});
+			$(this).on('end', function() {
+				timeoutId != null && clearTimeout(timeoutId);
 
-			timeoutId != null && clearTimeout(timeoutId);
-		});
-		$(this).on('end', function() {
-			timeoutId != null && clearTimeout(timeoutId);
+				timeoutId = setTimeout(function() {
+					$statDepth2Wrap.stop().fadeOut();
+				}, 4000);
+			});
+			$(this).on('endNow', function() {
+				timeoutId != null && clearTimeout(timeoutId);
 
-			timeoutId = setTimeout(function() {
 				$statDepth2Wrap.stop().fadeOut();
-			}, 4000);
+			});
+			$statDepth2Wrap.on("click mouseover", function(event) {
+				if (event.target == event.currentTarget) {
+					$lnb.triggerHandler("endNow");
+				}
+			});
 		});
-		$(this).on('endNow', function() {
-			timeoutId != null && clearTimeout(timeoutId);
-
-			$statDepth2Wrap.stop().fadeOut();
-		});
-		$statDepth2Wrap.on("click mouseover", function(event) {
-			if (event.target == event.currentTarget) {
-				$lnb.triggerHandler("endNow");
-			}
-		});
+		
 	});
 
 	$('body.layout-page').each(function() {

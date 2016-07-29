@@ -2,13 +2,13 @@
 	<div class="toppopup-w">
 		<ul class="top-slide">
 			<li>
-				<img src="<?php echo $config["imageFolder"]; ?>/main/bg_toppopup.png" alt="" />
+				<a href="#"><img src="<?php echo $config["imageFolder"]; ?>/main/bg_toppopup.png" alt="" /></a>
 			</li>
 			<li>
-				<img src="<?php echo $config["imageFolder"]; ?>/main/bg_toppopup.png" alt="" />
+				<a href="#"><img src="<?php echo $config["imageFolder"]; ?>/main/bg_toppopup.png" alt="" /></a>
 			</li>
 			<li>
-				<img src="<?php echo $config["imageFolder"]; ?>/main/bg_toppopup.png" alt="" />
+				<a href="#"><img src="<?php echo $config["imageFolder"]; ?>/main/bg_toppopup.png" alt="" /></a>
 			</li>
 		</ul>
 		<p class="x-btn">
