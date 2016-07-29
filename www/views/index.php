@@ -8585,18 +8585,20 @@
 			</li>
 			<li>
 				<a href="data-year.php">
-					<h3>통계자료 다운로드 서비스!<span><strong>통계</strong>연보</span></h3>
-					<em>다운로드</em>
+    				<h3>통계자료 다운로드 서비스!<span><strong>통계</strong>연보</span></h3>
+    				<em>다운로드</em>
 				</a>
 			</li>
 			<li>
 				<ul class="main-slider">
 					<li>
-						<span>
-							<strong>함께</strong>하는<br>
-							<strong>국토</strong>교통<br>
-							<strong>통계</strong>알리미
-						</span>
+						<a href="">
+    						<span>
+    							<strong>함께</strong>하는<br>
+    							<strong>국토</strong>교통<br>
+    							<strong>통계</strong>알리미
+    						</span>
+						</a>
 					</li>
 					<li>
 						<span>
