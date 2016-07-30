@@ -255,6 +255,7 @@
 			</div>
 			<div class="contents">
 				<h1 class="site-logo"><a href="/index.php" title="메인으로 이동">국토교통 통계누리</a></h1>
+				<h1 class="site-logo"><a href="/index.php" title="메인으로 이동">국토교통 통계누리</a></h1>
 				<div class="lnb">
 					<ul>
 						<li class="notice">
