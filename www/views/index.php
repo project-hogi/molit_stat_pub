@@ -8851,66 +8851,28 @@
 			</div>
 			<div class="stat">
 				<ul class="menu-slide">
-					<?php for($i = 0; $i < 10; $i++){ ?>
-					<li>
+					<li style="background-image: url(<?php echo $config["imageFolder"]; ?>/main/main-chart-eq-0.png);">
 						<h3><strong>주요</strong>통계<em>Key statistics</em></h3>
-						<span id="chart<?php echo $i; ?>"></span>
-						<em class="chart-title">2016년도 전국 임대주택 통계</em>
 					</li>
-					<?php } ?>
+					<li style="background-image: url(<?php echo $config["imageFolder"]; ?>/main/main-chart-eq-1.png);">
+						<h3><strong>주요</strong>통계<em>Key statistics</em></h3>
+					</li>
+					<li style="background-image: url(<?php echo $config["imageFolder"]; ?>/main/main-chart-eq-2.png);">
+						<h3><strong>주요</strong>통계<em>Key statistics</em></h3>
+					</li>
+					<li style="background-image: url(<?php echo $config["imageFolder"]; ?>/main/main-chart-eq-3.png);">
+						<h3><strong>주요</strong>통계<em>Key statistics</em></h3>
+					</li>
+					<li style="background-image: url(<?php echo $config["imageFolder"]; ?>/main/main-chart-eq-4.png);">
+						<h3><strong>주요</strong>통계<em>Key statistics</em></h3>
+					</li>
+					<li style="background-image: url(<?php echo $config["imageFolder"]; ?>/main/main-chart-eq-5.png);">
+						<h3><strong>주요</strong>통계<em>Key statistics</em></h3>
+					</li>
+					<li style="background-image: url(<?php echo $config["imageFolder"]; ?>/main/main-chart-eq-6.png);">
+						<h3><strong>주요</strong>통계<em>Key statistics</em></h3>
+					</li>
 				</ul>
-				<script>
-				jQuery(function($){
-					<?php for($i = 0; $i < 10; $i++){ ?>
-    				$('#chart<?php echo $i; ?>').each(function() {
-    					var $this = $(this);
-    
-    					var chart = new Highcharts.Chart({
-    						exporting : {
-    							enabled : false
-    						},
-    						credits : {
-    							enabled : false
-    						},
-    						chart : {
-    							type : 'column',
-    							options3d : {
-    								enabled : true,
-    								alpha : 15,
-    								beta : 15,
-    								viewDistance : 25,
-    								depth : 40
-    							},
-    							renderTo : $this.attr("id"),
-    							plotBorderWidth : 0,
-    							backgroundColor : 'transparent',
-    							width : 228,
-    							height : 240
-    						},
-    						plotOptions : {
-    							pie : {
-    								innerSize : 300,
-    								depth : 45
-    							}
-    						},
-    						series : [ {
-    							name : 'John',
-    							data : [ 3 ]
-    						}, {
-    							name : 'Joe',
-    							data : [ 3 ]
-    						}, {
-    							name : 'Jane',
-    							data : [ 4 ]
-    						} ]
-    
-    					})
-    
-    					$this.css('display', 'block');
-    				});
-					<?php } ?>
-				});
-				</script>
 			</div>
 		</div><!-- //menu-wrap -->
 	</div><!-- //menu-pos -->
