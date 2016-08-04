@@ -25,7 +25,7 @@
 		if (options.theme ? options.theme : $.modalBox.defaults.theme) {
 			// 테마 유효성 검사
 			if (!$.modalBox.defaults.themeMap[options.theme ? options.theme : $.modalBox.defaults.theme]) {
-				console.log('modal-box : ' + options.theme + ' 테마 정보가 없습니다.');
+				//console.log('modal-box : ' + options.theme + ' 테마 정보가 없습니다.');
 				return false;
 			}
 		}
@@ -36,7 +36,7 @@
 		
 		// 유효성
 		if (options.src == null) {
-			console.log('modal-box : src가 존재하지 않습니다.');
+			//console.log('modal-box : src가 존재하지 않습니다.');
 			return;
 		}
 
@@ -154,7 +154,7 @@
 
 			break;
 		default:
-			console.log('modal-box : ' + settings.mode + '는 존재하지 않는 mode입니다.');
+			//console.log('modal-box : ' + settings.mode + '는 존재하지 않는 mode입니다.');
 			return false;
 		}
 

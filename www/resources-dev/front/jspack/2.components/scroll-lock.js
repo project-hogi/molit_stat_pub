@@ -18,7 +18,7 @@
 		
 		// 유효성
 		if (!$container.size()) {
-			console.log('scrollLock : container가 존재하지 않습니다.');
+			//console.log('scrollLock : container가 존재하지 않습니다.');
 			return;
 		}
 
