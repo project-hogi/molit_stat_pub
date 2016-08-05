@@ -22,17 +22,7 @@ module.exports = function(grunt) {
 		concat : {
 			build : {
 				src : [ '../../www/resources-dev/front/jspack/**/**/*.js' ],
-				dest : '../../www/resources-dev/front/temp/js/script.js'
-			}
-		},
-		uglify : {
-			options : {
-				preserveComments : false,
-			},
-			build : {
-				files : {
-					'../../www/resources/front/js/script.min.js' : [ '../../www/resources-dev/front/temp/js/script.js' ]
-				}
+				dest : '../../www/resources/front/js/script.min.js'
 			}
 		},
 		lesslint : {
@@ -94,19 +84,6 @@ module.exports = function(grunt) {
 				} ]
 			}
 		},
-		imagemin : {
-			build : {
-				options : {
-					optimizationLevel : 3,
-				},
-				files : [ {
-					expand : true,
-					cwd : '../../www/resources-dev/front/images/',
-					src : [ '**/*.{png,jpg,gif}' ],
-					dest : '../../www/resources/front/images/'
-				} ]
-			}
-		},
 		clean : {
 			primary : {
 				options : {
@@ -138,11 +115,18 @@ module.exports = function(grunt) {
 					dest : '../../www/resources/front/fonts/'
 				} ],
 			},
+			images : {
+				files : [ {
+					expand : true,
+					cwd : '../../www/resources-dev/front/images/',
+					src : [ '**' ],
+					dest : '../../www/resources/front/images/'
+				} ],
+			},
 		},
 	});
 
 	grunt.registerTask('default', [ 'clean', 'watch' ]);
-	grunt.registerTask('build', [ 'clean:primary', 'clean:beforeAndAfterBuild', 'copy', 'concat:build', 'uglify:build', 'lesslint', 'less:build', 'csscomb:build', 'autoprefixer:build',
-			'cssmin:build', 'imagemin:build', 'clean:beforeAndAfterBuild' ]);
+	grunt.registerTask('build', [ 'clean:primary', 'clean:beforeAndAfterBuild', 'copy', 'concat:build', 'less:build', 'csscomb:build', 'autoprefixer:build', 'cssmin:build', 'clean:beforeAndAfterBuild' ]);
 
 };

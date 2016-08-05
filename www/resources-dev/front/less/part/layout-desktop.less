@@ -7,11 +7,15 @@ body.layout-page {
 	
 }
 
+body{
+	height: auto !important;
+}
 #wrap{
 	position: relative;
-	height: 100%;
 	min-width:1000px !important;
-
+	body.scroll-lock &{
+		min-width: 0 !important;
+	}
 .dim { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: #000; opacity: 0.5; z-index: 900;}
 .sitemap_pc {
 	display: none;
@@ -20,7 +24,7 @@ body.layout-page {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: url("../images/common/bg_trans_blank.png") repeat center;
+	background: url("../images/common/bg_trans_blank.png?20160805") repeat center;
 	overflow-y: auto;
 	z-index: 10000;
 }
@@ -132,7 +136,7 @@ body.layout-page {
 	padding-top: 95px;
 	width: 95px;
 	height: 0;
-	background: url("../images/common/btn_sitemap_pc_close.png") no-repeat center;
+	background: url("../images/common/btn_sitemap_pc_close.png?20160805") no-repeat center;
 	overflow: hidden;
 }
 }
@@ -152,7 +156,6 @@ body.layout-page {
 	}
 }
 .body{
-	height: 100%;
 }
 .layout-index #container {
 	position: relative;
@@ -220,14 +223,14 @@ body.layout-index {
 		.container {
 			position:relative;
 			width:100%;
-			background:url('../images/main/bg_header_container.png') no-repeat 20px 16px;
+			background:url('../images/main/bg_header_container.png?20160805') no-repeat 20px 16px;
 			padding:0;
 			
 			.contents {
 				position:relative;
 				width:1000px;
 				margin:0 auto;
-				background:url('../images/main/bg_header_contents.png') no-repeat 780px 105px;
+				background:url('../images/main/bg_header_contents.png?20160805') no-repeat 780px 105px;
 			}
 		}
 		h1.site-logo {
@@ -245,7 +248,7 @@ body.layout-index {
 				width:198px;
 				height:42px;
 				text-indent:-9999px;
-				background:url('../images/common/h1-logo.png') no-repeat 0 0;
+				background:url('../images/common/h1-logo.png?20160805') no-repeat 0 0;
 			}
 		}
 		
@@ -261,7 +264,7 @@ body.layout-index {
 				li {
 					float:left;
 					padding:0 12px;
-					background:url('../images/main/gnb_li.png') no-repeat 0 50%;
+					background:url('../images/main/gnb_li.png?20160805') no-repeat 0 50%;
 					font-size:12px;
 					
 					&:first-child {
@@ -297,15 +300,15 @@ body.layout-index {
 								}
 								
 								&.zoom-in {
-									background:url('../images/common/bg_zoomin.png') no-repeat 50% 50%;
+									background:url('../images/common/bg_zoomin.png?20160805') no-repeat 50% 50%;
 								}
 								
 								&.rotation {
-									background:url('../images/common/bg_rotation.png') no-repeat 50% 50%;
+									background:url('../images/common/bg_rotation.png?20160805') no-repeat 50% 50%;
 								}
 								
 								&.zoom-out {
-									background:url('../images/common/bg_zoomout.png') no-repeat 50% 50%;
+									background:url('../images/common/bg_zoomout.png?20160805') no-repeat 50% 50%;
 								}
 							}
 						}
@@ -323,7 +326,7 @@ body.layout-index {
 				display:block;
 				width:40px;
 				height:40px;
-				background:url('../images/common/sitemap-btn.png') no-repeat 0 0;
+				background:url('../images/common/sitemap-btn.png?20160805') no-repeat 0 0;
 				text-indent:-9999px;
 				margin:0;
 			}
@@ -339,7 +342,7 @@ body.layout-index {
 				>li {
 					float:left;
 					padding:0 16px;
-					background:url('../images/main/lnb_li.png') no-repeat 0 12px;
+					background:url('../images/main/lnb_li.png?20160805') no-repeat 0 12px;
 					position: relative;
 					
 					&:first-child {
@@ -372,7 +375,7 @@ body.layout-index {
 						>li{
 							display: inline-block;
 							padding: 0 6px 0 2px;
-							background:url('../images/main/lnb.png') no-repeat 100% 50%;
+							background:url('../images/main/lnb.png?20160805') no-repeat 100% 50%;
 							
 							a{
 								display: block;
@@ -439,13 +442,13 @@ body.layout-index {
 			left:311px;
 			width:460px;
 			height:50px;
-			background:url('../images/main/bg_search-box.png') no-repeat 0 0;
+			background:url('../images/main/bg_search-box.png?20160805') no-repeat 0 0;
 			
 			p.select-click {
 				display:inline-block;
 				width:90px;
 				height:50px;
-				background:url('../images/common/select-click.png') no-repeat 55% 50%;
+				background:url('../images/common/select-click.png?20160805') no-repeat 55% 50%;
 				margin:0;
 				line-height:50px;
 				cursor:pointer;
@@ -456,7 +459,7 @@ body.layout-index {
 				overflow: hidden;
 				
 				&.on {
-					background-image:url('../images/common/select-click-over.png');
+					background-image:url('../images/common/select-click-over.png?20160805');
 				}
 			}
 			
@@ -525,20 +528,20 @@ body.layout-page {
 	
 	#header {
 		width:100%;
-		background:#fff url('../images/common/bg_header.png') repeat-x center 0;
+		background:#fff url('../images/common/bg_header.png?20160805') repeat-x center 0;
 		height:128px;
 		
 		.container {
 			position:relative;
 			width:100%;
-			background:url('../images/common/bg_header_container.png') no-repeat 20px 5px;
+			background:url('../images/common/bg_header_container.png?20160805') no-repeat 20px 5px;
 			padding:0;
 			
 			.contents {
 				position:relative;
 				width:1000px;
 				margin:0 auto;
-				background:url('../images/common/bg_header_contents.png') no-repeat right 67px;
+				background:url('../images/common/bg_header_contents.png?20160805') no-repeat right 67px;
 			}
 		}
 		h1.site-logo {
@@ -550,7 +553,7 @@ body.layout-page {
 				width:198px;
 				height:42px;
 				text-indent:-9999px;
-				background:url('../images/common/h1-logo.png') no-repeat 0 0;
+				background:url('../images/common/h1-logo.png?20160805') no-repeat 0 0;
 			}
 		}
 		
@@ -565,7 +568,7 @@ body.layout-page {
 				li {
 					float:left;
 					padding:0 12px;
-					background:url('../images/common/gnb_li.png') no-repeat 0 50%;
+					background:url('../images/common/gnb_li.png?20160805') no-repeat 0 50%;
 					font-size:12px;
 					
 					&:first-child {
@@ -601,15 +604,15 @@ body.layout-page {
 								}
 								
 								&.zoom-in {
-									background:url('../images/common/bg_zoomin.png') no-repeat 50% 50%;
+									background:url('../images/common/bg_zoomin.png?20160805') no-repeat 50% 50%;
 								}
 								
 								&.rotation {
-									background:url('../images/common/bg_rotation.png') no-repeat 50% 50%;
+									background:url('../images/common/bg_rotation.png?20160805') no-repeat 50% 50%;
 								}
 								
 								&.zoom-out {
-									background:url('../images/common/bg_zoomout.png') no-repeat 50% 50%;
+									background:url('../images/common/bg_zoomout.png?20160805') no-repeat 50% 50%;
 								}
 							}
 						}
@@ -627,7 +630,7 @@ body.layout-page {
 				display:block;
 				width:40px;
 				height:40px;
-				background:url('../images/common/sitemap-btn.png') no-repeat 0 0;
+				background:url('../images/common/sitemap-btn.png?20160805') no-repeat 0 0;
 				text-indent:-9999px;
 				margin:0;
 			}
@@ -662,13 +665,13 @@ body.layout-page {
 			left:668px;
 			width:240px;
 			height:34px;
-			background:url('../images/common/bg_search-box.png') no-repeat 0 0;
+			background:url('../images/common/bg_search-box.png?20160805') no-repeat 0 0;
 			
 			p.select-click {
 				display:inline-block;
 				width:70px;
 				height:34px;
- 				background:url('../images/common/select-click.png') no-repeat 80% 50%;
+ 				background:url('../images/common/select-click.png?20160805') no-repeat 80% 50%;
 				margin:0;
 				line-height:34px;
 				cursor:pointer;
@@ -679,7 +682,7 @@ body.layout-page {
 				overflow: hidden;
 				 
 				&.on {
-					background-image:url('../images/common/select-click-over.png');					
+					background-image:url('../images/common/select-click-over.png?20160805');					
 				}
 			}
 			
@@ -700,7 +703,7 @@ body.layout-page {
 				float:right;
 				width:34px;
 				height:34px;
-				background:url('../images/common/search-btn.png') no-repeat 50% 50%;
+				background:url('../images/common/search-btn.png?20160805') no-repeat 50% 50%;
 				text-indent:-9999px;
 			}
 			
@@ -761,7 +764,7 @@ body.layout-page {
 			position: relative;
 			float:left;
 			border-right:1px solid #e4e4e4;
-			background:url('../images/common/snb_arrow.png') no-repeat 90% 50%;
+			background:url('../images/common/snb_arrow.png?20160805') no-repeat 90% 50%;
 			
 			&.home{
 				background:none;
@@ -771,7 +774,7 @@ body.layout-page {
 					height:49px;
 					text-indent:-9999px;
 					border-left:1px solid #e4e4e4;
-					background:url('../images/common/bg_home_ico.png') no-repeat 50% 50%;
+					background:url('../images/common/bg_home_ico.png?20160805') no-repeat 50% 50%;
 				}
 			}
 			&:hover{
@@ -850,7 +853,7 @@ body.layout-page {
 
 .pagination > li > a.prev {
 	width:30px;
-	background:#fff url('../images/common/bg_arrow-prev.png') no-repeat 50% 50%;
+	background:#fff url('../images/common/bg_arrow-prev.png?20160805') no-repeat 50% 50%;
 	margin-right:0;
 }
 
@@ -860,7 +863,7 @@ body.layout-page {
 
 .pagination > li > a.next {
 	width:30px;
-	background:#fff url('../images/common/bg_arrow-next.png') no-repeat 50% 50%;
+	background:#fff url('../images/common/bg_arrow-next.png?20160805') no-repeat 50% 50%;
 }
 
 .pagination > li > a.next span {
@@ -893,7 +896,7 @@ input.search-btn {
 	height:30px;
 	border:1px solid #d4d4d4;
 	text-indent:-9999px;
-	background:#fff url('../images/common/bg_search-btn.png') no-repeat 50% 50%;
+	background:#fff url('../images/common/bg_search-btn.png?20160805') no-repeat 50% 50%;
 }
 
 /* 서브 공통 */
@@ -909,7 +912,7 @@ input.search-btn {
 		text-align:center;
 		font-weight:600;
 		margin-top:50px;
-		background:url('../images/common/bg_h2.png') no-repeat 50% 0;
+		background:url('../images/common/bg_h2.png?20160805') no-repeat 50% 0;
 		padding-top:15px;
 	}
 	
@@ -929,7 +932,7 @@ input.search-btn {
 		dd {
 			font-size:11px;
 			padding-left:22px;
-			background:url('../images/common/bg_paging_home.png') no-repeat 0 50%;
+			background:url('../images/common/bg_paging_home.png?20160805') no-repeat 0 50%;
 			height:22px;
 			line-height:22px;
 			
@@ -938,7 +941,7 @@ input.search-btn {
 				font-family:'돋움', Dotum;
 				display:inline-block;
 				padding:0 8px;
-				background:url('../images/common/bg_paging-arrow.png') no-repeat 100% 50%;
+				background:url('../images/common/bg_paging-arrow.png?20160805') no-repeat 100% 50%;
 			}
 			
 			a:nth-of-type(2) {
@@ -980,7 +983,7 @@ input.search-btn {
 						display:inline-block;
 						width:50px;
 						text-indent:-9999px;
-						background:url('../images/sub/bg_qna-q.png') no-repeat 11px 50%;
+						background:url('../images/sub/bg_qna-q.png?20160805') no-repeat 11px 50%;
 					}
 					
 				}
@@ -988,7 +991,7 @@ input.search-btn {
 				dd {
 					border-top:1px solid #e6e6e6;
 					padding:14px 50px 20px 55px;
-					background:#fff url('../images/sub/bg_qna-a.png') no-repeat 11px 12px;
+					background:#fff url('../images/sub/bg_qna-a.png?20160805') no-repeat 11px 12px;
 					font-size:12px;
 					font-family:'돋움', Dotum;
 					color:#444;
@@ -1134,7 +1137,7 @@ table.board-primary {
 				color:#444;
 				display:inline-block;
 				padding-left:20px;
-				background:url('../images/sub/bg_a-file.png') no-repeat 0 50%;
+				background:url('../images/sub/bg_a-file.png?20160805') no-repeat 0 50%;
 				
 				&:hover, &:focus {
 					text-decoration:underline;
@@ -1167,7 +1170,7 @@ table.board-primary {
 				font-family:'돋움', Dotum;
 				display:inline-block;
 				padding-right:35px;
-				background:url('../images/sub/view_arrow-prev.png') no-repeat 80% 48%;
+				background:url('../images/sub/view_arrow-prev.png?20160805') no-repeat 80% 48%;
 			}
 			
 			span.next {
@@ -1176,7 +1179,7 @@ table.board-primary {
 				font-family:'돋움', Dotum;
 				display:inline-block;
 				padding-right:35px;
-				background:url('../images/sub/view_arrow-next.png') no-repeat 80% 48%;
+				background:url('../images/sub/view_arrow-next.png?20160805') no-repeat 80% 48%;
 			}
 			
 			span.date {
@@ -1288,6 +1291,18 @@ body.layout-index {
 		margin-bottom:-180px;
 		padding-bottom:180px;
 		
+		&.small{
+			ul.link {
+				li{
+					background: none !important;
+					
+					a{
+						height: auto !important;
+						padding: 6px 0 !important;
+					}
+				}
+			}
+		}
 		.side {
 			position:relative;
 			height:100%;
@@ -1320,9 +1335,9 @@ body.layout-index {
 					a {
 						display:block;
 						width:55px;
-						height:90px;
+						height:75px;
 						text-align:center;
-						padding-top:46px;
+						padding-top:38px;
 						color:#555;
 						font-size:12px;
 						font-weight:600;
@@ -1330,31 +1345,31 @@ body.layout-index {
 					}
 					
 					&:first-child {
-						background:url('../images/common/bg_side-link1.png') no-repeat 60% 20%;
+						background:url('../images/common/bg_side-link1.png?20160805') no-repeat 60% 5px;
 					}
 					
 					&:nth-of-type(2) {
-						background:url('../images/common/bg_side-link2.png') no-repeat 60% 20%;
+						background:url('../images/common/bg_side-link2.png?20160805') no-repeat 60% 5px;
 					}
 					
 					&:nth-of-type(3) {
-						background:url('../images/common/bg_side-link3.png') no-repeat 50% 20%;
+						background:url('../images/common/bg_side-link3.png?20160805') no-repeat 50% 5px;
 					}
 					
 					&:nth-of-type(4) {
-						background:url('../images/common/bg_side-link4.png') no-repeat 50% 20%;
+						background:url('../images/common/bg_side-link4.png?20160805') no-repeat 50% 5px;
 					}
 					
 					&:nth-of-type(5) {
-						background:url('../images/common/bg_side-link5.png') no-repeat 50% 20%;
+						background:url('../images/common/bg_side-link5.png?20160805') no-repeat 50% 5px;
 					}
 					
 					&:nth-of-type(6) {
-						background:url('../images/common/bg_side-link6.png') no-repeat 50% 20%;
+						background:url('../images/common/bg_side-link6.png?20160805') no-repeat 50% 5px;
 					}
 					
 					&:nth-of-type(7) {
-						background:url('../images/common/bg_side-link7.png') no-repeat 50% 20%;
+						background:url('../images/common/bg_side-link7.png?20160805') no-repeat 50% 5px;
 					}
 				}
 			}
@@ -1368,7 +1383,7 @@ body.layout-index {
 					display:block;
 					width:55px;
 					height:55px;
-					background:#ddd url('../images/common/bg_go-top.png') no-repeat 50% 17px;
+					background:#ddd url('../images/common/bg_go-top.png?20160805') no-repeat 50% 17px;
 					text-align:center;
 					color:#003a72;
 					font-size:13px;
@@ -1396,6 +1411,18 @@ body.layout-page {
 			padding:0;
 		}
 		
+		&.small{
+			ul.link {
+				li{
+					background: none !important;
+					
+					a{
+						height: auto !important;
+						padding: 6px 0 !important;
+					}
+				}
+			}
+		}
 		.side {
 			position:relative;
 			background-color:#fff;
@@ -1428,9 +1455,9 @@ body.layout-page {
 					a {
 						display:block;
 						width:55px;
-						height:90px;
+						height:75px;
 						text-align:center;
-						padding-top:46px;
+						padding-top:38px;
 						color:#555;
 						font-size:12px;
 						font-weight:600;
@@ -1438,31 +1465,31 @@ body.layout-page {
 					}
 					
 					&:first-child {
-						background:url('../images/common/bg_side-link1.png') no-repeat 60% 20%;
+						background:url('../images/common/bg_side-link1.png?20160805') no-repeat 60% 5px;
 					}
 					
 					&:nth-of-type(2) {
-						background:url('../images/common/bg_side-link2.png') no-repeat 60% 20%;
+						background:url('../images/common/bg_side-link2.png?20160805') no-repeat 60% 5px;
 					}
 					
 					&:nth-of-type(3) {
-						background:url('../images/common/bg_side-link3.png') no-repeat 50% 20%;
+						background:url('../images/common/bg_side-link3.png?20160805') no-repeat 50% 5px;
 					}
 					
 					&:nth-of-type(4) {
-						background:url('../images/common/bg_side-link4.png') no-repeat 50% 20%;
+						background:url('../images/common/bg_side-link4.png?20160805') no-repeat 50% 5px;
 					}
 					
 					&:nth-of-type(5) {
-						background:url('../images/common/bg_side-link5.png') no-repeat 50% 20%;
+						background:url('../images/common/bg_side-link5.png?20160805') no-repeat 50% 5px;
 					}
 					
 					&:nth-of-type(6) {
-						background:url('../images/common/bg_side-link6.png') no-repeat 50% 20%;
+						background:url('../images/common/bg_side-link6.png?20160805') no-repeat 50% 5px;
 					}
 					
 					&:nth-of-type(7) {
-						background:url('../images/common/bg_side-link7.png') no-repeat 50% 20%;
+						background:url('../images/common/bg_side-link7.png?20160805') no-repeat 50% 5px;
 					}
 				}
 			}
@@ -1476,7 +1503,7 @@ body.layout-page {
 					display:block;
 					width:55px;
 					height:55px;
-					background:#ddd url('../images/common/bg_go-top.png') no-repeat 50% 17px;
+					background:#ddd url('../images/common/bg_go-top.png?20160805') no-repeat 50% 17px;
 					text-align:center;
 					color:#003a72;
 					font-size:13px;
@@ -1517,7 +1544,7 @@ body.layout-page {
 					li {
 						display:inline-block;
 						padding:0 13px;
-						background:url('../images/common/bg_ft_list.png') no-repeat 0 50%;
+						background:url('../images/common/bg_ft_list.png?20160805') no-repeat 0 50%;
 						
 						&:first-child {
 							background:none;
@@ -1550,12 +1577,12 @@ body.layout-page {
 					display:inline-block;
 					width:160px;
 					height:33px;
-					background:url('../images/common/bg_ft-site.png') no-repeat 0 0;
+					background:url('../images/common/bg_ft-site.png?20160805') no-repeat 0 0;
 					font-size:11px;
 					line-height:33px;
 					
 					&.on {
-						background-image:url('../images/common/bg_ft-site-over.png');
+						background-image:url('../images/common/bg_ft-site-over.png?20160805');
 					}
 					
 					a {
@@ -1618,7 +1645,7 @@ body.layout-page {
 		position: relative;
 		height: 126px;
 		padding-left:145px;
-		background:url('../images/common/ft_logo.png') no-repeat 40px 20px;
+		background:url('../images/common/ft_logo.png?20160805') no-repeat 40px 20px;
 		
 		address {
 			padding-top:25px;
@@ -1640,7 +1667,7 @@ body.layout-page {
 		margin:0;
 		height:50px;
 		line-height:50px;
-		background:#00acdc url('../images/sub/modal-h1.png') no-repeat 16px 50%;
+		background:#00acdc url('../images/sub/modal-h1.png?20160805') no-repeat 16px 50%;
 		color:#fff;
 		font-size:18px;
 		font-weight:normal;
@@ -1653,11 +1680,15 @@ body.layout-page {
 }
 
 /* sub-style */
-.sub-style {
-	width:100%;
+div.sub-style {
 	margin:0 auto;
 	min-width:1000px;
-		
+	width: auto !important;
+	height: auto !important;
+	
+	body.scroll-lock &{
+		min-width: 0;
+	}
 	.header {
 		position:relative;
 		height:80px;
@@ -1671,7 +1702,7 @@ body.layout-page {
 			width:198px;
 			height:42px;
 			text-indent:-9999px;
-			background:url('../images/common/h1-logo.png') no-repeat 0 0;
+			background:url('../images/common/h1-logo.png?20160805') no-repeat 0 0;
 			}
 			
 		}
@@ -1680,13 +1711,12 @@ body.layout-page {
 			position:absolute;
 			top:29px;
 			right:253px;
-			overflow:hidden;
 			
 			li{
 				
 				float:left;
 				padding:0 7px;
-				background:url('../images/graph/local-li.png') no-repeat 0 50%;
+				background:url('../images/graph/local-li.png?20160805') no-repeat 0 50%;
 				
 				&:first-child, &:last-child {
 					background:none;
@@ -1709,13 +1739,13 @@ body.layout-page {
 			top:29px;
 			width:240px;
 			height:34px;
-			background:url('../images/common/bg_search-box.png') no-repeat 0 0;
+			background:url('../images/common/bg_search-box.png?20160805') no-repeat 0 0;
 			
 			p.select-click {
 				display:inline-block;
 				width:70px;
 				height:34px;
- 				background:url('../images/common/select-click.png') no-repeat 80% 50%;
+ 				background:url('../images/common/select-click.png?20160805') no-repeat 80% 50%;
 				margin:0;
 				line-height:34px;
 				cursor:pointer;
@@ -1726,7 +1756,7 @@ body.layout-page {
 				overflow: hidden;
 				 
 				&.on {
-					background-image:url('../images/common/select-click-over.png');					
+					background-image:url('../images/common/select-click-over.png?20160805');					
 				}
 			}
 			
@@ -1747,7 +1777,7 @@ body.layout-page {
 				float:right;
 				width:34px;
 				height:34px;
-				background:url('../images/common/search-btn.png') no-repeat 50% 50%;
+				background:url('../images/common/search-btn.png?20160805') no-repeat 50% 50%;
 				text-indent:-9999px;
 			}
 			
@@ -1813,49 +1843,54 @@ body.layout-page {
 				position:absolute;
 				top:10px;
 				right:10px;
-				overflow:hidden;
+				display: inline-block;
+				width: 136px;
 				
 				li {
 					float:left;
-					padding:0 2px;
+					margin:0 2px;
+					display: inline-block;
+					width:30px;
+					height:30px;
 					
 					a {
 						display:inline-block;
+						overflow: hidden;
 						width:30px;
 						height:30px;
 						border:1px solid #4e8ec4;
 						border-radius:2px;
-						text-indent:-9999px;
+						font-size: 0;
 						
 						&.rotation {
-							background:url('../images/graph/rotation.png') no-repeat 50% 50%;
+							background:url('../images/graph/rotation.png?20160805') no-repeat 50% 50%;
 							
 							&:hover {
-								background:#fff url('../images/graph/rotation-ov.png') no-repeat 50% 50%;
+								background:#fff url('../images/graph/rotation-ov.png?20160805') no-repeat 50% 50%;
 							}						
 						}
 						
 						&.print {
-							background:url('../images/graph/print.png') no-repeat 50% 50%;
+							background:url('../images/graph/print.png?20160805') no-repeat 50% 50%;
 							
 							&:hover {
-								background:#fff url('../images/graph/print-ov.png') no-repeat 50% 50%;
+								background:#fff url('../images/graph/print-ov.png?20160805') no-repeat 50% 50%;
 							}
 						}
 						
 						&.graph {
-							background:url('../images/graph/graph-ico.png') no-repeat 50% 50%;
+							background:url('../images/graph/graph-ico.png?20160805') no-repeat 50% 50%;
 							
 							&:hover {
-								background:#fff url('../images/graph/graph-ico-ov.png') no-repeat 50% 50%;
+								background:#fff url('../images/graph/graph-ico-ov.png?20160805') no-repeat 50% 50%;
 							}
 						}
 						
 						&.x {
-							background:url('../images/graph/x-ico.png') no-repeat 50% 50%;
+							background:url('../images/graph/x-ico.png?20160805') no-repeat 50% 50%;
 							
 							&:hover {
-								background:#fff url('../images/graph/x-ico-ov.png') no-repeat 50% 50%;
+								background:#fff url('../images/graph/x-ico-ov.png?20160805') no-repeat 50% 50%;
 							}
 						}
 						
@@ -1875,14 +1910,13 @@ body.layout-page {
 					display:block;
 					width:50px;
 					height:50px;
-					background:url('../images/graph/menu.png') no-repeat 0 0;
+					background:url('../images/graph/menu.png?20160805') no-repeat 0 0;
 				}
 			}
 		}
 		
 		.graph-view {
 			position:relative;
-			width:100%;
 			background-color:#f4f4f4;
 			border:1px solid #e6e6e6;
 			padding:37px 349px 37px 49px;
@@ -1922,7 +1956,7 @@ body.layout-page {
 			ul.top-tab {
 				overflow:hidden;
 				height:45px;
-				background:url('../images/graph/bg_top-tab.png') repeat-x 0 0;
+				background:url('../images/graph/bg_top-tab.png?20160805') repeat-x 0 0;
 				border-right:1px solid #dfdcdc;
 				margin-bottom:15px;
 				
@@ -1963,9 +1997,10 @@ body.layout-page {
 				border-top:1px solid #d6d6d6;
 				border-right:1px solid #d6d6d6;
 				
-				tr {
+				th, td{
 					border-bottom:1px solid #dadada;
-					
+				}
+				tr {
 					&:last-child {
 						border-bottom:1px solid #b0b0b0;
 					}
@@ -2056,7 +2091,7 @@ body.layout-page {
 			
 			p.graph-img {
 				height:293px;
-				background:url('../images/graph/graph-img1.png') no-repeat 50% 50%;
+				background:url('../images/graph/graph-img1.png?20160805') no-repeat 50% 50%;
 				border:1px solid #c4c4c4;
 				margin-top:35px;
 				text-indent:-9999px;
@@ -2080,8 +2115,10 @@ body.layout-page {
 				border-top:2px solid #034a87;
 				margin-top:15px;
 				
-				tr {
+				th, td{
 					border-bottom:1px solid #dedede;
+				}
+				tr {
 					font-family:'돋움',Dotum;
 					
 					th {
@@ -2091,7 +2128,6 @@ body.layout-page {
 						font-size:12px;
 						color:#444;
 						border-right:1px solid #d9d9d9;
-						text-decoration:underline;
 						
 						&:first-child {
 							width:100px;
@@ -2144,10 +2180,10 @@ body.layout-page {
 				position:absolute;
 				right:299px;
 				top:0;
-				background:url('../images/graph/info-menu.png') no-repeat 0 0;
+				background:url('../images/graph/info-menu.png?20160805') no-repeat 0 0;
 				
 				&.on{
-					background:url('../images/graph/info-menu-ov.png') no-repeat 0 0;
+					background:url('../images/graph/info-menu-ov.png?20160805') no-repeat 0 0;
 				}
 				
 				a {
@@ -2165,8 +2201,7 @@ body.layout-page {
 				top:0;
 				width:300px;
 				border:1px solid #c2c5c8;
-				height:100%;
-				background:#fff url('../images/graph/bg_graph-info.png') no-repeat 50% 200px;
+				background:#fff url('../images/graph/bg_graph-info.png?20160805') no-repeat 50% 200px;
 				
 				ul.info-tab {
 					overflow:hidden;
@@ -2218,7 +2253,7 @@ body.layout-page {
 							display:inline-block;
 							color:#034a87;
 							padding-left:18px;
-							background:url('../images/graph/strong-chk.png') no-repeat 0 50%;
+							background:url('../images/graph/strong-chk.png?20160805') no-repeat 0 50%;
 						}
 						
 						em {
@@ -2322,47 +2357,47 @@ body.layout-page {
 				
 					p.txt1 {
 						padding-bottom:180px;
-						background:url('../images/common/m-eq0-txt1.png') no-repeat 35px 190px;
+						background:url('../images/common/m-eq0-txt1.png?20160805') no-repeat 35px 190px;
 					}
 				
 					ul.depth2-menu {
 						li {
 							&:first-child {
 								dl {
-									background-image:url('../images/common/eq0-1.png');
+									background-image:url('../images/common/eq0-1.png?20160805');
 								}
 							}
 							
 							&:nth-of-type(2) {
 								dl {
-									background-image:url('../images/common/eq0-2.png');
+									background-image:url('../images/common/eq0-2.png?20160805');
 								}
 							}
 							
 							&:nth-of-type(3) {
 								dl {
-									background-image:url('../images/common/eq0-3.png');
+									background-image:url('../images/common/eq0-3.png?20160805');
 								}
 							}
 							
 							&:nth-of-type(4) {
 								
 								dl {
-									background-image:url('../images/common/eq0-4.png');
+									background-image:url('../images/common/eq0-4.png?20160805');
 								}
 							}
 							
 							&:nth-of-type(5) {
 							
 								dl {
-									background-image:url('../images/common/eq0-5.png');
+									background-image:url('../images/common/eq0-5.png?20160805');
 								}
 							}
 							
 							&:nth-of-type(6) {
 								
 								dl {
-									background-image:url('../images/common/eq0-6.png');
+									background-image:url('../images/common/eq0-6.png?20160805');
 								}
 							}
 							
@@ -2370,7 +2405,7 @@ body.layout-page {
 								height:163px;
 								
 								dl {
-									background-image:url('../images/common/eq0-7.png');
+									background-image:url('../images/common/eq0-7.png?20160805');
 									
 								}
 							}
@@ -2379,7 +2414,7 @@ body.layout-page {
 								height:163px;
 							
 								dl {
-									background-image:url('../images/common/eq0-8.png');
+									background-image:url('../images/common/eq0-8.png?20160805');
 								}
 							}
 							
@@ -2387,7 +2422,7 @@ body.layout-page {
 								height:163px;
 								
 								dl {
-									background-image:url('../images/common/eq0-9.png');
+									background-image:url('../images/common/eq0-9.png?20160805');
 								}
 							}
 						}
@@ -2398,26 +2433,26 @@ body.layout-page {
 				
 					p.txt1 {
 						padding-bottom:180px;
-						background:url('../images/common/m-eq1-txt1.png') no-repeat 35px 190px;
+						background:url('../images/common/m-eq1-txt1.png?20160805') no-repeat 35px 190px;
 					}
 				
 					ul.depth2-menu {
 						li {
 							&:first-child {
 								dl {
-									background-image:url('../images/common/bg_depth2-2-1.png');
+									background-image:url('../images/common/bg_depth2-2-1.png?20160805');
 								}
 							}
 							
 							&:nth-of-type(2) {
 								dl {
-									background-image:url('../images/common/bg_depth2-2-2.png');
+									background-image:url('../images/common/bg_depth2-2-2.png?20160805');
 								}
 							}
 							
 							&:nth-of-type(3) {
 								dl {
-									background-image:url('../images/common/bg_depth2-2-3.png');
+									background-image:url('../images/common/bg_depth2-2-3.png?20160805');
 								}
 							}
 							
@@ -2425,7 +2460,7 @@ body.layout-page {
 								height:163px;
 								
 								dl {
-									background-image:url('../images/common/bg_depth2-2-4.png');
+									background-image:url('../images/common/bg_depth2-2-4.png?20160805');
 								}
 							}
 							
@@ -2433,7 +2468,7 @@ body.layout-page {
 								height:163px;
 							
 								dl {
-									background-image:url('../images/common/bg_depth2-2-5.png');
+									background-image:url('../images/common/bg_depth2-2-5.png?20160805');
 								}
 							}
 							
@@ -2441,7 +2476,7 @@ body.layout-page {
 								height:163px;
 								
 								dl {
-									background-image:url('../images/common/bg_depth2-2-6.png');
+									background-image:url('../images/common/bg_depth2-2-6.png?20160805');
 								}
 							}
 						}
@@ -2452,47 +2487,47 @@ body.layout-page {
 					
 					p.txt1 {
 						padding-bottom:180px;
-						background:url('../images/common/m-eq2-txt1.png') no-repeat 35px 190px;
+						background:url('../images/common/m-eq2-txt1.png?20160805') no-repeat 35px 190px;
 					}
 				
 					ul.depth2-menu {
 						li {
 							&:first-child {
 								dl {
-									background-image:url('../images/common/eq2-1.png');
+									background-image:url('../images/common/eq2-1.png?20160805');
 								}
 							}
 							
 							&:nth-of-type(2) {
 								dl {
-									background-image:url('../images/common/eq2-2.png');
+									background-image:url('../images/common/eq2-2.png?20160805');
 								}
 							}
 							
 							&:nth-of-type(3) {
 								dl {
-									background-image:url('../images/common/eq2-3.png');
+									background-image:url('../images/common/eq2-3.png?20160805');
 								}
 							}
 							
 							&:nth-of-type(4) {
 								
 								dl {
-									background-image:url('../images/common/eq2-4.png');
+									background-image:url('../images/common/eq2-4.png?20160805');
 								}
 							}
 							
 							&:nth-of-type(5) {
 							
 								dl {
-									background-image:url('../images/common/eq2-5.png');
+									background-image:url('../images/common/eq2-5.png?20160805');
 								}
 							}
 							
 							&:nth-of-type(6) {
 								
 								dl {
-									background-image:url('../images/common/eq2-6.png');
+									background-image:url('../images/common/eq2-6.png?20160805');
 								}
 							}
 							
@@ -2500,7 +2535,7 @@ body.layout-page {
 								height:163px;
 								
 								dl {
-									background-image:url('../images/common/eq2-7.png');
+									background-image:url('../images/common/eq2-7.png?20160805');
 								}
 							}
 							
@@ -2508,7 +2543,7 @@ body.layout-page {
 								height:163px;
 							
 								dl {
-									background-image:url('../images/common/eq2-8.png');
+									background-image:url('../images/common/eq2-8.png?20160805');
 								}
 							}
 							
@@ -2520,7 +2555,7 @@ body.layout-page {
 				
 					p.txt1 {
 						padding-bottom:180px;
-						background:url('../images/common/m-eq3-txt1.png') no-repeat 35px 190px;
+						background:url('../images/common/m-eq3-txt1.png?20160805') no-repeat 35px 190px;
 					}
 				
 					ul.depth2-menu {
@@ -2528,28 +2563,35 @@ body.layout-page {
 							&:first-child {
 								height:172px;
 								dl {
-									background-image:url('../images/common/eq3-1.png');
+									background-image:url('../images/common/eq3-1.png?20160805');
 								}
 							}
 							
 							&:nth-of-type(2) {
 								height:172px;
 								dl {
-									background-image:url('../images/common/eq3-2.png');
+									background-image:url('../images/common/eq3-2.png?20160805');
 								}
 							}
 							
 							&:nth-of-type(3) {
 								height:172px;
 								dl {
-									background-image:url('../images/common/eq3-3.png');
+									background-image:url('../images/common/eq3-3.png?20160805');
 								}
 							}
 							
 							&:nth-of-type(4) {
 								height:172px;
 								dl {
-									background-image:url('../images/common/eq3-4.png');
+									background-image:url('../images/common/eq3-4.png?20160805');
+								}
+							}
+							
+							&:nth-of-type(5) {
+								height:172px;
+								dl {
+									background-image:url('../images/common/eq3-5.png?20160805');
 								}
 							}
 						}
@@ -2641,7 +2683,7 @@ body.layout-page {
 						width:41px;
 						height:41px;
 						text-indent:-9999px;
-						background:url('../images/common/bg_close-btn.png') no-repeat 0 0;
+						background:url('../images/common/bg_close-btn.png?20160805') no-repeat 0 0;
 					}
 				}
 			}
@@ -2685,47 +2727,47 @@ body.layout-page {
 				
 					p.txt1 {
 						padding-bottom:180px;
-						background:url('../images/common/eq0-txt1.png') no-repeat 0 190px;
+						background:url('../images/common/eq0-txt1.png?20160805') no-repeat 0 190px;
 					}
 				
 					ul.depth2-menu {
 						li {
 							&:first-child {
 								dl {
-									background-image:url('../images/common/eq0-1.png');
+									background-image:url('../images/common/eq0-1.png?20160805');
 								}
 							}
 							
 							&:nth-of-type(2) {
 								dl {
-									background-image:url('../images/common/eq0-2.png');
+									background-image:url('../images/common/eq0-2.png?20160805');
 								}
 							}
 							
 							&:nth-of-type(3) {
 								dl {
-									background-image:url('../images/common/eq0-3.png');
+									background-image:url('../images/common/eq0-3.png?20160805');
 								}
 							}
 							
 							&:nth-of-type(4) {
 								
 								dl {
-									background-image:url('../images/common/eq0-4.png');
+									background-image:url('../images/common/eq0-4.png?20160805');
 								}
 							}
 							
 							&:nth-of-type(5) {
 							
 								dl {
-									background-image:url('../images/common/eq0-5.png');
+									background-image:url('../images/common/eq0-5.png?20160805');
 								}
 							}
 							
 							&:nth-of-type(6) {
 								
 								dl {
-									background-image:url('../images/common/eq0-6.png');
+									background-image:url('../images/common/eq0-6.png?20160805');
 								}
 							}
 							
@@ -2733,7 +2775,7 @@ body.layout-page {
 								height:163px;
 								
 								dl {
-									background-image:url('../images/common/eq0-7.png');
+									background-image:url('../images/common/eq0-7.png?20160805');
 									
 								}
 							}
@@ -2742,7 +2784,7 @@ body.layout-page {
 								height:163px;
 							
 								dl {
-									background-image:url('../images/common/eq0-8.png');
+									background-image:url('../images/common/eq0-8.png?20160805');
 								}
 							}
 							
@@ -2750,7 +2792,7 @@ body.layout-page {
 								height:163px;
 								
 								dl {
-									background-image:url('../images/common/eq0-9.png');
+									background-image:url('../images/common/eq0-9.png?20160805');
 								}
 							}
 						}
@@ -2761,26 +2803,26 @@ body.layout-page {
 				
 					p.txt1 {
 						padding-bottom:180px;
-						background:url('../images/common/eq1-txt1.png') no-repeat 0 190px;
+						background:url('../images/common/eq1-txt1.png?20160805') no-repeat 0 190px;
 					}
 				
 					ul.depth2-menu {
 						li {
 							&:first-child {
 								dl {
-									background-image:url('../images/common/bg_depth2-2-1.png');
+									background-image:url('../images/common/bg_depth2-2-1.png?20160805');
 								}
 							}
 							
 							&:nth-of-type(2) {
 								dl {
-									background-image:url('../images/common/bg_depth2-2-2.png');
+									background-image:url('../images/common/bg_depth2-2-2.png?20160805');
 								}
 							}
 							
 							&:nth-of-type(3) {
 								dl {
-									background-image:url('../images/common/bg_depth2-2-3.png');
+									background-image:url('../images/common/bg_depth2-2-3.png?20160805');
 								}
 							}
 							
@@ -2788,7 +2830,7 @@ body.layout-page {
 								height:163px;
 								
 								dl {
-									background-image:url('../images/common/bg_depth2-2-4.png');
+									background-image:url('../images/common/bg_depth2-2-4.png?20160805');
 								}
 							}
 							
@@ -2796,7 +2838,7 @@ body.layout-page {
 								height:163px;
 							
 								dl {
-									background-image:url('../images/common/bg_depth2-2-5.png');
+									background-image:url('../images/common/bg_depth2-2-5.png?20160805');
 								}
 							}
 							
@@ -2804,7 +2846,7 @@ body.layout-page {
 								height:163px;
 								
 								dl {
-									background-image:url('../images/common/bg_depth2-2-6.png');
+									background-image:url('../images/common/bg_depth2-2-6.png?20160805');
 								}
 							}
 						}
@@ -2815,47 +2857,47 @@ body.layout-page {
 					
 					p.txt1 {
 						padding-bottom:180px;
-						background:url('../images/common/eq2-txt1.png') no-repeat 0 190px;
+						background:url('../images/common/eq2-txt1.png?20160805') no-repeat 0 190px;
 					}
 				
 					ul.depth2-menu {
 						li {
 							&:first-child {
 								dl {
-									background-image:url('../images/common/eq2-1.png');
+									background-image:url('../images/common/eq2-1.png?20160805');
 								}
 							}
 							
 							&:nth-of-type(2) {
 								dl {
-									background-image:url('../images/common/eq2-2.png');
+									background-image:url('../images/common/eq2-2.png?20160805');
 								}
 							}
 							
 							&:nth-of-type(3) {
 								dl {
-									background-image:url('../images/common/eq2-3.png');
+									background-image:url('../images/common/eq2-3.png?20160805');
 								}
 							}
 							
 							&:nth-of-type(4) {
 								
 								dl {
-									background-image:url('../images/common/eq2-4.png');
+									background-image:url('../images/common/eq2-4.png?20160805');
 								}
 							}
 							
 							&:nth-of-type(5) {
 							
 								dl {
-									background-image:url('../images/common/eq2-5.png');
+									background-image:url('../images/common/eq2-5.png?20160805');
 								}
 							}
 							
 							&:nth-of-type(6) {
 								
 								dl {
-									background-image:url('../images/common/eq2-6.png');
+									background-image:url('../images/common/eq2-6.png?20160805');
 								}
 							}
 							
@@ -2863,7 +2905,7 @@ body.layout-page {
 								height:163px;
 								
 								dl {
-									background-image:url('../images/common/eq2-7.png');
+									background-image:url('../images/common/eq2-7.png?20160805');
 								}
 							}
 							
@@ -2871,7 +2913,7 @@ body.layout-page {
 								height:163px;
 							
 								dl {
-									background-image:url('../images/common/eq2-8.png');
+									background-image:url('../images/common/eq2-8.png?20160805');
 								}
 							}
 							
@@ -2883,7 +2925,7 @@ body.layout-page {
 				
 					p.txt1 {
 						padding-bottom:180px;
-						background:url('../images/common/eq3-txt1.png') no-repeat 0 190px;
+						background:url('../images/common/eq3-txt1.png?20160805') no-repeat 0 190px;
 					}
 				
 					ul.depth2-menu {
@@ -2891,28 +2933,35 @@ body.layout-page {
 							&:first-child {
 								height:172px;
 								dl {
-									background-image:url('../images/common/eq3-1.png');
+									background-image:url('../images/common/eq3-1.png?20160805');
 								}
 							}
 							
 							&:nth-of-type(2) {
 								height:172px;
 								dl {
-									background-image:url('../images/common/eq3-2.png');
+									background-image:url('../images/common/eq3-2.png?20160805');
 								}
 							}
 							
 							&:nth-of-type(3) {
 								height:172px;
 								dl {
-									background-image:url('../images/common/eq3-3.png');
+									background-image:url('../images/common/eq3-3.png?20160805');
 								}
 							}
 							
 							&:nth-of-type(4) {
 								height:172px;
 								dl {
-									background-image:url('../images/common/eq3-4.png');
+									background-image:url('../images/common/eq3-4.png?20160805');
+								}
+							}
+							
+							&:nth-of-type(5) {
+								height:172px;
+								dl {
+									background-image:url('../images/common/eq3-5.png?20160805');
 								}
 							}
 						}
@@ -3002,7 +3051,7 @@ body.layout-page {
 						width:41px;
 						height:41px;
 						text-indent:-9999px;
-						background:url('../images/common/bg_close-btn.png') no-repeat 0 0;
+						background:url('../images/common/bg_close-btn.png?20160805') no-repeat 0 0;
 					}
 				}
 			}
@@ -3023,6 +3072,6 @@ body.layout-page.fixed {
 
 .preparing {
 	height:200px;
-	background:url('../images/sub/preparing.png') no-repeat center 80%;
+	background:url('../images/sub/preparing.png?20160805') no-repeat center 80%;
 	text-indent:-9999px;
 }

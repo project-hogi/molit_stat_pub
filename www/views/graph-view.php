@@ -1,5 +1,6 @@
 <?php $pagePath = __FILE__; ?>
 <?php $bodyClass = "sub-style"; ?>
+<?php $ie8lt = true; ?>
 <?php require_once $_SERVER["DOCUMENT_ROOT"] . "/lib.php"; ?>
 <?php require "part/app-header.php"; ?>
 <div class="sub-style">

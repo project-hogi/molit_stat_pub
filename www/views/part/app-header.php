@@ -12,7 +12,7 @@ $config["imageFolder"] = $config["resourcesFolder"]  . "/images";
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<?php if(!isset($ie8lt)){ ?><meta http-equiv="X-UA-Compatible" content="IE=edge"><?php } ?>
 <meta name="description" content="<?php echo $config["sitename"]; ?> 홈페이지 입니다." />
 <title><?php echo $config["sitename"]; ?></title>
 <link rel="apple-touch-icon" sizes="57x57" href="/resources/favicon/apple-icon-57x57.png">
@@ -42,19 +42,11 @@ $config["imageFolder"] = $config["resourcesFolder"]  . "/images";
 <link rel="stylesheet" href="/resources/<?php echo $config["mode"]; ?>-legacy/css/legacy-style.css" />
 <?php } ?>
 <?php if($config['isDev'] === true && (isset($config['isBuild']) && !$config['isBuild'] || !isset($config['isBuild']))){ ?>
-<!--[if lt IE 9]><script src="/resources-dev/<?php echo $config["mode"]; ?>/jsvendor/jquery-1.12.2.min.js"></script><![endif]-->
-<!--[if gte IE 9]><!--><script src="/resources-dev/<?php echo $config["mode"]; ?>/jsvendor-dev-only/jquery.js"></script><![endif]-->
+<script src="/resources-dev/<?php echo $config["mode"]; ?>/jsvendor/jquery-1.12.2.min.js"></script>
 <?php echoJsInPath('/resources-dev/' . $config["mode"] . '/jspack/'); ?>
-<script src="<?php echo $config["resourcesFolder"]; ?>/jsvendor/highcharts/highcharts.js"></script>
-<script src="<?php echo $config["resourcesFolder"]; ?>/jsvendor/highcharts/highcharts-3d.js"></script>
-<script src="<?php echo $config["resourcesFolder"]; ?>/jsvendor/highcharts/exporting.js"></script>
 <?php } else { ?>
-<!--[if lt IE 9]><script src="/resources/<?php echo $config["mode"]; ?>/js/vendor/jquery-1.12.2.min.js"></script><![endif]-->
-<!--[if gte IE 9]><!--><script src="/resources/<?php echo $config["mode"]; ?>/js/vendor/jquery.min.js"></script><![endif]-->
+<script src="/resources/<?php echo $config["mode"]; ?>/js/vendor/jquery-1.12.2.min.js"></script>
 <script src="/resources/<?php echo $config["mode"]; ?>/js/script.min.js"></script>
-<script src="<?php echo $config["resourcesFolder"]; ?>/js/vendor/highcharts/highcharts.js"></script>
-<script src="<?php echo $config["resourcesFolder"]; ?>/js/vendor/highcharts/highcharts-3d.js"></script>
-<script src="<?php echo $config["resourcesFolder"]; ?>/js/vendor/highcharts/exporting.js"></script>
 <?php } ?>
 </head>
 <body class="<?php echo getBodyClass($bodyClass); ?>">

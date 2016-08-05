@@ -164,6 +164,20 @@ jQuery(function($) {
 
 			$goTop.css("bottom", aPoint <= bPoint ? bPoint - aPoint : 0);
 		});
+		$window.on("resize", function() {
+			if ($side_w.height() <= 632) {
+				$side_w.addClass("small");
+			} else {
+				$side_w.removeClass("small");
+			}
+		});
+		setInterval(function(){
+			if ($side_w.height() <= 632) {
+				$side_w.addClass("small");
+			} else {
+				$side_w.removeClass("small");
+			}
+		}, 500);
 	});
 
 	$('.graph-view').each(function() {

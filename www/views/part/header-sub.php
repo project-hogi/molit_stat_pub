@@ -168,6 +168,11 @@
 			                    <span>통계이야기</span>
 			                </a>
 			            </li>
+			            <li class="nav-depth-2">
+			                <a href="#">
+			                    <span>통계알리미</span>
+			                </a>
+			            </li>
 			        </ul>
 			    </li>
 			    <li class="nav-depth-1">
@@ -520,6 +525,14 @@
 								<a href="data-period.php">
 									<dt>통계이야기</dt>
 									<dd>재미있는 통계홍보자료를 만나보세요!</dd>
+								</a>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<a href="#">
+									<dt>통계알리미</dt>
+									<dd>함께하는 국토교통 통계알리미 사이트!</dd>
 								</a>
 							</dl>
 						</li>
