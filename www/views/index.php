@@ -8851,25 +8851,25 @@
 			</div>
 			<div class="stat">
 				<ul class="menu-slide">
-					<li style="background-image: url(<?php echo $config["imageFolder"]; ?>/main/main-chart-eq-0.png);">
+					<li style="background-image: url(<?php echo $config["imageFolder"]; ?>/main/main-chart-eq-0-1.png);">
 						<h3><strong>주요</strong>통계<em>Key statistics</em></h3>
 					</li>
-					<li style="background-image: url(<?php echo $config["imageFolder"]; ?>/main/main-chart-eq-1.png);">
+					<li style="background-image: url(<?php echo $config["imageFolder"]; ?>/main/main-chart-eq-1-1.png);">
 						<h3><strong>주요</strong>통계<em>Key statistics</em></h3>
 					</li>
-					<li style="background-image: url(<?php echo $config["imageFolder"]; ?>/main/main-chart-eq-2.png);">
+					<li style="background-image: url(<?php echo $config["imageFolder"]; ?>/main/main-chart-eq-2-1.png);">
 						<h3><strong>주요</strong>통계<em>Key statistics</em></h3>
 					</li>
-					<li style="background-image: url(<?php echo $config["imageFolder"]; ?>/main/main-chart-eq-3.png);">
+					<li style="background-image: url(<?php echo $config["imageFolder"]; ?>/main/main-chart-eq-3-1.png);">
 						<h3><strong>주요</strong>통계<em>Key statistics</em></h3>
 					</li>
-					<li style="background-image: url(<?php echo $config["imageFolder"]; ?>/main/main-chart-eq-4.png);">
+					<li style="background-image: url(<?php echo $config["imageFolder"]; ?>/main/main-chart-eq-4-1.png);">
 						<h3><strong>주요</strong>통계<em>Key statistics</em></h3>
 					</li>
-					<li style="background-image: url(<?php echo $config["imageFolder"]; ?>/main/main-chart-eq-5.png);">
+					<li style="background-image: url(<?php echo $config["imageFolder"]; ?>/main/main-chart-eq-5-1.png);">
 						<h3><strong>주요</strong>통계<em>Key statistics</em></h3>
 					</li>
-					<li style="background-image: url(<?php echo $config["imageFolder"]; ?>/main/main-chart-eq-6.png);">
+					<li style="background-image: url(<?php echo $config["imageFolder"]; ?>/main/main-chart-eq-6-1.png);">
 						<h3><strong>주요</strong>통계<em>Key statistics</em></h3>
 					</li>
 				</ul>
