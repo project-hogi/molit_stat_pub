@@ -122,6 +122,11 @@
 			            </li>
 			            <li class="nav-depth-2">
 			                <a href="stat-other.php">
+			                    <span>국제기구통계</span>
+			                </a>
+			            </li>
+			            <li class="nav-depth-2">
+			                <a href="stat-other.php">
 			                    <span>타기관통계</span>
 			                </a>
 			            </li>
@@ -332,6 +337,11 @@
         			            <li class="nav-depth-2">
         			                <a href="stat-area.php">
         			                    <span>지역별통계</span>
+        			                </a>
+        			            </li>
+        			            <li class="nav-depth-2">
+        			                <a href="stat-area.php">
+        			                    <span>국제기구통계</span>
         			                </a>
         			            </li>
         			            <li class="nav-depth-2">
@@ -568,6 +578,14 @@
 								<a href="stat-area.php">
 									<dt>지역별통계</dt>
 									<dd>국토교통통계누리 지역별통계를 확인하세요!</dd>
+								</a>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<a href="stat-area.php">
+									<dt>국제기구통계</dt>
+									<dd>주제별 및 회원국별 국제기구통계를 확인하세요!</dd>
 								</a>
 							</dl>
 						</li>
