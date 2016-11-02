@@ -24,10 +24,13 @@
 			<span>조회수</span> 217
 		</li>
 		<li>
-			<strong>첨부파일</strong>
-			<a href="#">
-				2016년도 1분기 통계알리미 홍보자료 우수작 선정결과.hwp
-			</a>
+			<strong class="file-item-tit">첨부파일</strong>
+			<ul class="file-items">
+				<li><a href="#">2016년도 1분기 통계알리미 홍보자료 우수작 선정결과.hwp1</a></li>
+				<li><a href="#">2016년도 1분기 통계알리미 홍보자료 우수작 선정결과.hwp2</a></li>
+				<li><a href="#">2016년도 1분기 통계알리미 홍보자료 우수작 선정결과.hwp3</a></li>
+			</ul>
+
 		</li>
 	</ul>
 	<div class="board-con">
